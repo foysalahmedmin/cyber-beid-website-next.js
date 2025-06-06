@@ -32,7 +32,7 @@ const Header = ({ className }: { className?: string }) => {
   const { scrollTop, scrollDirection } = useScrollPosition();
   const { visibleSection } = useVisibleSection(
     ["home", "services", "features", "projects"],
-    0.5,
+    0.5
   );
   console.log(visibleSection);
   const pathname = usePathname();
@@ -66,7 +66,7 @@ const Header = ({ className }: { className?: string }) => {
               (scrollDirection === "up" && pathname === "/") ||
               (scrollTop <= 80 && pathname === "/"),
           },
-          className,
+          className
         )}
       >
         <div className="container flex h-full items-center justify-between">
@@ -76,9 +76,9 @@ const Header = ({ className }: { className?: string }) => {
             aria-label="Home"
           >
             <Image
-              src="/images/logo.svg"
+              src="/logo.svg"
               alt="Logo"
-              width={150}
+              width={50}
               height={50}
               className="object-contain"
             />
@@ -97,7 +97,7 @@ const Header = ({ className }: { className?: string }) => {
                         "underline-effect primary text-sm whitespace-nowrap uppercase",
                         {
                           active: visibleSection === url.hash.replace("#", ""),
-                        },
+                        }
                       )}
                     >
                       {link?.name}
@@ -131,19 +131,19 @@ const Header = ({ className }: { className?: string }) => {
               <span
                 className={cn(
                   "bg-foreground h-0.5 w-6 transition-all duration-300 ease-in-out",
-                  isMobileMenuOpen && "translate-y-2 rotate-45",
+                  isMobileMenuOpen && "translate-y-2 rotate-45"
                 )}
               />
               <span
                 className={cn(
                   "bg-foreground h-0.5 w-6 transition-all duration-300 ease-in-out",
-                  isMobileMenuOpen && "opacity-0",
+                  isMobileMenuOpen && "opacity-0"
                 )}
               />
               <span
                 className={cn(
                   "bg-foreground h-0.5 w-6 transition-all duration-300 ease-in-out",
-                  isMobileMenuOpen && "-translate-y-2 -rotate-45",
+                  isMobileMenuOpen && "-translate-y-2 -rotate-45"
                 )}
               />
             </button>
@@ -156,7 +156,7 @@ const Header = ({ className }: { className?: string }) => {
           "bg-card fixed inset-0 z-40 flex flex-col items-center justify-center transition-all duration-500",
           isMobileMenuOpen
             ? "visible translate-x-0 opacity-100"
-            : "invisible translate-x-full opacity-50",
+            : "invisible translate-x-full opacity-50"
         )}
       >
         <nav className="flex flex-col items-center gap-4">
@@ -173,7 +173,7 @@ const Header = ({ className }: { className?: string }) => {
                       "underline-effect primary text-sm whitespace-nowrap uppercase",
                       {
                         active: visibleSection === url.hash.replace("#", ""),
-                      },
+                      }
                     )}
                   >
                     {link?.name}
