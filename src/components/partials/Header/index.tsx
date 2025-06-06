@@ -11,14 +11,14 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "/#home", name: "Home" },
+  { href: "/home/#home", name: "Home" },
   {
-    href: "/#services",
+    href: "/home/#services",
     name: "Services",
   },
-  { href: "/#features", name: "Features" },
+  { href: "/home/#features", name: "Features" },
   {
-    href: "/#projects",
+    href: "/home/#projects",
     name: "Projects",
   },
   {
@@ -57,21 +57,24 @@ const Header = ({ className }: { className?: string }) => {
         className={cn(
           "text-foreground top-0 right-0 left-0 z-50 h-20 bg-transparent backdrop-blur-xs transition-all duration-300 ease-in-out",
           {
-            "dark fixed": pathname === "/",
-            "bg-card sticky": pathname !== "/",
-            "bg-background/95 shadow-sm": scrollTop > 80 && pathname === "/",
+            "dark fixed": pathname === "/home",
+            "bg-card sticky": pathname !== "/home",
+            "bg-background/95 shadow-sm":
+              scrollTop > 80 && pathname === "/home",
             "-translate-y-full":
-              scrollDirection === "down" && scrollTop > 80 && pathname === "/",
+              scrollDirection === "down" &&
+              scrollTop > 80 &&
+              pathname === "/home",
             "translate-y-0":
-              (scrollDirection === "up" && pathname === "/") ||
-              (scrollTop <= 80 && pathname === "/"),
+              (scrollDirection === "up" && pathname === "/home") ||
+              (scrollTop <= 80 && pathname === "/home"),
           },
           className
         )}
       >
         <div className="container flex h-full items-center justify-between">
           <Link
-            href="/"
+            href="/home"
             className="font-display block text-xl font-medium tracking-tight transition-opacity duration-300 hover:opacity-80"
             aria-label="Home"
           >
