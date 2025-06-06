@@ -1,8 +1,8 @@
 import type { User } from "./model";
 
-export interface UserState {
+export type UserState = {
   token?: string;
   info?: User;
   isAuthenticated?: boolean;
   [key: string]: unknown;
-}
+};
