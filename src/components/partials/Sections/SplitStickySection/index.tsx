@@ -1,4 +1,4 @@
-import { Content } from "@/assets/data/contents";
+import type { Content } from "@/assets/data/contents";
 import { Button } from "@/components/ui/Button";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 import { cn } from "@/lib/utils";
@@ -14,9 +14,9 @@ type SplitStickySectionProps = {
 };
 
 const SplitStickySection = ({
-  title = "",
-  subtitle = "",
-  description = "",
+  // title = "",
+  // subtitle = "",
+  // description = "",
   image = "",
   contents = [],
   className = "",

@@ -4,7 +4,7 @@ export type Response = {
   success?: boolean;
   message?: string;
   status?: number;
-  data?: unknown;
+  data?: any;
   [key: string]: unknown;
 };
 

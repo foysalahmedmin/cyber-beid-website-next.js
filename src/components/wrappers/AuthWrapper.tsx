@@ -3,7 +3,8 @@
 import Loading from "@/components/partials/Loading";
 import useUser from "@/hooks/states/useUser";
 import { usePathname, useRouter } from "next/navigation";
-import { ReactNode, useEffect } from "react";
+import type { ReactNode} from "react";
+import { useEffect } from "react";
 
 interface PrivateRouteProps {
   children: ReactNode;

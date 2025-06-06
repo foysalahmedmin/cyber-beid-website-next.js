@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/SectionTitle";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import React from "react";
 
 type SplitSectionProps = {
   title?: string;

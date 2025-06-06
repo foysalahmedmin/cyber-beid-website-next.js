@@ -1,10 +1,10 @@
-type DebounceFunction<T extends (...args: unknown[]) => void> = T & {
+type DebounceFunction<T extends (...args: Parameters<T>) => void> = T & {
   cancel: () => void;
 };
 
-const debounce = <T extends (...args: unknown[]) => void>(
+const debounce = <T extends (...args: Parameters<T>) => void>(
   func: T,
-  delay: number
+  delay: number,
 ): DebounceFunction<T> => {
   let timeoutId: ReturnType<typeof setTimeout>;
 

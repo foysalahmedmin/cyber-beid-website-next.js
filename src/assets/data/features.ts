@@ -1,3 +1,5 @@
+import type {
+  LucideIcon} from "lucide-react";
 import {
   Clock,
   Hammer,
@@ -11,7 +13,7 @@ export type TFeature = {
   _id: string;
   title: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
 };
 
 export const features = [

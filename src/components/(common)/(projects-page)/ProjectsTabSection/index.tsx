@@ -1,6 +1,6 @@
 "use client";
 
-import { Project } from "@/assets/data/projects";
+import type { Project } from "@/assets/data/projects";
 import { Button } from "@/components/ui/Button";
 import { Plus } from "lucide-react";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const ProjectsTabSection = ({ projects = [] }: { projects: Project[] }) => {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
         {projects
           ?.slice(0, isShowMore ? projects?.length : 6)
-          ?.map((project, index) => (
+          ?.map((project) => (
             <div key={project?._id}>
               <div className="group/card grid items-center gap-6">
                 <Link

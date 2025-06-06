@@ -2,8 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
+import type {
+  ElementType} from "react";
 import React, {
-  ElementType,
   forwardRef,
   type ComponentPropsWithoutRef,
   type ElementRef,

@@ -24,8 +24,8 @@ const BlogsPage = () => {
                   In design, sustainability, and programming, the Boston
                   University Center for Computing & Data Sciences marks the
                   future of construction in higher education. The 19-story,
-                  350,000-square-foot building is a testament to the
-                  university's commitment to innovation and excellence.
+                  350,000-square-foot building the university&rsquo;s commitment
+                  to innovation and excellence.
                 </p>
               </div>
               <div className="aspect-[5/4] w-full">

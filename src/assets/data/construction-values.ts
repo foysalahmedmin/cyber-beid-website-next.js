@@ -1,10 +1,11 @@
+import type { LucideIcon} from "lucide-react";
 import { Award, Leaf, ShieldCheck } from "lucide-react";
 
 export type TConstructionValue = {
   _id: string;
   title: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
   link: string;
 };
 

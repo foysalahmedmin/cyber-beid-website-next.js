@@ -27,10 +27,10 @@ const FAQSection = () => {
               <Accordion type="single" collapsible className="w-full">
                 {faqs?.map((faq) => (
                   <AccordionItem key={faq._id} value={faq._id}>
-                    <AccordionTrigger>
+                    <AccordionTrigger value={faq._id}>
                       <span className="text-xl">{faq?.question}</span>
                     </AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionContent value={faq._id}>
                       <p>{faq?.answer}</p>
                     </AccordionContent>
                   </AccordionItem>

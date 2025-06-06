@@ -32,7 +32,7 @@ const LeadershipsSection = () => {
           <div className="lg:col-span-2">
             <Carousel className="group">
               <CarouselContent>
-                {leaderships?.map((leader, index) => (
+                {leaderships?.map((leader) => (
                   <CarouselItem key={leader._id}>
                     <div className="group/card grid grid-cols-2 items-center gap-6 md:px-6">
                       <div className="aspect-[4/5] w-full cursor-pointer overflow-hidden">

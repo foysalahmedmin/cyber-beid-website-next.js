@@ -23,7 +23,7 @@ const BlogsSection = () => {
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:col-span-2">
-            {blogs?.slice(0, 2)?.map((blog, index) => (
+            {blogs?.slice(0, 2)?.map((blog) => (
               <div
                 key={blog._id}
                 className="basis-1/1 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6"

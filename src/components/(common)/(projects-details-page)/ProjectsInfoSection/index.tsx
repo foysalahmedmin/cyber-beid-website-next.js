@@ -1,4 +1,4 @@
-import { Project } from "@/assets/data/projects";
+import type { Project } from "@/assets/data/projects";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 
 const ProjectInfoSection = ({ project }: { project?: Project }) => {

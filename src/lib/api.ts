@@ -20,7 +20,7 @@ export interface RequestConfig {
   options: RequestInit;
 }
 
-export interface FetchResponse<T = any> {
+export interface FetchResponse<T =  unknown> {
   data: T;
   status: number;
   statusText: string;
@@ -30,8 +30,8 @@ export interface FetchResponse<T = any> {
     method?: string;
     baseURL?: string;
     headers?: Record<string, string>;
-    params?: Record<string, any>;
-    body?: any;
+    params?: Record<string,  unknown>;
+    body?: unknown;
     timeout?: number;
   };
 }
@@ -180,7 +180,7 @@ export class Fetch {
     return headers;
   }
 
-  async request<T = any>(
+  async request<T =  unknown>(
     url: string,
     options: RequestInit & NextFetchConfig = {}
   ): Promise<FetchResponse<T>> {
@@ -199,11 +199,11 @@ export class Fetch {
   }
 
   // HTTP verb methods remain the same...
-  get<T = any>(url: string, options?: RequestInit): Promise<FetchResponse<T>> {
+  get<T =  unknown>(url: string, options?: RequestInit): Promise<FetchResponse<T>> {
     return this.request<T>(url, { ...options, method: "GET" });
   }
 
-  post<T = any>(
+  post<T =  unknown>(
     url: string,
     data?: any,
     options?: Omit<RequestInit, "body">
@@ -215,7 +215,7 @@ export class Fetch {
     });
   }
 
-  put<T = any>(
+  put<T =  unknown>(
     url: string,
     data?: any,
     options?: Omit<RequestInit, "body">
@@ -227,7 +227,7 @@ export class Fetch {
     });
   }
 
-  patch<T = any>(
+  patch<T =  unknown>(
     url: string,
     data?: any,
     options?: Omit<RequestInit, "body">
@@ -239,7 +239,7 @@ export class Fetch {
     });
   }
 
-  delete<T = any>(
+  delete<T = unknown>(
     url: string,
     options?: RequestInit
   ): Promise<FetchResponse<T>> {

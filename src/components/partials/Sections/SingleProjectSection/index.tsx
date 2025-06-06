@@ -1,4 +1,4 @@
-import { Project } from "@/assets/data/projects";
+import type { Project } from "@/assets/data/projects";
 import {
   Description,
   SectionTitle,
@@ -8,6 +8,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Plus } from "lucide-react";
 import Link from "next/link";
+import React from "react";
 
 type SingleProjectSectionProps = {
   title?: string;

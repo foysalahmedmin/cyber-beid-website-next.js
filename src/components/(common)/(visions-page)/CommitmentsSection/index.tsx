@@ -28,7 +28,7 @@ const CommitmentsSection = () => {
                 className={cn(
                   "flex max-w-80 flex-col gap-y-4",
                   alignClassMD,
-                  alignClassLG,
+                  alignClassLG
                 )}
               >
                 <item.icon className="inline-block size-16" strokeWidth={1} />

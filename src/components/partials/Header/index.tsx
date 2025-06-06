@@ -46,10 +46,10 @@ const Header = ({ className }: { className?: string }) => {
     }
   };
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-    document.body.style.overflow = "auto";
-  };
+  // const closeMobileMenu = () => {
+  //   setIsMobileMenuOpen(false);
+  //   document.body.style.overflow = "auto";
+  // };
 
   return (
     <>

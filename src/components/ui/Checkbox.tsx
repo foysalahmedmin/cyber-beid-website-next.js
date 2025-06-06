@@ -2,8 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
-import {
-  ElementType,
+import type {
+  ElementType} from "react";
+import React, {
   forwardRef,
   type ComponentPropsWithoutRef,
   type ElementRef,
@@ -50,7 +51,7 @@ const checkboxVariants = cva(
       variant: "default",
       size: "default",
     },
-  },
+  }
 );
 
 const Checkbox = forwardRef<
@@ -71,7 +72,7 @@ const Checkbox = forwardRef<
       type = "checkbox",
       ...props
     },
-    ref,
+    ref
   ) => {
     const Comp = (asChild ? "span" : as || "input") as ElementType;
 
@@ -89,13 +90,13 @@ const Checkbox = forwardRef<
           }),
           {
             [cn("loading", loadingClassName)]: isLoading,
-          },
+          }
         )}
         ref={ref}
         {...props}
       />
     );
-  },
+  }
 );
 
 Checkbox.displayName = "Checkbox";

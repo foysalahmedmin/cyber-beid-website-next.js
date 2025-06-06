@@ -1,4 +1,5 @@
-import { Project, projects as projects_data } from "@/assets/data/projects";
+import type { Project} from "@/assets/data/projects";
+import { projects as projects_data } from "@/assets/data/projects";
 import {
   Carousel,
   CarouselContent,
@@ -31,7 +32,7 @@ const ProjectsSlideSection = ({
   description = "",
   projects = projects_data,
   className = "",
-} : ProjectsSlideSectionProps) => {
+}: ProjectsSlideSectionProps) => {
   return (
     <section className={cn("py-16 md:py-24", className)}>
       <div className="container">
@@ -51,7 +52,7 @@ const ProjectsSlideSection = ({
         <div>
           <Carousel className="group">
             <CarouselContent>
-              {projects?.map((project, index) => (
+              {projects?.map((project) => (
                 <CarouselItem
                   key={project._id}
                   className="basis-1/1 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6"

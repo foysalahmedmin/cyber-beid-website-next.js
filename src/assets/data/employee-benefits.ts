@@ -1,3 +1,5 @@
+import type {
+  LucideIcon} from "lucide-react";
 import {
   CalendarClock,
   GraduationCap,
@@ -11,7 +13,7 @@ export type TEmployeeBenefit = {
   _id: string;
   title: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
 };
 
 export const employee_benefits : TEmployeeBenefit[] = [

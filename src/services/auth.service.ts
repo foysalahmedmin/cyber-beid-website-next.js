@@ -17,19 +17,19 @@ export async function signIn(payload: SignInPayload): Promise<AuthResponse> {
   const response = await api.post("/api/auth/signin", payload, {
     headers: { "Content-Type": "application/json" },
   });
-  return response?.data;
+  return response?.data as AuthResponse;
 }
 
 export async function signUp(payload: SignUpPayload): Promise<AuthResponse> {
   const response = await api.post("/api/auth/signup", payload, {
     headers: { "Content-Type": "application/json" },
   });
-  return response?.data;
+  return response?.data as AuthResponse;
 }
 
 export async function signOut(): Promise<AuthResponse> {
   const response = await api.post("/api/auth/signout", {
     headers: { "Content-Type": "application/json" },
   });
-  return response?.data;
+  return response?.data as AuthResponse;
 }

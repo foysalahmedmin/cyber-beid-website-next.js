@@ -1,21 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export const useVisibleSection = (ids?: string[], threshold = 0.5) => {
-  console.log(ids);
-  if (!ids || ids.length === 0) {
-    return { visibleSection: null };
-  }
-
   const [visibleSection, setVisibleSection] = useState<string | null>(null);
 
+  const memoizedIds = useMemo(() => ids ?? [], [ids]);
+
   useEffect(() => {
+    if (memoizedIds.length === 0) return;
+
     const observers: IntersectionObserver[] = [];
 
-    ids.forEach((sectionId) => {
+    memoizedIds.forEach((sectionId) => {
       const element = document.getElementById(sectionId);
       if (!element) return;
+
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
@@ -32,7 +32,7 @@ export const useVisibleSection = (ids?: string[], threshold = 0.5) => {
     return () => {
       observers.forEach((observer) => observer.disconnect());
     };
-  }, [ids, threshold]);
+  }, [memoizedIds, threshold]);
 
   return { visibleSection };
 };

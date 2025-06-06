@@ -3,12 +3,13 @@
 import useRippleEffect from "@/hooks/ui/useRippleEffect";
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
-import React, {
+import type {
   ComponentPropsWithoutRef,
   ElementRef,
   ElementType,
+  RefObject} from "react";
+import React, {
   forwardRef,
-  RefObject,
   useImperativeHandle,
   useRef,
 } from "react";

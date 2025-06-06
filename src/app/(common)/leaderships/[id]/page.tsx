@@ -80,7 +80,7 @@ const LeadershipsDetailsPage = async ({ params }: Props) => {
             {description
               ?.split("\n")
               .map((paragraph, index) =>
-                paragraph ? <p key={index}>{paragraph}</p> : <br />,
+                paragraph ? <p key={index}>{paragraph}</p> : <br key={index} />
               )}
           </div>
         </div>
