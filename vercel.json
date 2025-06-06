@@ -1,9 +1,21 @@
 {
-  "builds": [
+  "version": 2,
+  "rewrites": [{ "source": "/old-route", "destination": "/new-route" }],
+  "redirects": [
+    { "source": "/redirect-me", "destination": "/", "permanent": true }
+  ],
+  "headers": [
     {
-      "src": "package.json",
-      "use": "@vercel/next"
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/" }]
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://api.cyber-doc.com"
+  }
 }

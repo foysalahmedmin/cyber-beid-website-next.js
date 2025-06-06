@@ -2,7 +2,6 @@
   "name": "cyber-doc",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@7.6.0",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -41,5 +40,11 @@
     "tw-animate-css": "^1.2.9",
     "typescript": "^5",
     "typescript-eslint": "^8.32.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
