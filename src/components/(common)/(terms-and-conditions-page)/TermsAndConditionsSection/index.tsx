@@ -1,6 +1,11 @@
 import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
 
-const sections = [
+type TSection = {
+  title: string;
+  description: string;
+};
+
+const sections: TSection[] = [
   {
     title: "What information do we collect?",
     description:

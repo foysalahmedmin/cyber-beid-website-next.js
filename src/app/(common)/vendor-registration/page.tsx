@@ -105,7 +105,7 @@ const VendorRegistrationPage = () => {
       <PageHeaderSection
         subtitle="Vendor Registration"
         title="Vendor Agreement Form"
-        description="MERCY CONSTRUCTION INC. works with bank owned or mortgage owned properties that are foreclosed or occupied. Our main objective is to make sure the
+        description="CyberDoc INC. works with bank owned or mortgage owned properties that are foreclosed or occupied. Our main objective is to make sure the
 client demands are met and the service quality is maintained on the highest level
 possible."
       />
