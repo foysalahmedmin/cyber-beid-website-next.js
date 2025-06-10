@@ -13,7 +13,7 @@ type Props = {
 const ServicesDetailsPage = async ({ params }: Props) => {
   const { id } = await params;
   const service = services.find((service) => service._id === id);
-  const { title, description, image } = service || {};
+  const { title, description, thumbnail } = service || {};
 
   return (
     <main>
@@ -21,7 +21,7 @@ const ServicesDetailsPage = async ({ params }: Props) => {
         subtitle="Service"
         title={title}
         description={description}
-        image={image}
+        image={thumbnail}
       />
       <SplitSection
         title="Delivering integrated construction services to build lasting success"

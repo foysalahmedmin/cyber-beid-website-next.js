@@ -1,4 +1,4 @@
-import type { Project} from "@/assets/data/projects";
+import type { TProject } from "@/assets/data/projects";
 import { projects as projects_data } from "@/assets/data/projects";
 import {
   Carousel,
@@ -22,7 +22,7 @@ type ProjectsSlideSectionProps = {
   title?: string;
   subtitle?: string;
   description?: string;
-  projects?: Project[];
+  projects?: TProject[];
   className?: string;
 };
 
@@ -64,7 +64,7 @@ const ProjectsSlideSection = ({
                     >
                       <img
                         className="size-full object-cover object-center transition-all duration-700 ease-in-out group-hover/card:scale-110"
-                        src={project?.image}
+                        src={project?.thumbnail}
                         alt={project?.title}
                       />
                       <div className="group/trigger absolute right-0 bottom-0 flex h-14 flex-row-reverse items-center">

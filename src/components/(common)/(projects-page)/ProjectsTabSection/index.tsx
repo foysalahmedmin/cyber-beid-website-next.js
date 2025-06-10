@@ -1,12 +1,12 @@
 "use client";
 
-import type { Project } from "@/assets/data/projects";
+import type { TProject } from "@/assets/data/projects";
 import { Button } from "@/components/ui/Button";
 import { Plus } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-const ProjectsTabSection = ({ projects = [] }: { projects: Project[] }) => {
+const ProjectsTabSection = ({ projects = [] }: { projects: TProject[] }) => {
   const [isShowMore, setIsShowMore] = useState(false);
   return (
     <div>
@@ -22,7 +22,7 @@ const ProjectsTabSection = ({ projects = [] }: { projects: Project[] }) => {
                 >
                   <img
                     className="size-full object-cover object-center transition-all duration-700 ease-in-out group-hover/card:scale-110"
-                    src={project?.image}
+                    src={project?.thumbnail}
                     alt={project?.title}
                   />
                   <div className="group/trigger absolute right-0 bottom-0 flex h-14 flex-row-reverse items-center">

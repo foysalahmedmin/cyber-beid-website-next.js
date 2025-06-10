@@ -19,7 +19,7 @@ const ServicesSection = () => {
             >
               <img
                 className="size-full object-cover object-center transition-all duration-700 ease-in-out group-hover:scale-110"
-                src={service.image}
+                src={service.thumbnail}
                 alt={service.title}
               />
             </Link>

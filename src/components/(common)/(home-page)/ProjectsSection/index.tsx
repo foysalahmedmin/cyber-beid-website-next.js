@@ -46,7 +46,7 @@ const ProjectsSection = () => {
                     >
                       <img
                         className="size-full object-cover object-center transition-all duration-700 ease-in-out group-hover/card:scale-110"
-                        src={project?.image}
+                        src={project?.thumbnail}
                         alt={project?.title}
                       />
                       <div className="group/trigger absolute right-0 bottom-0 flex h-14 flex-row-reverse items-center">

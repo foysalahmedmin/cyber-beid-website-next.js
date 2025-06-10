@@ -12,7 +12,7 @@ type Props = {
 const ProjectsDetailsPage = async ({ params }: Props) => {
   const { id } = await params;
   const project = projects.find((project) => project._id === id);
-  const { title, description } = project || {};
+  const { title, description, thumbnail } = project || {};
 
   return (
     <main>
@@ -20,7 +20,7 @@ const ProjectsDetailsPage = async ({ params }: Props) => {
         subtitle="Project"
         title={title}
         description={description}
-        image={"/images/(projects-details-page)/page-header.png"}
+        image={thumbnail}
       />
       <ProjectInfoSection project={project} />
       <SplitImageSection

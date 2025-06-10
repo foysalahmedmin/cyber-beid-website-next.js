@@ -1,7 +1,7 @@
-import type { Project } from "@/assets/data/projects";
+import type { TProject } from "@/assets/data/projects";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 
-const ProjectInfoSection = ({ project }: { project?: Project }) => {
+const ProjectInfoSection = ({ project }: { project?: TProject }) => {
   const { title, description, client, sector, location } = project || {};
   return (
     <section className="py-16 md:py-24">

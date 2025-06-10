@@ -1,4 +1,4 @@
-import type { Project } from "@/assets/data/projects";
+import type { TProject } from "@/assets/data/projects";
 import {
   Description,
   SectionTitle,
@@ -15,7 +15,7 @@ type SingleProjectSectionProps = {
   subtitle?: string;
   description?: string | React.ReactNode;
   className?: string;
-  project?: Project;
+  project?: Partial<TProject>;
 };
 
 const SingleProjectSection = ({
@@ -27,10 +27,10 @@ const SingleProjectSection = ({
     _id: "station-home",
     title: "Station Home",
     description: "",
-    image: "/images/partials/single-project.png",
+    thumbnail: "/images/partials/single-project.png",
     tags: ["public-buildings"],
     client: "",
-    sector: "Projects",
+    sector: "content-creation",
     location: "",
     link: "/projects/station-home/",
   },
@@ -56,7 +56,7 @@ const SingleProjectSection = ({
           >
             <img
               className="size-full object-cover object-center transition-all duration-700 ease-in-out group-hover/card:scale-110"
-              src={project?.image}
+              src={project?.thumbnail}
               alt={project?.title}
             />
             <div className="absolute right-0 bottom-0 flex h-20 flex-row-reverse items-center">
