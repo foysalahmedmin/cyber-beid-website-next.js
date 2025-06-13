@@ -1,12 +1,14 @@
-import type {
-  LucideIcon} from "lucide-react";
 import {
+  BarChart,
   Clock,
-  Hammer,
-  PackageCheck,
+  Code2,
+  Cpu,
+  LucideIcon,
   Receipt,
+  Rocket,
   Settings,
-  TreePalm,
+  Smartphone,
+  Users,
 } from "lucide-react";
 
 export type TFeature = {
@@ -16,47 +18,68 @@ export type TFeature = {
   icon: LucideIcon;
 };
 
-export const features = [
+export const features: TFeature[] = [
   {
-    _id: "1c6f1ca",
-    title: "Expert Craftsmanship",
-    description:
-      "Our team of skilled professionals delivers superior quality in every project, ensuring precision and attention to detail.",
-    icon: Hammer,
-  },
-  {
-    _id: "0f9f7f7",
+    _id: "on-time-delivery",
     title: "On-Time Delivery",
     description:
-      "We pride ourselves on completing projects on schedule, so you can move into your dream space without delay.",
+      "We follow agile development practices to ensure your product is launched on schedule—every time.",
     icon: Clock,
   },
   {
-    _id: "5637a0e",
-    title: "Custom Solutions",
-    description:
-      "From residential to commercial projects, we tailor our services to meet your specific needs and vision.",
-    icon: Settings,
-  },
-  {
-    _id: "737279f",
+    _id: "transparent-pricing",
     title: "Transparent Pricing",
     description:
-      "No hidden fees—our clear and competitive pricing ensures you know exactly what you're paying for.",
+      "Upfront and honest estimates with no hidden costs. You know exactly what you're paying for at every stage.",
     icon: Receipt,
   },
   {
-    _id: "d7ba7a7",
-    title: "Sustainable Practices",
+    _id: "custom-secure-solutions",
+    title: "Custom & Secure Solutions",
     description:
-      "We focus on eco-friendly construction techniques, promoting sustainability in all our projects.",
-    icon: TreePalm,
+      "We design and build customized solutions with enterprise-grade security, tailored to your unique business goals and user needs.",
+    icon: Settings,
   },
   {
-    _id: "f26c653",
-    title: "Comprehensive Services",
+    _id: "tech-expertise",
+    title: "Technical Expertise",
     description:
-      "From design consultation to final construction, we offer end-to-end solutions for all your building needs.",
-    icon: PackageCheck,
+      "Our certified professionals specialize in React, Node.js, AI/ML, and cloud platforms to build scalable digital products.",
+    icon: Cpu,
+  },
+  {
+    _id: "data-driven",
+    title: "Data-Driven Strategy",
+    description:
+      "We leverage analytics and performance data to optimize your solution continuously for better ROI.",
+    icon: BarChart,
+  },
+  {
+    _id: "innovative-tech",
+    title: "Emerging Technologies",
+    description:
+      "Stay ahead of the curve with AI integration, AR/VR experiences, and blockchain-powered innovations.",
+    icon: Rocket,
+  },
+  {
+    _id: "full-stack",
+    title: "Full-Cycle Development",
+    description:
+      "From design and development to testing, deployment, and support—we manage the entire product lifecycle.",
+    icon: Code2,
+  },
+  {
+    _id: "cross-platform",
+    title: "Cross-Platform Excellence",
+    description:
+      "Deliver consistent, high-quality experiences across web and mobile with responsive design and native apps.",
+    icon: Smartphone,
+  },
+  {
+    _id: "user-centric",
+    title: "User-Centric Design",
+    description:
+      "Our human-centered approach ensures intuitive interfaces and seamless user experiences at every touchpoint.",
+    icon: Users,
   },
 ];
