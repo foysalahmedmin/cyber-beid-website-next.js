@@ -7,31 +7,31 @@ const CareersPage = () => {
   return (
     <main>
       <PageHeaderSection
-        subtitle="The future you want is within reach"
+        subtitle="Shape the future of digital innovation"
         title="Careers"
-        description="That’s the mindset that moves us forward. It builds our strong, supportive community, nurtures our curiosity, and drives us toward inventive ways of delivering results."
+        description="Join a team that thrives on creativity, strategy, and technology. At CyberDoc, we believe the future belongs to those who build it—and we’re building it every day through groundbreaking digital experiences."
         image="/images/(careers-page)/page-header.png"
       />
       <PageHeaderSection
         subtitle="Careers at CyberDoc"
         title="Life at CyberDoc"
-        description="At CyberDoc, being an employee means being part of a dedicated family that thrives on collaboration and shared success. Our culture is built on mutual respect and support, where every team member is encouraged to bring their unique talents to the table. We believe in empowering our employees to take ownership of their work, fostering a sense of pride in every project we undertake. Together, we celebrate our diverse backgrounds and experiences, driving innovation and excellence in the construction industry. Here, your contributions matter, and your growth is our priority. Join us, and be part of a team that values integrity, quality, and the pursuit of excellence."
+        description="Working at CyberDoc means being part of a passionate team that values innovation, collaboration, and impact. Whether you're a developer, designer, strategist, or digital marketer, you’ll find a place where your ideas matter and your growth is supported. We prioritize flexibility, continuous learning, and a culture of excellence that pushes boundaries and delivers real results for global clients. Together, we build powerful software, drive successful campaigns, and design user-centered experiences that make a difference."
         image="/images/(careers-page)/career-life.png"
       />
       <BenefitsSection />
+      <PageHeaderSection
+        subtitle="Explore Opportunities"
+        title="Your career in tech and creativity starts here"
+        description="At CyberDoc, we offer career paths in software engineering, UI/UX design, digital marketing, automation, project strategy, and beyond. We're not just offering jobs—we’re offering the chance to work on meaningful digital solutions that shape industries and improve lives."
+        image="/images/(careers-page)/career-opportunities.png"
+      />
       <SplitSection2
         className="bg-muted"
-        subtitle="Growing"
-        title="Intern Program"
-        description="At CyberDoc, our Internship Program is a vital part of nurturing the next generation of industry leaders. With an impressive 85% of our former interns advancing their careers within the company, they are actively contributing to shaping our future across all levels. Our interns gain hands-on experience by collaborating with seasoned professionals on various project phases, allowing them to develop practical skills and industry insights. We offer internships tailored for students aspiring to become Project Managers, Superintendents, and other key roles in areas such as marketing, finance, information technology, and safety. With opportunities for increased responsibility throughout multiple internship sessions, CyberDoc is dedicated to empowering interns to grow their careers while making meaningful contributions to our projects and culture."
+        subtitle="Talent Development"
+        title="Internship Program"
+        description="Our Internship Program is designed to launch careers in technology and marketing. Over 85% of our interns continue to grow with us, contributing across web and app development, performance marketing, design systems, and automation solutions. Interns work closely with experienced professionals, gaining real-world experience in project cycles, client collaboration, and strategic delivery. We offer structured internships in areas such as frontend/backend development, creative design, content, SEO/SEM, and tech-driven project management—empowering the next generation of digital innovators."
         image1="/images/(careers-page)/internship-1.png"
         image2="/images/(careers-page)/internship-2.png"
-      />
-      <PageHeaderSection
-        subtitle="Career Opportunities"
-        title="A career where anything is possible"
-        description="At Mercy, there’s no limit to what you can achieve. We offer opportunities in a variety of disciplines that go above and beyond what you expect from a construction company."
-        image="/images/(careers-page)/career-opportunities.png"
       />
       <FollowUpSection />
     </main>

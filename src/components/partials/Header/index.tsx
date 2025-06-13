@@ -32,7 +32,7 @@ const Header = ({ className }: { className?: string }) => {
   const { scrollTop, scrollDirection } = useScrollPosition();
   const { visibleSection } = useVisibleSection(
     ["home", "services", "features", "projects"],
-    0.5
+    0.5,
   );
   console.log(visibleSection);
   const pathname = usePathname();
@@ -69,22 +69,26 @@ const Header = ({ className }: { className?: string }) => {
               (scrollDirection === "up" && pathname === "/home") ||
               (scrollTop <= 80 && pathname === "/home"),
           },
-          className
+          className,
         )}
       >
         <div className="container flex h-full items-center justify-between">
           <Link
             href="/home"
-            className="font-display block text-xl font-medium tracking-tight transition-opacity duration-300 hover:opacity-80"
+            className="font-display flex w-full items-center gap-2 text-xl font-medium transition-opacity duration-300 hover:opacity-80"
             aria-label="Home"
           >
             <Image
               src="/logo.svg"
               alt="Logo"
-              width={50}
-              height={50}
-              className="object-contain"
+              width={48}
+              height={48}
+              className="size-12 rounded-lg object-contain object-left"
             />
+            <div className="leading-none">
+              <h5 className="font-semibold">CyberDoc</h5>
+              <span className="text-xs leading-0">Renovation Experts</span>
+            </div>
           </Link>
           <nav className="hidden flex-1 items-center justify-center gap-4 px-0 lg:flex lg:gap-6 lg:px-16">
             {navLinks?.map((link, index) => {
@@ -100,7 +104,7 @@ const Header = ({ className }: { className?: string }) => {
                         "underline-effect primary text-sm whitespace-nowrap uppercase",
                         {
                           active: visibleSection === url.hash.replace("#", ""),
-                        }
+                        },
                       )}
                     >
                       {link?.name}
@@ -134,19 +138,19 @@ const Header = ({ className }: { className?: string }) => {
               <span
                 className={cn(
                   "bg-foreground h-0.5 w-6 transition-all duration-300 ease-in-out",
-                  isMobileMenuOpen && "translate-y-2 rotate-45"
+                  isMobileMenuOpen && "translate-y-2 rotate-45",
                 )}
               />
               <span
                 className={cn(
                   "bg-foreground h-0.5 w-6 transition-all duration-300 ease-in-out",
-                  isMobileMenuOpen && "opacity-0"
+                  isMobileMenuOpen && "opacity-0",
                 )}
               />
               <span
                 className={cn(
                   "bg-foreground h-0.5 w-6 transition-all duration-300 ease-in-out",
-                  isMobileMenuOpen && "-translate-y-2 -rotate-45"
+                  isMobileMenuOpen && "-translate-y-2 -rotate-45",
                 )}
               />
             </button>
@@ -159,7 +163,7 @@ const Header = ({ className }: { className?: string }) => {
           "bg-card fixed inset-0 z-40 flex flex-col items-center justify-center transition-all duration-500",
           isMobileMenuOpen
             ? "visible translate-x-0 opacity-100"
-            : "invisible translate-x-full opacity-50"
+            : "invisible translate-x-full opacity-50",
         )}
       >
         <nav className="flex flex-col items-center gap-4">
@@ -176,7 +180,7 @@ const Header = ({ className }: { className?: string }) => {
                       "underline-effect primary text-sm whitespace-nowrap uppercase",
                       {
                         active: visibleSection === url.hash.replace("#", ""),
-                      }
+                      },
                     )}
                   >
                     {link?.name}

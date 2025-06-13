@@ -1,4 +1,4 @@
-type TBlog = {
+export type TBlog = {
   _id: string;
   title: string;
   description: string;
@@ -33,10 +33,10 @@ export const blogs: TBlog[] = [
     description:
       "Learn the best practices to design scalable and maintainable API architectures for modern web applications.",
     details: `
-      <h2>Understanding API Scalability Fundamentals</h2>
+      <h1>Understanding API Scalability Fundamentals</h1>
       <p>Designing APIs that can handle exponential user growth requires strategic planning from the ground up. The foundation of scalable API architecture lies in stateless design principles, where each request contains all necessary information for processing without relying on server-stored session data.</p>
       
-      <h3>Core Architectural Patterns</h3>
+      <h2>Core Architectural Patterns</h2>
       <p>When building for scale, consider these patterns:</p>
       <ul>
         <li><strong>RESTful Design</strong> - Ideal for standardized CRUD operations with predictable endpoints</li>
@@ -44,7 +44,7 @@ export const blogs: TBlog[] = [
         <li><strong>gRPC Framework</strong> - Excellent for microservices communication requiring high performance</li>
       </ul>
       
-      <h3>Performance Optimization Strategies</h3>
+      <h2>Performance Optimization Strategies</h2>
       <p>To maintain responsiveness under heavy loads:</p>
       <ol>
         <li>Implement <strong>rate limiting</strong> using token bucket or leaky bucket algorithms</li>
@@ -53,7 +53,7 @@ export const blogs: TBlog[] = [
         <li>Apply <strong>compression techniques</strong> like GZIP for large payloads</li>
       </ol>
       
-      <h3>Versioning Best Practices</h3>
+      <h2>Versioning Best Practices</h2>
       <p>Maintain backward compatibility while evolving your API:</p>
       <ul>
         <li>Use URI versioning (v1/resources) for clear separation</li>
@@ -62,7 +62,7 @@ export const blogs: TBlog[] = [
         <li>Provide detailed migration guides between versions</li>
       </ul>
       
-      <h3>Monitoring and Analytics</h3>
+      <h2>Monitoring and Analytics</h2>
       <p>Implement comprehensive monitoring with:</p>
       <ul>
         <li>Real-time dashboards tracking request rates, error percentages, and latency</li>
@@ -89,10 +89,10 @@ export const blogs: TBlog[] = [
     description:
       "Understand the trade-offs between microservices and monolithic architectures to select the best fit for your project.",
     details: `
-      <h2>Architectural Showdown: A Comprehensive Comparison</h2>
+      <h1>Architectural Showdown: A Comprehensive Comparison</h1>
       <p>Choosing between microservices and monolithic architecture is one of the most critical decisions in system design. This choice impacts everything from development velocity to operational complexity.</p>
       
-      <h3>When Monoliths Excel</h3>
+      <h2>When Monoliths Excel</h2>
       <p>Monolithic architectures shine in specific scenarios:</p>
       <ul>
         <li><strong>Early-stage startups</strong> where speed to market is critical</li>
@@ -102,7 +102,7 @@ export const blogs: TBlog[] = [
       </ul>
       <p>Real-world example: Basecamp successfully scaled their monolith to handle millions of users through careful modularization.</p>
       
-      <h3>The Microservices Advantage</h3>
+      <h2>The Microservices Advantage</h2>
       <p>Microservices offer compelling benefits for mature organizations:</p>
       <ol>
         <li><strong>Independent deployment</strong> - Update services without full redeployments</li>
@@ -111,7 +111,7 @@ export const blogs: TBlog[] = [
         <li><strong>Organizational alignment</strong> - Match services to team structures</li>
       </ol>
       
-      <h3>Hidden Costs of Microservices</h3>
+      <h2>Hidden Costs of Microservices</h2>
       <p>Be aware of these often underestimated challenges:</p>
       <ul>
         <li>Distributed transaction management complexity</li>
@@ -121,7 +121,7 @@ export const blogs: TBlog[] = [
         <li>Data consistency challenges</li>
       </ul>
       
-      <h3>Migration Strategies</h3>
+      <h2>Migration Strategies</h2>
       <p>Transitioning from monolith to microservices:</p>
       <ol>
         <li>Identify bounded contexts using domain-driven design</li>
@@ -150,10 +150,10 @@ export const blogs: TBlog[] = [
     description:
       "Explore essential best practices for integrating cloud services with your existing applications smoothly.",
     details: `
-      <h2>Strategic Cloud Integration Framework</h2>
+      <h1>Strategic Cloud Integration Framework</h1>
       <p>Successful cloud integration requires more than just technical implementation - it demands a holistic approach considering security, performance, and business alignment.</p>
       
-      <h3>Integration Patterns</h3>
+      <h2>Integration Patterns</h2>
       <p>Choose the right pattern for your needs:</p>
       <ul>
         <li><strong>Point-to-Point</strong> - Simple connections between two systems</li>
@@ -162,7 +162,7 @@ export const blogs: TBlog[] = [
         <li><strong>API-Led Connectivity</strong> - Modern approach using API gateways</li>
       </ul>
       
-      <h3>Security Implementation Checklist</h3>
+      <h2>Security Implementation Checklist</h2>
       <p>Critical security measures for cloud integration:</p>
       <ol>
         <li>Implement OAuth 2.0 with JWT tokens for authentication</li>
@@ -172,7 +172,7 @@ export const blogs: TBlog[] = [
         <li>Implement IP whitelisting and DDoS protection</li>
       </ol>
       
-      <h3>Performance Optimization Techniques</h3>
+      <h2>Performance Optimization Techniques</h2>
       <p>Ensure responsive integrations:</p>
       <ul>
         <li>Implement exponential backoff for retry mechanisms</li>
@@ -181,7 +181,7 @@ export const blogs: TBlog[] = [
         <li>Cache frequently accessed data with Redis or Cloud CDN</li>
       </ul>
       
-      <h3>Monitoring and Maintenance</h3>
+      <h2>Monitoring and Maintenance</h2>
       <p>Build a comprehensive observability stack:</p>
       <ol>
         <li>Track key metrics: Latency, Error Rate, Traffic, Saturation (LETS)</li>
@@ -210,10 +210,10 @@ export const blogs: TBlog[] = [
     description:
       "How automation of repetitive business workflows can save time, reduce errors, and improve productivity.",
     details: `
-      <h2>The Business Automation Revolution</h2>
+      <h1>The Business Automation Revolution</h1>
       <p>Workflow automation transforms business operations by replacing manual, repetitive tasks with streamlined digital processes. The average knowledge worker saves 4 hours weekly through effective automation.</p>
       
-      <h3>Automation Opportunity Assessment</h3>
+      <h2>Automation Opportunity Assessment</h2>
       <p>Identify prime candidates for automation:</p>
       <ul>
         <li><strong>High-volume repetitive tasks</strong> - Data entry, report generation</li>
@@ -222,7 +222,7 @@ export const blogs: TBlog[] = [
         <li><strong>Compliance-critical processes</strong> - Audit trails, documentation</li>
       </ul>
       
-      <h3>Automation Tool Landscape</h3>
+      <h2>Automation Tool Landscape</h2>
       <p>Select the right tools for your needs:</p>
       <table>
         <thead>
@@ -256,7 +256,7 @@ export const blogs: TBlog[] = [
         </tbody>
       </table>
       
-      <h3>Implementation Roadmap</h3>
+      <h2>Implementation Roadmap</h2>
       <p>Successful automation deployment:</p>
       <ol>
         <li>Process mapping with swimlane diagrams</li>
@@ -266,7 +266,7 @@ export const blogs: TBlog[] = [
         <li>Implement comprehensive exception handling</li>
       </ol>
       
-      <h3>Measuring Automation Impact</h3>
+      <h2>Measuring Automation Impact</h2>
       <p>Track these key performance indicators:</p>
       <ul>
         <li><strong>Time reduction</strong> - Process duration before/after</li>
@@ -295,10 +295,10 @@ export const blogs: TBlog[] = [
     description:
       "Discover key strategies for small and medium enterprises to successfully embrace digital transformation.",
     details: `
-      <h2>SME Digital Transformation Blueprint</h2>
+      <h1>SME Digital Transformation Blueprint</h1>
       <p>Digital transformation is no longer optional - 70% of SMEs that embrace digitalization see improved customer engagement and operational efficiency. This comprehensive guide provides actionable strategies tailored for resource-constrained businesses.</p>
       
-      <h3>Four Pillars of SME Transformation</h3>
+      <h2>Four Pillars of SME Transformation</h2>
       <p>Build your strategy on these foundations:</p>
       <ol>
         <li><strong>Customer Experience</strong> - Digital touchpoints and personalization</li>
@@ -307,7 +307,7 @@ export const blogs: TBlog[] = [
         <li><strong>Business Model Innovation</strong> - New digital revenue streams</li>
       </ol>
       
-      <h3>Technology Adoption Roadmap</h3>
+      <h2>Technology Adoption Roadmap</h2>
       <p>Prioritize technologies with maximum impact:</p>
       <table>
         <thead>
@@ -341,7 +341,7 @@ export const blogs: TBlog[] = [
         </tbody>
       </table>
       
-      <h3>Overcoming Common Challenges</h3>
+      <h2>Overcoming Common Challenges</h2>
       <p>Navigate these SME-specific hurdles:</p>
       <ul>
         <li><strong>Budget constraints</strong> - Start with high-ROI quick wins</li>
@@ -350,7 +350,7 @@ export const blogs: TBlog[] = [
         <li><strong>Change resistance</strong> - Develop comprehensive change management plan</li>
       </ul>
       
-      <h3>Implementation Framework</h3>
+      <h2>Implementation Framework</h2>
       <p>Proven step-by-step approach:</p>
       <ol>
         <li>Digital maturity assessment</li>
@@ -380,10 +380,10 @@ export const blogs: TBlog[] = [
     description:
       "Best practices for choosing and implementing Customer Relationship Management (CRM) systems effectively.",
     details: `
-      <h2>CRM Success Framework for SMBs</h2>
+      <h1>CRM Success Framework for SMBs</h1>
       <p>Properly implemented CRM systems deliver 245% ROI on average, yet 63% of implementations fail to meet expectations. This guide ensures your CRM becomes a revenue engine rather than a cost center.</p>
       
-      <h3>CRM Selection Criteria</h3>
+      <h2>CRM Selection Criteria</h2>
       <p>Evaluate solutions using these parameters:</p>
       <ul>
         <li><strong>Business Process Alignment</strong> - Match to your sales methodology</li>
@@ -393,7 +393,7 @@ export const blogs: TBlog[] = [
         <li><strong>Reporting Depth</strong> - Customizable dashboards and analytics</li>
       </ul>
       
-      <h3>Implementation Best Practices</h3>
+      <h2>Implementation Best Practices</h2>
       <p>Follow this proven approach:</p>
       <ol>
         <li><strong>Process Definition</strong> - Map current sales workflows before configuration</li>
@@ -403,7 +403,7 @@ export const blogs: TBlog[] = [
         <li><strong>Integration Plan</strong> - Connect email, calendar, and marketing automation</li>
       </ol>
       
-      <h3>User Adoption Strategies</h3>
+      <h2>User Adoption Strategies</h2>
       <p>Overcome resistance with these tactics:</p>
       <ul>
         <li>Executive sponsorship and visible usage</li>
@@ -413,7 +413,7 @@ export const blogs: TBlog[] = [
         <li>Recognition programs for power users</li>
       </ul>
       
-      <h3>Advanced Optimization Techniques</h3>
+      <h2>Advanced Optimization Techniques</h2>
       <p>Transform your CRM into a growth engine:</p>
       <ol>
         <li>Implement lead scoring models</li>
@@ -423,7 +423,7 @@ export const blogs: TBlog[] = [
         <li>Build customer health dashboards</li>
       </ol>
       
-      <h3>ROI Measurement Framework</h3>
+      <h2>ROI Measurement Framework</h2>
       <p>Track these critical metrics:</p>
       <table>
         <thead>

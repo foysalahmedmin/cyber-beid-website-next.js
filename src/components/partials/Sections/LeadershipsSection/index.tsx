@@ -1,4 +1,5 @@
 import { leaderships } from "@/assets/data/leaderships";
+import LeadershipCard from "@/components/cards/LeadershipCard";
 import { Button } from "@/components/ui/Button";
 import {
   Carousel,
@@ -32,35 +33,9 @@ const LeadershipsSection = () => {
           <div className="lg:col-span-2">
             <Carousel className="group">
               <CarouselContent>
-                {leaderships?.map((leader) => (
-                  <CarouselItem key={leader._id}>
-                    <div className="group/card grid grid-cols-2 items-center gap-6 md:px-6">
-                      <div className="aspect-[4/5] w-full cursor-pointer overflow-hidden">
-                        <img
-                          className="size-full object-cover object-center transition-all duration-700 ease-in-out group-hover/card:scale-110"
-                          src={leader?.image}
-                          alt={leader?.name}
-                        />
-                      </div>
-                      <div className="space-y-6 md:pr-12">
-                        <div className="space-y-2">
-                          <h3 className="text-3xl">
-                            <Link
-                              href={"/leaderships/" + leader?._id}
-                              className="primary hover:text-primary underline-effect"
-                            >
-                              {leader?.name}
-                            </Link>
-                          </h3>
-                          <strong className="inline-block">
-                            {leader?.designation}
-                          </strong>
-                        </div>
-                        <p className="leading-relaxed">
-                          {leader?.short_description}
-                        </p>
-                      </div>
-                    </div>
+                {leaderships?.map((leadership) => (
+                  <CarouselItem key={leadership._id}>
+                    <LeadershipCard leadership={leadership} />
                   </CarouselItem>
                 ))}
               </CarouselContent>

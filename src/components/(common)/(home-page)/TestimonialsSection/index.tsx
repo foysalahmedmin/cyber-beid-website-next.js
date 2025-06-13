@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
           {testimonials?.map((testimonial) => (
             <div
               key={testimonial._id}
-              className="bg-muted flex flex-col gap-6 self-stretch rounded-md p-6 md:p-10"
+              className="bg-muted flex flex-col gap-6 self-stretch rounded-xl p-6 md:p-10"
             >
               <div>
                 <p className="text-sm font-light">{testimonial?.quote}</p>

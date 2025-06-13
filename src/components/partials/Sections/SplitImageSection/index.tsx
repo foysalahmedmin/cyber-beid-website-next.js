@@ -40,9 +40,9 @@ const SplitImageSection = ({
                 )}
               </SectionTitle>
             )}
-            <div className="aspect-[4/5] w-full">
+            <div className="aspect-[4/5] w-full overflow-hidden rounded-xl">
               <img
-                className="size-full object-cover object-center"
+                className="bg-muted size-full object-cover object-center"
                 src={image}
                 alt="hero-split-image"
               />

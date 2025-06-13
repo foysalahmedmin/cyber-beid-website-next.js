@@ -58,14 +58,14 @@ const SplitSection2 = ({
               </div>
             )}
           </div>
-          <div className="aspect-square w-full lg:order-1">
+          <div className="relative aspect-square w-full overflow-hidden rounded-xl lg:order-1">
             <img
-              className="absolute inset-0 mt-auto ml-auto size-full h-2/3 w-1/2 object-cover object-center"
+              className="bg-muted absolute inset-0 mt-auto ml-auto size-full h-2/3 w-1/2 rounded-xl object-cover object-center"
               src={image1}
               alt="hero-split-image"
             />
             <img
-              className="absolute inset-0 z-10 mt-auto mr-auto size-full h-1/2 w-2/3 object-cover object-center"
+              className="bg-muted absolute inset-0 z-10 mt-auto mr-auto size-full h-1/2 w-2/3 rounded-xl object-cover object-center"
               src={image2}
               alt="hero-split-image"
             />

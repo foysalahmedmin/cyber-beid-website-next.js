@@ -1,4 +1,4 @@
-import { contents_services_details } from "@/assets/data/contents";
+import { projects } from "@/assets/data/projects";
 import { services } from "@/assets/data/services";
 import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
 import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
@@ -13,7 +13,7 @@ type Props = {
 const ServicesDetailsPage = async ({ params }: Props) => {
   const { id } = await params;
   const service = services.find((service) => service._id === id);
-  const { title, description, thumbnail } = service || {};
+  const { title, description, thumbnail, details, points } = service || {};
 
   return (
     <main>
@@ -24,15 +24,21 @@ const ServicesDetailsPage = async ({ params }: Props) => {
         image={thumbnail}
       />
       <SplitSection
-        title="Delivering integrated construction services to build lasting success"
-        description="When you partner with Konstruktion, you not only get innovative solutions, you get our fully vested team and a commitment to doing things right. Our relentless focus on success leads to smarter more collaborative building practices."
+        subtitle="Details"
+        title={details?.title}
+        description={details?.description}
+        image={details?.thumbnail}
       />
-      <SingleProjectSection description="No matter the challenge, we build on what we know works and elevate your vision of success" />
-      <SplitStickySection
-        image="/images/partials/split-sticky.png"
-        contents={contents_services_details}
+      <SingleProjectSection
+        project={projects?.find((project) => project?.sector === service?._id)}
       />
-      <ProjectsSlideSection title="Explore Similar Projects" />
+      <SplitStickySection image={points?.thumbnail} contents={points?.list} />
+      <ProjectsSlideSection
+        title="Explore Similar Projects"
+        projects={projects?.filter(
+          (project) => project?.sector === service?._id,
+        )}
+      />
       <FollowUpSection />
     </main>
   );

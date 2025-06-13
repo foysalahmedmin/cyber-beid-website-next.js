@@ -141,16 +141,20 @@ const Footer = () => {
           <div className="space-y-4 lg:col-span-3 xl:col-span-2 xl:space-y-12">
             <Link
               href="/home"
-              className="font-display block w-full text-xl font-medium tracking-tight transition-opacity duration-300 hover:opacity-80"
+              className="font-display flex w-full items-center gap-2 text-xl font-medium transition-opacity duration-300 hover:opacity-80"
               aria-label="Home"
             >
               <Image
                 src="/logo.svg"
                 alt="Logo"
-                width={150}
-                height={50}
-                className="h-10 w-full object-contain object-left md:h-14"
+                width={48}
+                height={48}
+                className="size-12 rounded-lg object-contain object-left"
               />
+              <div className="leading-none">
+                <h5 className="font-semibold">CyberDoc</h5>
+                <span className="text-xs leading-0">Renovation Experts</span>
+              </div>
             </Link>
             <div className="flex flex-wrap gap-4">
               <Link target="_blank" href="tel:+16463925450">
@@ -193,7 +197,7 @@ const Footer = () => {
           {links.map((link, index) => (
             <Link className="w-full" key={index} href={link?.href}>
               <Button
-                className="border-b-foreground hover:text-primary hover:border-b-primary w-full items-start justify-start border-b bg-transparent px-0 uppercase hover:bg-transparent"
+                className="border-b-foreground hover:text-primary hover:border-b-primary w-full items-start justify-start rounded-none border-b bg-transparent px-0 uppercase hover:bg-transparent"
                 size="lg"
               >
                 <span>{link?.text}</span>

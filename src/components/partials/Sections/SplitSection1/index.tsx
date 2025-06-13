@@ -15,30 +15,26 @@ type SplitSection1 = {
 };
 
 const SplitSection1 = ({
-  title = "",
-  subtitle = "",
-  description = "",
-  className = "",
-  image = "/images/partials/split.png",
+  title,
+  subtitle,
+  description,
+  className,
+  image,
 }: SplitSection1) => {
   return (
     <section className={cn("py-16 md:py-24", className)}>
       <div className="container">
         {(title || subtitle || description) && (
-          <SectionTitle>
+          <SectionTitle className="max-w-full">
             {subtitle && <Subtitle>{subtitle}</Subtitle>}
             {title && <Title>{title}</Title>}
-            {description && (
-              <Description className="text-xl md:text-3xl">
-                {description}
-              </Description>
-            )}
+            {description && <Description>{description}</Description>}
           </SectionTitle>
         )}
         <div className="group/card grid items-center gap-6">
-          <div className="group/trigger relative aspect-[2/1] w-full cursor-pointer overflow-hidden">
+          <div className="group/trigger relative aspect-[2/1] w-full cursor-pointer overflow-hidden rounded-xl">
             <img
-              className="size-full object-cover object-center"
+              className="bg-muted size-full object-cover object-center"
               src={image}
               alt={title || "hero-split-image"}
             />

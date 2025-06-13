@@ -7,7 +7,7 @@ import {
 } from "react";
 
 // ---------- SectionTitle ----------
-const sectionTitleVariants = cva("group mb-8 md:mb-12 space-y-4 max-w-xl", {
+const sectionTitleVariants = cva("group mb-8 md:mb-12 space-y-4 max-w-3xl", {
   variants: {
     variant: {
       center:

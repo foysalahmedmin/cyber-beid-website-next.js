@@ -42,8 +42,8 @@ const FAQSection = () => {
               </Accordion>
             </div>
           </div>
-          <div>
-            <div className="bg-card space-y-6 p-12">
+          <div className="bg-card md:h-[53rem] flex rounded-xl flex-col justify-center">
+            <div className="space-y-6 p-12">
               <h3 className="text-3xl">Schedule Free Consultation</h3>
               <form className="space-y-4" action="">
                 <label className="block w-full space-y-2">

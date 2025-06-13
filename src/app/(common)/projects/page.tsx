@@ -1,4 +1,5 @@
 import { projects } from "@/assets/data/projects";
+import { sectors } from "@/assets/data/sectors";
 import ProjectsTabSection from "@/components/(common)/(projects-page)/ProjectsTabSection";
 import {
   Description,
@@ -13,9 +14,6 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/Tabs";
-
-const all_tags = projects.flatMap((project) => project?.tags);
-const tags = ["all", ...new Set(all_tags)];
 
 const ProjectsPage = () => {
   return (
@@ -33,24 +31,29 @@ const ProjectsPage = () => {
           <div>
             <Tabs value="all">
               <TabsList className="mb-8 justify-start gap-6 md:mb-12">
-                {tags?.map((tag) => (
-                  <TabsTrigger key={tag} value={tag}>
-                    <span className="text-xl capitalize">
-                      {tag?.replace("-", " ")}
+                <TabsTrigger value="all">
+                    <span className="capitalize font-semibold">
+                      All
+                    </span>
+                  </TabsTrigger>
+                {sectors?.map((sector) => (
+                  <TabsTrigger key={sector._id} value={sector._id}>
+                    <span className="capitalize font-semibold">
+                      {sector?.title}
                     </span>
                   </TabsTrigger>
                 ))}
               </TabsList>
               <TabsContent>
-                {tags?.map((tag) => {
-                  const filtered_projects =
-                    tag === "all"
-                      ? projects
-                      : projects?.filter((project) =>
-                          project?.tags.includes(tag),
+                <TabsItem value="all">
+                      <ProjectsTabSection projects={projects} />
+                    </TabsItem>
+                {sectors?.map((sector) => {
+                  const filtered_projects = projects?.filter((project) =>
+                          project?.sector === sector._id
                         ) || [];
                   return (
-                    <TabsItem key={tag} value={tag}>
+                    <TabsItem key={sector._id} value={sector._id}>
                       <ProjectsTabSection projects={filtered_projects} />
                     </TabsItem>
                   );

@@ -13,11 +13,11 @@ type PageHeaderSectionProps = {
 };
 
 const PageHeaderSection = ({
-  title = "",
-  subtitle = "",
-  description = "",
-  image = "",
-  className = "",
+  title,
+  subtitle,
+  description,
+  image,
+  className,
   metrics: Metrics = [],
 }: PageHeaderSectionProps) => {
   return (
@@ -32,7 +32,7 @@ const PageHeaderSection = ({
       {image && (
         <div
           style={{ backgroundImage: `url('${image}')` }}
-          className="h-[60vh] bg-cover bg-center bg-no-repeat"
+          className="bg-muted h-[60vh] bg-cover bg-center bg-no-repeat"
         />
       )}
       {Metrics?.length > 0 && (

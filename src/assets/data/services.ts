@@ -312,7 +312,7 @@ export const services: TService[] = [
   {
     _id: "application-systems-development",
     icon: Code2,
-    title: "Application Systems Development (Web, Desktop & Mobile)",
+    title: "Application Systems Development",
     description:
       "We design and develop high-performance applications across web, desktop, and mobile platforms. From responsive websites and scalable web apps to native and cross-platform mobile apps, our solutions are tailored to your business goals. Using modern frameworks like React, Next.js, Node.js, Flutter, and React Native, we ensure consistency, speed, and reliability across all devices.",
     thumbnail: "/images/services/application-systems-development.png",
