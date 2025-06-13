@@ -57,9 +57,9 @@ const sections: TSection[] = [
       "As a global provider, your data may be transferred internationally:\n\n• We use EU-approved Standard Contractual Clauses\n• Implement supplementary security measures\n• Ensure equivalent protection regardless of location\n\nBy using our services, you consent to this transfer.",
   },
   {
-    title: "Children's Privacy",
+    title: "Children&rsquo;s Privacy",
     description:
-      "Our services are not directed to individuals under 16:\n\n• We do not knowingly collect children's information\n• If we discover such collection, we will delete it promptly\n• Parents/guardians may contact us regarding potential collection",
+      "Our services are not directed to individuals under 16:\n\n• We do not knowingly collect children&rsquo;s information\n• If we discover such collection, we will delete it promptly\n• Parents/guardians may contact us regarding potential collection",
   },
   {
     title: "Policy Updates",

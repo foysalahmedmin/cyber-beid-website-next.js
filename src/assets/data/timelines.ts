@@ -36,7 +36,7 @@ export const timelines: TTimeline[] = [
     year: "2005",
     title: "Winning Workplaces",
     description:
-      "Konstruktion is named for the first time as one of USA's Best Managed Companies, which recognizes excellence in USA-owned and USA-managed companies with revenues over $25 million. In 2009, having won seven years in a row, PCL is inducted into the Best Managed Platinum Club.",
+      "Konstruktion is named for the first time as one of USA&rsquo;s Best Managed Companies, which recognizes excellence in USA-owned and USA-managed companies with revenues over $25 million. In 2009, having won seven years in a row, PCL is inducted into the Best Managed Platinum Club.",
     image: "/images/(history-page)/4.png",
   },
   {
@@ -52,7 +52,7 @@ export const timelines: TTimeline[] = [
     year: "2016",
     title: "Gaining Insight",
     description:
-      "As part of Konstruktion's commitment to innovation, Konstruktion's Construction launches Job Site Insights®, an Internet of Things (IoT) smart construction platform that uses digital technology to find efficient construction practices, enhance safety and quality, and improve customer satisfaction.",
+      "As part of Konstruktion&rsquo;s commitment to innovation, Konstruktion&rsquo;s Construction launches Job Site Insights®, an Internet of Things (IoT) smart construction platform that uses digital technology to find efficient construction practices, enhance safety and quality, and improve customer satisfaction.",
     image: "/images/(history-page)/6.png",
   },
   {
@@ -60,7 +60,7 @@ export const timelines: TTimeline[] = [
     year: "2019",
     title: "Driving Change",
     description:
-      "Konstruktion publishes its first Corporate Social Responsibility report, detailing the company's efforts to lead by example on sustainability and drive change in the construction industry.",
+      "Konstruktion publishes its first Corporate Social Responsibility report, detailing the company&rsquo;s efforts to lead by example on sustainability and drive change in the construction industry.",
     image: "/images/(history-page)/7.png",
   },
   {
@@ -76,7 +76,7 @@ export const timelines: TTimeline[] = [
     year: "2020",
     title: "Commitment to Safety",
     description:
-      "During the COVID-19 pandemic, Konstruktion's dedicated health and safety teams undertook initiatives to keep its workers safe, both on job sites and in offices, over the course of an unimaginable year.",
+      "During the COVID-19 pandemic, Konstruktion&rsquo;s dedicated health and safety teams undertook initiatives to keep its workers safe, both on job sites and in offices, over the course of an unimaginable year.",
     image: "/images/(history-page)/9.png",
   },
   {
@@ -90,7 +90,7 @@ export const timelines: TTimeline[] = [
   {
     _id: 11,
     year: "2024",
-    title: "20 years of redefining what's possible",
+    title: "20 years of redefining what&rsquo;s possible",
     description:
       "Konstruktion marks its 40th anniversary thanks to a steadfast commitment to its core values, a belief in challenging the status quo, and the strongest people in the business.",
     image: "/images/(history-page)/1.png",

@@ -19,14 +19,14 @@ const BlogsPage = () => {
               <div className="bg-muted flex flex-col justify-center space-y-8 self-stretch rounded-xl p-8 md:space-y-12 md:p-12">
                 <Title>Navigating the Digital Transformation Journey</Title>
                 <Description>
-                  In today's rapidly evolving digital landscape, businesses face
-                  unprecedented opportunities and challenges. Our insights
-                  bridge the gap between cutting-edge technology and practical
-                  business implementation. From AI-driven automation to
-                  cloud-native architectures, we explore strategies that help
-                  enterprises future-proof their operations, enhance customer
-                  experiences, and unlock sustainable growth through innovative
-                  digital solutions.
+                  In today&rsquo;s rapidly evolving digital landscape,
+                  businesses face unprecedented opportunities and challenges.
+                  Our insights bridge the gap between cutting-edge technology
+                  and practical business implementation. From AI-driven
+                  automation to cloud-native architectures, we explore
+                  strategies that help enterprises future-proof their
+                  operations, enhance customer experiences, and unlock
+                  sustainable growth through innovative digital solutions.
                 </Description>
               </div>
               <div className="aspect-[5/4] w-full overflow-hidden rounded-xl xl:col-span-2">

@@ -1,14 +1,14 @@
 import {
-  Briefcase,
-  Clapperboard,
-  Code2,
-  Headphones,
-  LayoutDashboard,
-  LucideIcon,
-  Megaphone,
-  Paintbrush,
-  PenLine,
-  UserPlus,
+    Briefcase,
+    Clapperboard,
+    Code2,
+    Headphones,
+    LayoutDashboard,
+    LucideIcon,
+    Megaphone,
+    Paintbrush,
+    PenLine,
+    UserPlus,
 } from "lucide-react";
 
 export type TService = {
@@ -111,7 +111,7 @@ export const services: TService[] = [
           _id: "dm-1",
           title: "Integrated Channel Strategy",
           description:
-            "We design synchronized campaigns across search, social, email, content networks, and paid advertising platforms. Our channel integration ensures consistent messaging while leveraging each platform's unique strengths to maximize reach and conversions.",
+            "We design synchronized campaigns across search, social, email, content networks, and paid advertising platforms. Our channel integration ensures consistent messaging while leveraging each platform&rsquo;s unique strengths to maximize reach and conversions.",
           links: [{ text: "Channel Strategy", url: "/strategy/channels" }],
         },
         {
@@ -142,7 +142,7 @@ export const services: TService[] = [
     icon: UserPlus,
     title: "Lead Generation",
     description:
-      "Our lead generation service helps you attract and convert potential customers through a combination of landing pages, email funnels, paid ads, and outreach campaigns. We use data-driven techniques to target your ideal audience, build interest, and nurture leads until they're ready to buy. It's not just about getting leads—it's about getting the right ones.",
+      "Our lead generation service helps you attract and convert potential customers through a combination of landing pages, email funnels, paid ads, and outreach campaigns. We use data-driven techniques to target your ideal audience, build interest, and nurture leads until they're ready to buy. It&rsquo;s not just about getting leads—it&rsquo;s about getting the right ones.",
     thumbnail: "/images/services/lead-generation.png",
     link: "/services/lead-generation/",
     details: {
@@ -412,7 +412,7 @@ export const services: TService[] = [
     icon: Headphones,
     title: "Online Support",
     description:
-      "Our online support service ensures that your digital platforms are always operational and your customers receive timely help. We offer live chat setup, ticketing systems, virtual assistance, and knowledge base management. Whether it's technical support or customer service, we're here to help you stay responsive and reliable.",
+      "Our online support service ensures that your digital platforms are always operational and your customers receive timely help. We offer live chat setup, ticketing systems, virtual assistance, and knowledge base management. Whether it&rsquo;s technical support or customer service, we're here to help you stay responsive and reliable.",
     thumbnail: "/images/services/online-support.png",
     link: "/services/online-support/",
     details: {

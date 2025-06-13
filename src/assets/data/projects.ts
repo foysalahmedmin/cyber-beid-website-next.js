@@ -409,7 +409,7 @@ export const projects: TProject[] = [
       thumbnail: "/images/projects/product-promo-details.jpg",
       title: "Product Launch Promo for TechNova",
       description:
-        "We transformed raw camera footage into a professional promotional video with fast-paced edits, animated product highlights, and vibrant transitions. The goal was to emphasize the product's features in an engaging 60-second video for social media ads.",
+        "We transformed raw camera footage into a professional promotional video with fast-paced edits, animated product highlights, and vibrant transitions. The goal was to emphasize the product&rsquo;s features in an engaging 60-second video for social media ads.",
       links: [
         {
           text: "Watch Video",
@@ -456,7 +456,7 @@ export const projects: TProject[] = [
       thumbnail: "/images/projects/zenwear-ads-details.jpg",
       title: "Social Ad Edits for ZenWear",
       description:
-        "We edited five high-conversion short videos for ZenWear's seasonal campaign. Each was under 30 seconds, optimized for Instagram Reels and TikTok, featuring viral-style cuts and trendy effects.",
+        "We edited five high-conversion short videos for ZenWear&rsquo;s seasonal campaign. Each was under 30 seconds, optimized for Instagram Reels and TikTok, featuring viral-style cuts and trendy effects.",
       links: [
         { text: "Watch Reels", url: "https://www.instagram.com/zenwear" },
       ],
