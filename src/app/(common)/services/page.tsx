@@ -1,10 +1,10 @@
 import { services } from "@/assets/data/services";
 import ServicesSection from "@/components/(common)/(services-page)/ServicesSection";
 import {
-    Description,
-    SectionTitle,
-    Subtitle,
-    Title,
+  Description,
+  SectionTitle,
+  Subtitle,
+  Title,
 } from "@/components/ui/SectionTitle";
 
 const ServicesPage = () => {

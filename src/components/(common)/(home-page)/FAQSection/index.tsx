@@ -1,4 +1,5 @@
 import { faqs } from "@/assets/data/faqs";
+import { services } from "@/assets/data/services";
 import {
   Accordion,
   AccordionContent,
@@ -31,8 +32,9 @@ const FAQSection = () => {
                       <span className="text-xl">{faq?.question}</span>
                     </AccordionTrigger>
                     <AccordionContent value={faq._id}>
-                      <div className="prose dark:prose-invert">
+                      <div className="prose prose-headings:font-normal dark:prose-invert">
                         <article
+                          className="text-foreground"
                           dangerouslySetInnerHTML={{ __html: faq.answer }}
                         />
                       </div>
@@ -42,7 +44,7 @@ const FAQSection = () => {
               </Accordion>
             </div>
           </div>
-          <div className="bg-card md:h-[53rem] flex rounded-xl flex-col justify-center">
+          <div className="bg-card flex flex-col justify-center rounded-xl md:h-[53rem]">
             <div className="space-y-6 p-12">
               <h3 className="text-3xl">Schedule Free Consultation</h3>
               <form className="space-y-4" action="">
@@ -73,20 +75,11 @@ const FAQSection = () => {
                   </span>
                   <FormControl as="select" size="lg">
                     <option value="">Select</option>
-                    <option value="Home Renovation">Home Renovation</option>
-                    <option value="Interior Painting Services">
-                      Interior Painting Services
-                    </option>
-                    <option value="Kitchen Remodeling">
-                      Kitchen Remodeling
-                    </option>
-                    <option value="Bathroom Remodeling">
-                      Bathroom Remodeling
-                    </option>
-                    <option value="Apartment Renovation">
-                      Apartment Renovation
-                    </option>
-                    <option value="Roofing">Roofing</option>
+                    {services?.map((service) => (
+                      <option key={service._id} value={service._id}>
+                        {service?.title}
+                      </option>
+                    ))}
                   </FormControl>
                 </label>
                 <label className="block w-full space-y-2">

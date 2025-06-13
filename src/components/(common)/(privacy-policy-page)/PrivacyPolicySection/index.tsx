@@ -1,49 +1,75 @@
 import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
 
-const sections = [
+type TSection = {
+  title: string;
+  description: string;
+};
+
+const sections: TSection[] = [
   {
-    title: "Who We Are",
-    description: "Our website address is: cyber-doc.vercel.app",
+    title: "Introduction",
+    description:
+      "At CyberDoc, we are committed to protecting your privacy. This policy outlines how we collect, use, and safeguard your personal information when you use our website and services.",
   },
   {
-    title: "Comments",
+    title: "Information We Collect",
     description:
-      "When visitors leave comments on the site, we collect the data shown in the comments form, as well as the visitor's IP address and browser user agent string to help with spam detection.\n\nAn anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to check if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/.\n\nAfter approval of your comment, your profile picture (if available via Gravatar) will be visible to the public alongside your comment.",
+      "We collect information to provide and improve our services:\n\n• Contact Information: Name, email, phone number when you submit forms\n• Business Details: Company name, industry, project requirements\n• Technical Data: IP address, browser type, device information\n• Usage Data: Pages visited, time spent, interaction patterns\n• Cookies: Small data files stored on your device (see Cookie section)",
   },
   {
-    title: "Media",
+    title: "How We Use Your Information",
     description:
-      "If you upload images to the website, avoid uploading images with embedded location data (EXIF GPS).\n\nVisitors can download and extract any location data from images on the website.",
+      "Your information helps us deliver and improve our services:\n\n• Provide requested services and project consultations\n• Personalize your experience and content recommendations\n• Communicate about projects, updates, and promotions\n• Analyze website usage to improve functionality\n• Prevent fraud and enhance security measures\n• Comply with legal obligations and business operations",
   },
   {
-    title: "Cookies",
+    title: "Data Sharing & Disclosure",
     description:
-      "If you leave a comment, you may opt-in to saving your name, email, and website in cookies. These are for convenience so you don’t have to re-enter details for future comments. These cookies last for one year.\n\nIf you visit our login page, we set a temporary cookie to check if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.\n\nUpon logging in, we set up cookies to save your login info and screen display choices. Login cookies last two days, and screen options cookies last a year. Selecting 'Remember Me' extends login persistence to two weeks.\n\nLogging out removes login cookies.\n\nEditing or publishing an article saves an additional cookie with no personal data, only the post ID. It expires after 1 day.",
+      "We respect your privacy and only share information when necessary:\n\n• Service Partners: With trusted providers (hosting, analytics) who assist our operations under strict confidentiality agreements\n• Legal Compliance: When required by law or to protect our rights\n• Business Transfers: In connection with mergers, acquisitions, or asset sales\n• With Consent: When you explicitly authorize specific sharing\n\nWe never sell your personal information to third parties.",
   },
   {
-    title: "Embedded Content",
+    title: "Cookies & Tracking Technologies",
     description:
-      "This site may include embedded content (e.g., videos, images, articles).\n\nEmbedded content from other websites behaves exactly as if you visited the source website. These sites may collect data, use cookies, embed third-party tracking, and monitor interactions—including if you’re logged into that website.",
+      "We use cookies and similar technologies to enhance your experience:\n\n• Essential Cookies: Required for site functionality and security\n• Analytics Cookies: Help us understand usage patterns (Google Analytics)\n• Marketing Cookies: Support personalized advertising campaigns\n\nYou can manage preferences through your browser settings. Disabling cookies may affect site functionality.",
   },
   {
-    title: "Data Sharing",
+    title: "Data Security",
     description:
-      "If you request a password reset, your IP address will be included in the reset email.",
+      "We implement robust security measures to protect your information:\n\n• Encryption: Industry-standard SSL/TLS for data transmission\n• Access Controls: Strict role-based access to sensitive data\n• Security Audits: Regular vulnerability assessments\n• Employee Training: Confidentiality and security protocols\n\nWhile we implement strong safeguards, no internet transmission is 100% secure.",
   },
   {
     title: "Data Retention",
     description:
-      "Comments and their metadata are retained indefinitely to recognize and auto-approve follow-up comments.\n\nFor registered users, we store personal information provided in their profiles. Users can see, edit, or delete their info anytime (except usernames). Administrators can also access and edit this information.",
+      "We retain your information only as long as necessary:\n\n• Active Clients: Throughout our business relationship\n• Prospective Clients: 2 years from last engagement\n• Website Analytics: 26 months\n• Legal Requirements: As mandated by applicable laws\n\nYou may request deletion of your data at any time (see Your Rights section).",
   },
   {
-    title: "Your Rights",
+    title: "Your Rights & Choices",
     description:
-      "If you have an account or have left comments, you can request:\n\n- An exported file of your personal data.\n- Erasure of your personal data (excluding data retained for administrative, legal, or security purposes).",
+      "You have control over your personal information:\n\n• Access: Request a copy of your data\n• Correction: Update inaccurate information\n• Deletion: Request removal of personal data\n• Opt-out: Unsubscribe from marketing communications\n• Restriction: Limit how we use your data\n• Portability: Receive your data in transferable format\n\nTo exercise these rights, contact us at foysalahmedmin@gamil.com.",
   },
   {
-    title: "Data Processing",
+    title: "Third-Party Services",
     description:
-      "Visitor comments may be processed by an automated spam detection service.",
+      "Our website may contain links to third-party services:\n\n• Payment Processors: Stripe, PayPal for transactions\n• Analytics: Google Analytics for usage data\n• Social Media: Integrated platforms for sharing\n• Cloud Services: AWS, Vercel for hosting\n\nThese services have their own privacy policies. We encourage you to review them.",
+  },
+  {
+    title: "International Data Transfers",
+    description:
+      "As a global provider, your data may be transferred internationally:\n\n• We use EU-approved Standard Contractual Clauses\n• Implement supplementary security measures\n• Ensure equivalent protection regardless of location\n\nBy using our services, you consent to this transfer.",
+  },
+  {
+    title: "Children's Privacy",
+    description:
+      "Our services are not directed to individuals under 16:\n\n• We do not knowingly collect children's information\n• If we discover such collection, we will delete it promptly\n• Parents/guardians may contact us regarding potential collection",
+  },
+  {
+    title: "Policy Updates",
+    description:
+      "We may update this policy periodically:\n\n• Changes will be posted on this page\n• Material changes will be notified via email\n• Continued use after updates constitutes acceptance\n\nLast Updated: June 11, 2025",
+  },
+  {
+    title: "Contact Us",
+    description:
+      "For privacy-related inquiries:\n\nCyberDoc\nAttn: Privacy Officer\nEmail: foysalahmedmin@gamil.com\nPhone: +1 (555) 123-4567\n\nWe respond to all requests within 30 days.",
   },
 ];
 

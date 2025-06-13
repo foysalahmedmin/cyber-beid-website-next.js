@@ -12,7 +12,7 @@ import LeadershipsSection from "@/components/partials/Sections/LeadershipsSectio
 
 const HomePage = () => {
   return (
-    <main>
+    <main className="scroll-smooth">
       <HeroSection />
       <QuickContactSection />
       <ServicesSection />

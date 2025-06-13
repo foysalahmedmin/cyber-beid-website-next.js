@@ -7,24 +7,69 @@ type TSection = {
 
 const sections: TSection[] = [
   {
-    title: "What information do we collect?",
+    title: "1. Services Overview",
     description:
-      "When you interact with us, we may collect your name, address, email address(es), telephone number(s), and, where appropriate, date of birth.",
+      "CyberDoc provides digital solutions including web development, application development, UI/UX design, digital marketing, and business automation services. By engaging with our services, you agree to these terms governing our professional relationship.",
   },
   {
-    title: "How do we collect information?",
+    title: "2. Service Engagement",
     description:
-      "We may collect information about you whenever you interact with us. For example, when you contact regarding our activities, register as a supporter, send or receive information or sign a petition, you specifically and knowingly provide us with your personal information. We may also receive information about you from third parties – but only if you have given them permission to share your information.",
+      "All projects begin with a formal proposal outlining scope, deliverables, timeline, and pricing. Client approval of the proposal constitutes agreement to these terms. CyberDoc reserves the right to decline projects that conflict with our ethical guidelines or technical capabilities.",
   },
   {
-    title: "Confidentiality",
+    title: "3. Intellectual Property Rights",
     description:
-      "We will not be responsible for the privacy of data collected by websites not owned or managed by Charity, including those linked through our website.",
+      "Upon full payment, clients receive exclusive rights to final deliverables. CyberDoc retains rights to:\n• Pre-existing code libraries and frameworks\n• Project methodologies and processes\n• Non-client-specific solutions developed during engagement\nWe may showcase completed work in our portfolio unless otherwise agreed in writing.",
   },
   {
-    title: "Making a complaint",
+    title: "4. Confidentiality",
     description:
-      "If you are not satisfied with the response, please contact us at konstruktion@email.com with the details explaining your concerns. We will review your complaint and investigate if the right procedures have been followed and respond back to you as appropriate. We aim to complete this investigation within 15 working days of receiving your complaint, however, in some cases it may take longer. If you are still unsatisfied with the response, you may contact us.",
+      "Both parties agree to protect confidential information including:\n• Business strategies and technical specifications\n• Source code and proprietary algorithms\n• Client data and user information\n• Financial arrangements\nConfidentiality obligations survive project completion by 3 years.",
+  },
+  {
+    title: "5. Payment Terms",
+    description:
+      "Standard payment structure:\n• 30% deposit to commence work\n• 40% milestone payment\n• 30% upon completion\nDelayed payments incur 1.5% monthly interest. All invoices are payable within 15 days unless otherwise specified in the project agreement.",
+  },
+  {
+    title: "6. Revisions & Change Management",
+    description:
+      "Projects include two rounds of revisions within original scope. Additional requests will be:\n• Estimated separately\n• Subject to change order approval\n• May impact project timeline\nScope changes exceeding 20% of original estimate may require new proposal.",
+  },
+  {
+    title: "7. Warranties & Limitations",
+    description:
+      "CyberDoc warrants deliverables for 90 days post-launch against material defects. We are not liable for:\n• Third-party platform changes\n• Client-modified code\n• Issues arising from unclear requirements\n• Force majeure events\nMaximum liability is limited to project fees paid.",
+  },
+  {
+    title: "8. Termination Policy",
+    description:
+      "Either party may terminate with 30 days written notice. Upon termination:\n• Client pays for work completed\n• CyberDoc delivers completed work\n• Pre-paid amounts for uncompleted work are refunded\n• Client receives all work-in-progress assets",
+  },
+  {
+    title: "9. Data Handling",
+    description:
+      "Client retains ownership of all provided data. CyberDoc will:\n• Process data only for project purposes\n• Implement industry-standard security\n• Delete or return data upon request\n• Never sell or share client data",
+  },
+  {
+    title: "10. Third-Party Services",
+    description:
+      "Projects may incorporate:\n• Open-source libraries (governed by their licenses)\n• APIs and third-party platforms\n• Cloud infrastructure providers\nClient is responsible for associated costs and compliance with third-party terms.",
+  },
+  {
+    title: "11. Governing Law & Disputes",
+    description:
+      "These terms are governed by the laws of [Your Jurisdiction]. Disputes will first attempt resolution through mediation. Unresolved disputes may proceed to binding arbitration in [City, State], with each party bearing own costs.",
+  },
+  {
+    title: "12. Policy Updates",
+    description:
+      "Terms may be updated periodically. Clients will be notified of material changes 30 days in advance. Continued use of services constitutes acceptance of revised terms.",
+  },
+  {
+    title: "13. Contact & Dispute Resolution",
+    description:
+      "For concerns or disputes:\n\nCyberDoc Solutions\nAttn: Legal Department\nEmail: legal@cyberdoc.com\nPhone: +1 (555) 123-4567\n\nWe commit to responding to formal complaints within 10 business days.",
   },
 ];
 

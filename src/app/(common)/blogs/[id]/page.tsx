@@ -15,7 +15,7 @@ const BlogsDetailsPage = async ({ params }: Props) => {
   return (
     <main>
       <PageHeaderSection
-        subtitle="Service"
+        subtitle="Blog"
         title={title}
         description={description}
         image={thumbnail}
@@ -23,9 +23,9 @@ const BlogsDetailsPage = async ({ params }: Props) => {
       <section>
         <div className="container">
           <div className="border-b py-16 md:py-24">
-            <div className="prose dark:prose-invert">
+            <div className="prose prose-headings:font-normal dark:prose-invert">
               <article
-                className="text-foreground"
+                className="text-foreground font-outfit"
                 dangerouslySetInnerHTML={{ __html: details || "" }}
               />
             </div>

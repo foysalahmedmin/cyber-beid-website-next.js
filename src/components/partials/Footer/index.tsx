@@ -1,3 +1,4 @@
+import { services } from "@/assets/data/services";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,12 +9,12 @@ const data = [
     items: [
       {
         type: "text",
-        text: "95-28 147th Place, Queens, NY 11435, United States",
+        text: "Wellington, New Zealand",
       },
       {
         type: "link",
-        text: "+1 (646) 392-5450",
-        href: "tel:+16463925450",
+        text: "+880 195 060 1811",
+        href: "tel:+88050601811",
       },
       {
         type: "link",
@@ -23,57 +24,27 @@ const data = [
     ],
   },
   {
-    title: "Services",
-    items: [
-      {
-        type: "link",
-        text: "Home Renovation",
-        href: "/services/home-renovation",
-      },
-      {
-        type: "link",
-        text: "Interior Painting Services",
-        href: "/services/interior-painting-services",
-      },
-      {
-        type: "link",
-        text: "Kitchen Remodeling",
-        href: "/services/kitchen-remodeling",
-      },
-      {
-        type: "link",
-        text: "Bathroom Remodeling",
-        href: "/services/bathroom-remodeling",
-      },
-      {
-        type: "link",
-        text: "Roofing",
-        href: "/services/roofing",
-      },
-      {
-        type: "link",
-        text: "Apartment Renovation",
-        href: "/services/apartment-renovation",
-      },
-      {
-        type: "link",
-        text: "Hardwood floor",
-        href: "/services/hardwood-floor",
-      },
-    ],
-  },
-  {
     title: "About",
     items: [
       {
         type: "link",
-        text: "History",
-        href: "/history",
+        text: "Leaderships",
+        href: "/leaderships",
       },
       {
         type: "link",
-        text: "Vision",
-        href: "/vision",
+        text: "Services",
+        href: "/services",
+      },
+      {
+        type: "link",
+        text: "Projects",
+        href: "/projects",
+      },
+      {
+        type: "link",
+        text: "Blogs",
+        href: "/blogs",
       },
       {
         type: "link",
@@ -82,37 +53,62 @@ const data = [
       },
       {
         type: "link",
-        text: "Leaderships",
-        href: "/leaderships",
+        text: "History",
+        href: "/history",
       },
       {
         type: "link",
-        text: "Projects",
-        href: "/projects",
+        text: "Visions",
+        href: "/visions",
       },
     ],
+  },
+  {
+    title: "Services",
+    items: services.map((service) => {
+      return {
+        type: "link",
+        text: service?.title,
+        href: `/services/${service?._id}`,
+      };
+    }),
   },
 ];
 const links = [
   {
-    text: "Projects",
-    href: "/projects",
-  },
-  {
-    text: "History",
-    href: "/history",
-  },
-  {
-    text: "Visions",
-    href: "/visions",
-  },
-  {
+    type: "link",
     text: "Leaderships",
     href: "/leaderships",
   },
   {
+    type: "link",
+    text: "Services",
+    href: "/services",
+  },
+  {
+    type: "link",
+    text: "Projects",
+    href: "/projects",
+  },
+  // {
+  //   type: "link",
+  //   text: "Blogs",
+  //   href: "/blogs",
+  // },
+  {
+    type: "link",
     text: "Careers",
     href: "/careers",
+  },
+  {
+    type: "link",
+    text: "History",
+    href: "/history",
+  },
+  {
+    type: "link",
+    text: "Visions",
+    href: "/visions",
   },
 ];
 const socials = [
@@ -193,7 +189,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-6">
           {links.map((link, index) => (
             <Link className="w-full" key={index} href={link?.href}>
               <Button
