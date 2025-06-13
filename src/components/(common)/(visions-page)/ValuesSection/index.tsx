@@ -1,18 +1,18 @@
-import { construction_values } from "@/assets/data/construction-values";
+import { values } from "@/assets/data/visions";
 import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-const CommitmentsSection = () => {
+const ValuesSection = () => {
   return (
-    <section id="features" className="bg-muted py-16 md:py-24">
+    <section className="bg-muted py-16 md:py-24">
       <div className="container">
         <SectionTitle>
-          <Subtitle>Our Commitments</Subtitle>
-          <Title>We know that every decision has an impact</Title>
+          <Subtitle>Our Values in Action</Subtitle>
+          <Title>We deliver purposeful solutions with measurable impact</Title>
         </SectionTitle>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
-          {construction_values?.map((item, index) => {
+          {values?.map((item, index) => {
             const col2 = index % 2;
             const col3 = index % 3;
             const alignClassMD = col2 === 0 ? "md:mr-auto" : "md:ml-auto";
@@ -54,4 +54,4 @@ const CommitmentsSection = () => {
   );
 };
 
-export default CommitmentsSection;
+export default ValuesSection;

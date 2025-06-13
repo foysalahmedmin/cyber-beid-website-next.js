@@ -2,22 +2,19 @@ import Link from "next/link";
 
 const clients = [
   {
-    _id: "5febd0aa",
-    name: "",
-    image:
-      "https://mercyconstructioninc.com/wp-content/uploads/2024/02/Bolla-Market-Logo.svg",
+    _id: "client-1",
+    name: "client-1",
+    image: "/images/clients/1.png",
   },
   {
-    _id: "74b6be72",
-    name: "",
-    image:
-      "https://mercyconstructioninc.com/wp-content/uploads/2024/12/Mobil-logo.png",
+    _id: "client-2",
+    name: "client-2",
+    image: "/images/clients/2.png",
   },
   {
-    _id: "1be6777e",
-    name: "",
-    image:
-      "https://mercyconstructioninc.com/wp-content/uploads/2024/12/burger-king-logo.png",
+    _id: "client-3",
+    name: "client-3",
+    image: "/images/clients/3.png",
   },
 ];
 

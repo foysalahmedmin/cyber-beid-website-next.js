@@ -89,26 +89,28 @@ const AccordionTrigger = React.forwardRef<
     <button
       ref={ref}
       className={cn(
-        "hover:text-primary group/trigger data-[state=open]:text-primary flex flex-1 cursor-pointer items-center justify-between py-4 text-left text-sm transition-all",
+        "hover:text-primary w-full group/trigger gap-4 data-[state=open]:text-primary flex flex-1 cursor-pointer items-center justify-between py-4 text-left text-sm transition-all",
         className
       )}
       onClick={() => toggleItem(value)}
       data-state={isOpen ? "open" : "closed"}
       {...props}
     >
-      {children}
-      <Plus
-        className={cn(
-          "text-muted-foreground inline-block h-4 w-4 shrink-0 transition-transform duration-300",
-          isOpen && "hidden"
-        )}
-      />
-      <Minus
-        className={cn(
-          "text-muted-foreground hidden h-4 w-4 shrink-0 transition-transform duration-300",
-          isOpen && "inline-block"
-        )}
-      />
+      <div className="flex flex-1 items-center gap-2">{children}</div>
+      <div className="flex items-center">
+        <Plus
+          className={cn(
+            "text-muted-foreground inline-block h-4 w-4 shrink-0 transition-transform duration-300",
+            isOpen && "hidden"
+          )}
+        />
+        <Minus
+          className={cn(
+            "text-muted-foreground hidden h-4 w-4 shrink-0 transition-transform duration-300",
+            isOpen && "inline-block"
+          )}
+        />
+      </div>
     </button>
   );
 });

@@ -1,6 +1,6 @@
-import { construction_visions } from "@/assets/data/contents";
-import CommitmentsSection from "@/components/(common)/(visions-page)/CommitmentsSection";
+import { points } from "@/assets/data/visions";
 import LeadershipsSection from "@/components/(common)/(visions-page)/LeadershipsSection";
+import ValuesSection from "@/components/(common)/(visions-page)/ValuesSection";
 import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
 import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
 import SplitStickySection from "@/components/partials/Sections/SplitStickySection";
@@ -10,9 +10,9 @@ const VisionsPage = async () => {
   return (
     <main>
       <PageHeaderSection
-        subtitle="A bold direction"
-        title="Vision"
-        description="We believe that when caring, ambitious people come together, anything is possible. We stand up for and do what’s right. We challenge conventions to drive meaningful, positive progress for our clients, our industry, and our communities. While we have distinct and diverse skills and perspectives, we’re united in our endless quest to redefine what’s possible."
+        subtitle="Driving Digital Excellence"
+        title="Our Vision"
+        description="We believe in the power of collaboration, creativity, and technology to solve complex problems. Our team of dedicated strategists, designers, developers, and marketers is committed to creating solutions that help businesses grow, engage users, and stay competitive in a rapidly evolving digital landscape."
         image="/images/(visions-page)/page-header.png"
       />
       <section className="bg-muted py-16 md:py-24">
@@ -20,21 +20,18 @@ const VisionsPage = async () => {
           <SectionTitle>
             <Subtitle>Our Vision</Subtitle>
             <Title>
-              To integrate the entire building lifecycle into a seamless
-              platform to redefine how the world builds.
+              To unify strategy, creativity, and technology into seamless
+              digital solutions that fuel sustainable business growth.
             </Title>
           </SectionTitle>
         </div>
       </section>
-      <SplitStickySection
-        image="/images/partials/split-sticky-1.png"
-        contents={construction_visions}
-      />
-      <CommitmentsSection />
+      <SplitStickySection image={points?.thumbnail} contents={points?.list} />
+      <ValuesSection />
       <PageHeaderSection
         subtitle="Our Core Values"
-        title="Passion. Integrity. Hard work. Professionalism. Caring."
-        description="These core values have been with us since the beginning, and they’ve infused who we are and how we build. Nothing brings us more excitement than transforming the skyline — and we do it by setting our standards high, striving for the best, building trust, and lifting up the people around us."
+        title="Innovation. Reliability. Collaboration. Transparency. Growth."
+        description="These values shape how we approach every project and client relationship. Whether building high-performance web platforms, launching impactful campaigns, or streamlining business systems, we prioritize excellence, open communication, and long-term success for our partners."
         image="/images/(visions-page)/core-values.png"
       />
       <LeadershipsSection />

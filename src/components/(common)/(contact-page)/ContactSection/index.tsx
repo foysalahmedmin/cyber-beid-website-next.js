@@ -31,8 +31,8 @@ const locations = [
   },
   {
     type: "link",
-    text: "mercyconstructionnyc@gmail.com",
-    href: "mailto:mercyconstructionnyc@gmail.com",
+    text: "cyberdocnyc@gmail.com",
+    href: "mailto:cyberdocnyc@gmail.com",
   },
 ];
 const ContactSection = () => {

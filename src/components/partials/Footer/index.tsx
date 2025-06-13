@@ -17,8 +17,8 @@ const data = [
       },
       {
         type: "link",
-        text: "mercyconstructionnyc@gmail.com",
-        href: "mailto:mercyconstructionnyc@gmail.com",
+        text: "cyberdocnyc@gmail.com",
+        href: "mailto:cyberdocnyc@gmail.com",
       },
     ],
   },
@@ -77,18 +77,13 @@ const data = [
       },
       {
         type: "link",
-        text: "Safety",
-        href: "/safety",
-      },
-      {
-        type: "link",
         text: "Careers",
         href: "/careers",
       },
       {
         type: "link",
-        text: "Leadership",
-        href: "/leadership",
+        text: "Leaderships",
+        href: "/leaderships",
       },
       {
         type: "link",
@@ -123,17 +118,17 @@ const links = [
 const socials = [
   {
     text: "Facebook",
-    href: "https://www.facebook.com/mercyconstructioninc",
+    href: "https://www.facebook.com/cyberdocinc",
     target: "_blank",
   },
   {
     text: "Linkedin",
-    href: "https://www.linkedin.com/mercyconstructioninc",
+    href: "https://www.linkedin.com/cyberdocinc",
     target: "_blank",
   },
   {
     text: "Instagram",
-    href: "https://www.instagram.com/mercyconstructioninc",
+    href: "https://www.instagram.com/cyberdocinc",
     target: "_blank",
   },
 ];
@@ -211,7 +206,7 @@ const Footer = () => {
             ©2025
             <Link
               className="primary underline-effect hover:text-primary"
-              href="https://mercyconstructionnyc.com"
+              href="https://cyberdocnyc.com"
             >
               CyberDoc Inc.
             </Link>

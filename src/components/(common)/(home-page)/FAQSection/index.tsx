@@ -31,7 +31,11 @@ const FAQSection = () => {
                       <span className="text-xl">{faq?.question}</span>
                     </AccordionTrigger>
                     <AccordionContent value={faq._id}>
-                      <p>{faq?.answer}</p>
+                      <div className="prose dark:prose-invert">
+                        <article
+                          dangerouslySetInnerHTML={{ __html: faq.answer }}
+                        />
+                      </div>
                     </AccordionContent>
                   </AccordionItem>
                 ))}

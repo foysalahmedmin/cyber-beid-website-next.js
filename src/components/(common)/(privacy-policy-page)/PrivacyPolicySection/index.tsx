@@ -3,12 +3,12 @@ import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
 const sections = [
   {
     title: "Who We Are",
-    description: "Our website address is: mercyconstructioninc.com.",
+    description: "Our website address is: cyber-doc.vercel.app",
   },
   {
     title: "Comments",
     description:
-      "When visitors leave comments on the site, we collect the data shown in the comments form, as well as the visitor’s IP address and browser user agent string to help with spam detection.\n\nAn anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to check if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/.\n\nAfter approval of your comment, your profile picture (if available via Gravatar) will be visible to the public alongside your comment.",
+      "When visitors leave comments on the site, we collect the data shown in the comments form, as well as the visitor's IP address and browser user agent string to help with spam detection.\n\nAn anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to check if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/.\n\nAfter approval of your comment, your profile picture (if available via Gravatar) will be visible to the public alongside your comment.",
   },
   {
     title: "Media",
