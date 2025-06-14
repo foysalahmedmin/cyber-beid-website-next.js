@@ -70,7 +70,7 @@ export const blogs: TBlog[] = [
         <li>Automated alerts for abnormal patterns</li>
       </ul>
     `,
-    thumbnail: "/blogs/scalable-api-architecture.png",
+    thumbnail: "/images/blogs/scalable-api-architecture.png",
     tags: ["API", "Scalability", "Backend"],
     date: new Date("2025-05-01"),
     sector: "application-systems-development",
@@ -131,7 +131,7 @@ export const blogs: TBlog[] = [
         <li>Implement service discovery and API gateway</li>
       </ol>
     `,
-    thumbnail: "/blogs/microservices-vs-monolith.png",
+    thumbnail: "/images/blogs/microservices-vs-monolith.png",
     tags: ["Microservices", "Architecture", "System Design"],
     date: new Date("2025-04-15"),
     sector: "application-systems-development",
@@ -191,7 +191,7 @@ export const blogs: TBlog[] = [
         <li>Maintain detailed integration documentation</li>
       </ol>
     `,
-    thumbnail: "/blogs/cloud-integration-best-practices.png",
+    thumbnail: "/images/blogs/cloud-integration-best-practices.png",
     tags: ["Cloud", "Integration", "DevOps"],
     date: new Date("2025-03-10"),
     sector: "application-systems-development",
@@ -276,7 +276,7 @@ export const blogs: TBlog[] = [
         <li><strong>Throughput increase</strong> - Volume processed per period</li>
       </ul>
     `,
-    thumbnail: "/blogs/automating-business-workflows.png",
+    thumbnail: "/images/blogs/automating-business-workflows.png",
     tags: ["Automation", "Workflow", "Efficiency"],
     date: new Date("2025-02-25"),
     sector: "application-systems-development",
@@ -361,7 +361,7 @@ export const blogs: TBlog[] = [
         <li>Full-scale rollout with continuous optimization</li>
       </ol>
     `,
-    thumbnail: "/blogs/digital-transformation-strategies.png",
+    thumbnail: "/images/blogs/digital-transformation-strategies.png",
     tags: ["Digital Transformation", "SMEs", "Business Growth"],
     date: new Date("2025-01-18"),
     sector: "business-solutions",
@@ -457,7 +457,7 @@ export const blogs: TBlog[] = [
         </tbody>
       </table>
     `,
-    thumbnail: "/blogs/crm-implementation-tips.png",
+    thumbnail: "/images/blogs/crm-implementation-tips.png",
     tags: ["CRM", "Customer Relations", "Small Business"],
     date: new Date("2025-01-05"),
     sector: "business-solutions",
