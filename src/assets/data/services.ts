@@ -1,14 +1,14 @@
 import {
-    Briefcase,
-    Clapperboard,
-    Code2,
-    Headphones,
-    LayoutDashboard,
-    LucideIcon,
-    Megaphone,
-    Paintbrush,
-    PenLine,
-    UserPlus,
+  Briefcase,
+  Clapperboard,
+  Code2,
+  Headphones,
+  LayoutDashboard,
+  LucideIcon,
+  Megaphone,
+  Paintbrush,
+  PenLine,
+  UserPlus,
 } from "lucide-react";
 
 export type TService = {

@@ -1,7 +1,7 @@
 import { blogs } from "@/assets/data/blogs";
 import BlogCard from "@/components/cards/BlogCard";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
-import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
+import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 
 const BlogsPage = () => {

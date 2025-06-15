@@ -1,8 +1,8 @@
 import { blogs } from "@/assets/data/blogs";
 import { projects } from "@/assets/data/projects";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
-import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
-import ProjectsSlideSection from "@/components/partials/Sections/ProjectsSlideSection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
+import PageHeaderSection from "@/components/sections/PageHeaderSection";
+import ProjectsSlideSection from "@/components/sections/ProjectsSlideSection";
 
 type Props = {
   params: Promise<{ id: string }>;

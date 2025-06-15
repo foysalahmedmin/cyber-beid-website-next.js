@@ -10,7 +10,7 @@ const ServiceCard = ({ service, className }: ServiceCardProps) => {
   return (
     <div
       className={cn(
-        "group bg-card relative aspect-[5/4] w-full cursor-pointer overflow-hidden rounded-xl",
+        "group bg-card relative aspect-[6/3] w-full cursor-pointer overflow-hidden rounded-xl",
         className,
       )}
     >
@@ -24,12 +24,10 @@ const ServiceCard = ({ service, className }: ServiceCardProps) => {
           src={service?.thumbnail}
           alt={service?.title}
         />
-        <div className="from-background absolute inset-0 flex items-end justify-start overflow-hidden bg-gradient-to-t via-transparent to-transparent">
-          <div className="p-6">
-            <h3 className="pb-1 text-2xl">{service?.title}</h3>
-            <p className="invisible -mb-20 line-clamp-3 text-sm opacity-0 transition-all duration-500 ease-in-out group-hover:visible group-hover:mb-0 group-hover:opacity-100">
-              {service?.description}
-            </p>
+        <div className="group-hover:bg-background/50 text-foreground dark absolute inset-0 flex items-end justify-start overflow-hidden transition-all duration-500 group-hover:backdrop-blur-xs">
+          <div className="translate-y-full p-6 opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
+            <h3 className="pb-1 text-3xl">{service?.title}</h3>
+            <p className="line-clamp-3 text-sm">{service?.description}</p>
           </div>
         </div>
       </Link>

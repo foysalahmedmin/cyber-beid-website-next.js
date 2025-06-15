@@ -5,6 +5,7 @@ import Link from "next/link";
 const CallToActionSection = () => {
   return (
     <section
+      id="CTA"
       style={{
         backgroundImage: "url('/images/(home-page)/call-to-action-bg.png')",
       }}

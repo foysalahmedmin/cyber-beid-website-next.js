@@ -1,5 +1,5 @@
 import { features } from "@/assets/data/features";
-import { Title } from "@/components/ui/SectionTitle";
+import { Description, Subtitle, Title } from "@/components/ui/SectionTitle";
 import { cn } from "@/lib/utils";
 
 const FeaturesSection = () => {
@@ -8,10 +8,14 @@ const FeaturesSection = () => {
       <div className="container">
         <div className="grid grid-cols-1 gap-8 md:gap-12 lg:grid-cols-4">
           <div>
+            <Subtitle>Features</Subtitle>
             <Title>
               Why <br />
               choose us
             </Title>
+            <Description>
+              We deliver purposeful solutions with measurable impact
+            </Description>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:col-span-3 lg:grid-cols-3">
             {features?.map((feature, index) => {

@@ -36,7 +36,7 @@ const checkActivePath = ({
   } else {
     return (
       trimPath(currentPath) === trimPath(path) ||
-      currentPath?.startsWith(trimPath(path) + "/")
+      trimPath(currentPath)?.startsWith(trimPath(path) + "/")
     );
   }
 };
@@ -58,7 +58,7 @@ const ActiveLink = forwardRef<HTMLAnchorElement, ActiveLinkProps>(
         {children}
       </Link>
     );
-  }
+  },
 );
 
 ActiveLink.displayName = "ActiveLink";

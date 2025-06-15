@@ -1,7 +1,7 @@
-import BenefitsSection from "@/components/partials/Sections/BenefitsSection";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
-import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
-import SplitSection2 from "@/components/partials/Sections/SplitSection2";
+import BenefitsSection from "@/components/sections/BenefitsSection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
+import PageHeaderSection from "@/components/sections/PageHeaderSection";
+import SplitSection2 from "@/components/sections/SplitSection2";
 
 const CareersPage = () => {
   return (

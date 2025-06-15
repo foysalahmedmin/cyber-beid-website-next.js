@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-16 md:py-24">
+    <section id="testimonials" className="py-16 md:py-24">
       <div className="container max-w-4xl">
         <div className="mb-8 space-y-2 text-center md:mb-12">
           <h2 className="text-4xl">Trusted by Homeowners</h2>

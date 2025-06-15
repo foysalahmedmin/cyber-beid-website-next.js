@@ -1,5 +1,5 @@
 import PrivacyPolicySection from "@/components/(common)/(privacy-policy-page)/PrivacyPolicySection";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
 
 const PrivacyPolicyPage = () => {
   return (

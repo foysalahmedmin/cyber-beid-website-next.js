@@ -1,9 +1,9 @@
 import { points } from "@/assets/data/visions";
+import LeadershipsSection from "@/components/(common)/(visions-page)/LeadershipsSection";
 import ValuesSection from "@/components/(common)/(visions-page)/ValuesSection";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
-import LeadershipsSection from "@/components/partials/Sections/LeadershipsSection";
-import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
-import SplitStickySection from "@/components/partials/Sections/SplitStickySection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
+import PageHeaderSection from "@/components/sections/PageHeaderSection";
+import SplitStickySection from "@/components/sections/SplitStickySection";
 import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
 
 const VisionsPage = async () => {

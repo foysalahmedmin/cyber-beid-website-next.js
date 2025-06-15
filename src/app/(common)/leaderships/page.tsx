@@ -1,7 +1,7 @@
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
-import LeadershipsSlideSection from "@/components/partials/Sections/LeadershipsSlideSection";
-import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
-import SplitSection from "@/components/partials/Sections/SplitSection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
+import LeadershipsSlideSection from "@/components/sections/LeadershipsSlideSection";
+import PageHeaderSection from "@/components/sections/PageHeaderSection";
+import SplitSection from "@/components/sections/SplitSection";
 
 const metrics = [
   {
@@ -24,7 +24,7 @@ const LeadershipsPage = () => {
       <PageHeaderSection
         subtitle="Leaderships"
         title="The champions of a construction revolution"
-        description="Mercy’s leaders come from all walks of life and business. What they share: a persistent drive to explore and change the way the world builds. Meet the people who lead our quest for better."
+        description="Mercy's leaders come from all walks of life and business. What they share: a persistent drive to explore and change the way the world builds. Meet the people who lead our quest for better."
         metrics={metrics}
       />
       <SplitSection

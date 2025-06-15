@@ -1,11 +1,11 @@
 import { projects } from "@/assets/data/projects";
 import { services } from "@/assets/data/services";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
-import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
-import ProjectsSlideSection from "@/components/partials/Sections/ProjectsSlideSection";
-import SingleProjectSection from "@/components/partials/Sections/SingleProjectSection";
-import SplitSection from "@/components/partials/Sections/SplitSection";
-import SplitStickySection from "@/components/partials/Sections/SplitStickySection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
+import PageHeaderSection from "@/components/sections/PageHeaderSection";
+import ProjectsSlideSection from "@/components/sections/ProjectsSlideSection";
+import SingleProjectSection from "@/components/sections/SingleProjectSection";
+import SplitSection from "@/components/sections/SplitSection";
+import SplitStickySection from "@/components/sections/SplitStickySection";
 
 type Props = {
   params: Promise<{ id: string }>;

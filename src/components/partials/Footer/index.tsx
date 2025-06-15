@@ -136,7 +136,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-5">
           <div className="space-y-4 lg:col-span-3 xl:col-span-2 xl:space-y-12">
             <Link
-              href="/home"
+              href="/"
               className="font-display flex w-full items-center gap-2 text-xl font-medium transition-opacity duration-300 hover:opacity-80"
               aria-label="Home"
             >

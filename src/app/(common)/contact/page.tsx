@@ -1,7 +1,7 @@
 import ContactSection from "@/components/(common)/(contact-page)/ContactSection";
 import ProjectApplySection from "@/components/(common)/(contact-page)/ProjectApplySection";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
-import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
+import PageHeaderSection from "@/components/sections/PageHeaderSection";
 
 const ContactPage = () => {
   return (

@@ -1,11 +1,11 @@
 import { projects } from "@/assets/data/projects";
 import ProjectInfoSection from "@/components/(common)/(projects-details-page)/ProjectsInfoSection";
 import ProjectsNavigationSection from "@/components/(common)/(projects-details-page)/ProjectsNavigationSection";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
-import PageHeaderSection from "@/components/partials/Sections/PageHeaderSection";
-import SplitImageSection from "@/components/partials/Sections/SplitImageSection";
-import SplitSection1 from "@/components/partials/Sections/SplitSection1";
-import SplitStickySection from "@/components/partials/Sections/SplitStickySection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
+import PageHeaderSection from "@/components/sections/PageHeaderSection";
+import SplitImageSection from "@/components/sections/SplitImageSection";
+import SplitSection1 from "@/components/sections/SplitSection1";
+import SplitStickySection from "@/components/sections/SplitStickySection";
 
 type Props = {
   params: Promise<{ id: string }>;

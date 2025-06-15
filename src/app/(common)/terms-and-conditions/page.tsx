@@ -1,5 +1,5 @@
 import TermsAndConditionsSection from "@/components/(common)/(terms-and-conditions-page)/TermsAndConditionsSection";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
 
 const TermsAndConditionsPage = () => {
   return (

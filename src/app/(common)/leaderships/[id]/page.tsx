@@ -1,5 +1,5 @@
 import { leaderships } from "@/assets/data/leaderships";
-import FollowUpSection from "@/components/partials/Sections/FollowUpSection";
+import FollowUpSection from "@/components/sections/FollowUpSection";
 import { Button } from "@/components/ui/Button";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 import Link from "next/link";
@@ -80,7 +80,7 @@ const LeadershipsDetailsPage = async ({ params }: Props) => {
             {description
               ?.split("\n")
               .map((paragraph, index) =>
-                paragraph ? <p key={index}>{paragraph}</p> : <br key={index} />
+                paragraph ? <p key={index}>{paragraph}</p> : <br key={index} />,
               )}
           </div>
         </div>
