@@ -5,6 +5,7 @@ import {
   Title,
 } from "@/components/ui/SectionTitle";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 type SplitImageSectionProps = {
   className?: string;
@@ -40,11 +41,13 @@ const SplitImageSection = ({
                 )}
               </SectionTitle>
             )}
-            <div className="aspect-[4/5] w-full overflow-hidden rounded-xl">
-              <img
+            <div className="aspect-[3/4] w-full overflow-hidden rounded-xl">
+              <Image
                 className="bg-muted size-full object-cover object-center"
-                src={image}
+                src={image || ""}
                 alt="hero-split-image"
+                height={700}
+                width={525}
               />
             </div>
           </div>

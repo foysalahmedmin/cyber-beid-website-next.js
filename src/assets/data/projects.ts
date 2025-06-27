@@ -50,10 +50,11 @@ export const projects: TProject[] = [
     _id: "energy-management-dashboard",
     title: "Energy Management Dashboard",
     description: "Real-time energy monitoring web application",
-    thumbnail: "/images/projects/energy-management-dashboard.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/energy-management-dashboard-1.png",
-      "/images/projects/energy-management-dashboard-2.png",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop",
     ],
     tags: ["web application", "dashboard", "real-time", "IoT"],
     category: "Energy",
@@ -63,14 +64,16 @@ export const projects: TProject[] = [
     sector: "application-systems-development",
     link: "/projects/energy-management-dashboard",
     details: {
-      thumbnail: "/images/projects/energy-management-dashboard-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1581092335878-4d6bb21d0e3c?w=800&h=600&fit=crop",
       title: "Enterprise Energy Monitoring",
       description:
         "Built real-time energy management platform processing data from 15,000+ IoT sensors, helping commercial clients reduce energy consumption by 18% on average through actionable insights.",
       links: [{ text: "Tech Specs", url: "/tech/energy-dashboard" }],
     },
     points: {
-      thumbnail: "/images/projects/energy-management-dashboard-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
       list: [
         {
           _id: "wdp-1",
@@ -91,10 +94,11 @@ export const projects: TProject[] = [
     _id: "interactive-learning-platform",
     title: "Interactive Learning Platform",
     description: "Next-gen educational platform for professional training",
-    thumbnail: "/images/projects/interactive-learning-platform.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/interactive-learning-platform-1.png",
-      "/images/projects/interactive-learning-platform-2.png",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=600&fit=crop",
     ],
     tags: ["web application", "education", "interactive", "lms"],
     category: "EdTech",
@@ -104,14 +108,16 @@ export const projects: TProject[] = [
     sector: "application-systems-development",
     link: "/projects/interactive-learning-platform",
     details: {
-      thumbnail: "/images/projects/interactive-learning-platform-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
       title: "Professional Learning Ecosystem",
       description:
         "Developed comprehensive learning management system with interactive labs, progress tracking, and certification features. Platform supports 50,000+ active users with 92% course completion rate.",
       links: [{ text: "Platform Demo", url: "/demos/learning-platform" }],
     },
     points: {
-      thumbnail: "/images/projects/interactive-learning-platform-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
       list: [
         {
           _id: "wdp-3",
@@ -132,10 +138,11 @@ export const projects: TProject[] = [
     _id: "field-service-management-app",
     title: "Field Service Management App",
     description: "Mobile solution for field technicians and dispatchers",
-    thumbnail: "/images/projects/field-service-management-app.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/field-service-management-app-1.png",
-      "/images/projects/field-service-management-app-2.png",
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=800&h=600&fit=crop",
     ],
     tags: ["mobile application", "offline", "geolocation", "scheduling"],
     category: "Field Services",
@@ -145,14 +152,16 @@ export const projects: TProject[] = [
     sector: "application-systems-development",
     link: "/projects/field-service-management-app",
     details: {
-      thumbnail: "/images/projects/field-service-management-app-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
       title: "Field Operations Platform",
       description:
         "Built cross-platform mobile application for field service management that reduced job completion time by 27% and improved first-time fix rate by 33% for nationwide service provider.",
       links: [{ text: "App Features", url: "/features/field-service" }],
     },
     points: {
-      thumbnail: "/images/projects/field-service-management-app-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop",
       list: [
         {
           _id: "map-1",
@@ -173,10 +182,11 @@ export const projects: TProject[] = [
     _id: "mental-wellness-application",
     title: "Mental Wellness Application",
     description: "AI-powered mental health support platform",
-    thumbnail: "/images/projects/mental-wellness-application.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/mental-wellness-application-1.png",
-      "/images/projects/mental-wellness-application-2.png",
+      "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
     ],
     tags: ["mobile application", "health", "AI", "privacy"],
     category: "Healthcare",
@@ -186,14 +196,16 @@ export const projects: TProject[] = [
     sector: "application-systems-development",
     link: "/projects/mental-wellness-application",
     details: {
-      thumbnail: "/images/projects/mental-wellness-application-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop",
       title: "Personalized Mental Wellness",
       description:
         "Developed HIPAA-compliant mobile application providing personalized mental health support to 250,000+ users. Clinical studies showed 32% reduction in anxiety symptoms among regular users.",
       links: [{ text: "Privacy Overview", url: "/security/mindbalance" }],
     },
     points: {
-      thumbnail: "/images/projects/mental-wellness-application-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&h=600&fit=crop",
       list: [
         {
           _id: "map-3",
@@ -217,10 +229,11 @@ export const projects: TProject[] = [
     title: "Global Tech Blog Network",
     description:
       "Content strategy and creation for international tech publication",
-    thumbnail: "/images/projects/global-tech-blog-network.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/global-tech-blog-network-1.png",
-      "/images/projects/global-tech-blog-network-2.png",
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
     ],
     tags: ["content strategy", "SEO", "blogging"],
     category: "Digital Publishing",
@@ -230,7 +243,8 @@ export const projects: TProject[] = [
     sector: "content-creation",
     link: "/projects/global-tech-blog-network",
     details: {
-      thumbnail: "/images/projects/global-tech-blog-network-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
       title: "Tech Blog Network Expansion",
       description:
         "Developed and executed a comprehensive content strategy for a network of 12 technology blogs targeting different global markets. Produced 300+ SEO-optimized articles, increasing organic traffic by 240% within 9 months.",
@@ -240,7 +254,8 @@ export const projects: TProject[] = [
       ],
     },
     points: {
-      thumbnail: "/images/projects/global-tech-blog-network-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
       list: [
         {
           _id: "ccp-1",
@@ -262,10 +277,11 @@ export const projects: TProject[] = [
     _id: "health-wellness-video-series",
     title: "Health & Wellness Video Series",
     description: "Educational video content production for healthcare provider",
-    thumbnail: "/images/projects/health-wellness-video-series.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1581591524425-c7c0970e7b1a?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/health-wellness-video-series-1.png",
-      "/images/projects/health-wellness-video-series-2.png",
+      "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",
     ],
     tags: ["video production", "educational content", "healthcare"],
     category: "Healthcare Education",
@@ -275,14 +291,16 @@ export const projects: TProject[] = [
     sector: "content-creation",
     link: "/projects/health-wellness-video-series",
     details: {
-      thumbnail: "/images/projects/health-wellness-video-series-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1581591524425-c7c0970e7b1a?w=800&h=600&fit=crop",
       title: "Patient Education Video Campaign",
       description:
         "Produced 52-week video series covering chronic disease management, preventative care, and wellness strategies. Content achieved 92% patient engagement rate and reduced clinical consultation time by 25%.",
       links: [{ text: "Video Samples", url: "/samples/health-videos" }],
     },
     points: {
-      thumbnail: "/images/projects/health-wellness-video-series-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=800&h=600&fit=crop",
       list: [
         {
           _id: "ccp-3",
@@ -306,10 +324,11 @@ export const projects: TProject[] = [
     title: "Eco-Fashion Brand Relaunch",
     description:
       "360° digital marketing campaign for sustainable apparel brand",
-    thumbnail: "/images/projects/eco-fashion-brand-relaunch.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/eco-fashion-brand-relaunch-1.png",
-      "/images/projects/eco-fashion-brand-relaunch-2.png",
+      "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&h=600&fit=crop",
     ],
     tags: ["sustainability", "influencer", "email"],
     category: "Fashion Retail",
@@ -319,14 +338,16 @@ export const projects: TProject[] = [
     sector: "digital-marketing",
     link: "/projects/eco-fashion-brand-relaunch",
     details: {
-      thumbnail: "/images/projects/eco-fashion-brand-relaunch-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
       title: "Sustainable Fashion Marketing",
       description:
         "Developed and executed multi-channel digital marketing strategy highlighting ethical production practices and sustainable materials. Campaign generated 5x ROI with 35% customer acquisition cost reduction.",
       links: [{ text: "Campaign Report", url: "/reports/greenthread" }],
     },
     points: {
-      thumbnail: "/images/projects/eco-fashion-brand-relaunch-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&h=600&fit=crop",
       list: [
         {
           _id: "dmp-1",
@@ -347,10 +368,11 @@ export const projects: TProject[] = [
     _id: "b2b-saas-demand-generation",
     title: "B2B SaaS Demand Generation",
     description: "Lead generation campaign for enterprise software platform",
-    thumbnail: "/images/projects/b2b-saas-demand-generation.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/b2b-saas-demand-generation-1.png",
-      "/images/projects/b2b-saas-demand-generation-2.png",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop",
     ],
     tags: ["B2B", "lead gen", "ABM"],
     category: "Enterprise Software",
@@ -360,14 +382,16 @@ export const projects: TProject[] = [
     sector: "digital-marketing",
     link: "/projects/b2b-saas-demand-generation",
     details: {
-      thumbnail: "/images/projects/b2b-saas-demand-generation-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       title: "Enterprise SaaS Marketing",
       description:
         "Created account-based marketing program targeting Fortune 500 companies in financial services sector. Generated $4.2M pipeline within 6 months with 22% conversion rate to qualified opportunities.",
       links: [{ text: "ABM Strategy", url: "/strategies/abm" }],
     },
     points: {
-      thumbnail: "/images/projects/b2b-saas-demand-generation-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
       list: [
         {
           _id: "dmp-3",
@@ -388,10 +412,11 @@ export const projects: TProject[] = [
     _id: "automotive-launch-campaign",
     title: "Electric Vehicle Launch Campaign",
     description: "Multi-platform advertising campaign for EV launch",
-    thumbnail: "/images/projects/automotive-launch-campaign.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/automotive-launch-campaign-1.png",
-      "/images/projects/automotive-launch-campaign-2.png",
+      "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1593941707882-a5bac6861d75?w=800&h=600&fit=crop",
     ],
     tags: ["automotive", "video ads", "CTR"],
     category: "Automotive",
@@ -401,14 +426,16 @@ export const projects: TProject[] = [
     sector: "digital-marketing",
     link: "/projects/automotive-launch-campaign",
     details: {
-      thumbnail: "/images/projects/automotive-launch-campaign-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?w=800&h=600&fit=crop",
       title: "Electric Vehicle Market Launch",
       description:
         "Developed and executed cross-channel advertising strategy for new electric SUV launch, achieving 12.5% CTR and 34% lower cost-per-lead than industry benchmarks.",
       links: [{ text: "Ad Creatives", url: "/creatives/volt-motors" }],
     },
     points: {
-      thumbnail: "/images/projects/automotive-launch-campaign-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&h=600&fit=crop",
       list: [
         {
           _id: "adp-1",
@@ -430,10 +457,11 @@ export const projects: TProject[] = [
     title: "Fitness App Subscription Growth",
     description:
       "Performance advertising for subscription-based fitness platform",
-    thumbnail: "/images/projects/fitness-app-subscription-growth.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/fitness-app-subscription-growth-1.png",
-      "/images/projects/fitness-app-subscription-growth-2.png",
+      "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop",
     ],
     tags: ["mobile", "subscription", "ROAS"],
     category: "Fitness Tech",
@@ -443,14 +471,16 @@ export const projects: TProject[] = [
     sector: "digital-marketing",
     link: "/projects/fitness-app-subscription-growth",
     details: {
-      thumbnail: "/images/projects/fitness-app-subscription-growth-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
       title: "App Subscription Acceleration",
       description:
         "Scaled performance advertising across social and search platforms to drive premium subscriptions, achieving 4.8x ROAS while maintaining CPA 22% below target.",
       links: [{ text: "Performance Report", url: "/reports/fitlife" }],
     },
     points: {
-      thumbnail: "/images/projects/fitness-app-subscription-growth-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=800&h=600&fit=crop",
       list: [
         {
           _id: "adp-3",
@@ -468,15 +498,108 @@ export const projects: TProject[] = [
     },
   },
 
+  // SEO Projects
+  {
+    _id: "local-business-seo-campaign",
+    title: "Local Business SEO Campaign",
+    description:
+      "Comprehensive local SEO strategy for multi-location restaurant chain",
+    thumbnail:
+      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&h=600&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&h=600&fit=crop",
+    ],
+    tags: ["local SEO", "Google My Business", "citation building"],
+    category: "Food & Restaurant",
+    client: "Bella Vista Restaurant Group",
+    location: "Chicago, IL",
+    date: new Date("2023-07-22"),
+    sector: "seo",
+    link: "/projects/local-business-seo-campaign",
+    details: {
+      thumbnail:
+        "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&h=600&fit=crop",
+      title: "Multi-Location Restaurant SEO",
+      description:
+        "Implemented comprehensive local SEO strategy for 15-location restaurant chain, increasing local search visibility by 285% and driving 12,000+ additional monthly visitors. Improved average Google My Business rating from 3.8 to 4.6 stars.",
+      links: [{ text: "SEO Results Report", url: "/reports/bella-vista-seo" }],
+    },
+    points: {
+      thumbnail:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      list: [
+        {
+          _id: "seo-1",
+          title: "Local Search Optimization",
+          description:
+            "Optimized Google My Business profiles for all 15 locations with consistent NAP data, location-specific content, and strategic keyword targeting. Achieved top 3 rankings for 'restaurant near me' searches in 89% of target areas.",
+        },
+        {
+          _id: "seo-2",
+          title: "Citation & Review Management",
+          description:
+            "Built comprehensive citation profile across 45+ local directories and review platforms. Implemented review acquisition system that increased monthly reviews by 340% while maintaining quality scores above 4.5 stars.",
+        },
+      ],
+    },
+  },
+  {
+    _id: "ecommerce-seo-optimization",
+    title: "E-commerce SEO Optimization",
+    description:
+      "Technical SEO and content strategy for online electronics retailer",
+    thumbnail:
+      "https://images.unsplash.com/photo-1571677208775-05aa9c93516d?w=800&h=600&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=600&fit=crop",
+    ],
+    tags: ["technical SEO", "content strategy", "product optimization"],
+    category: "E-commerce",
+    client: "TechGear Online",
+    location: "Austin, TX",
+    date: new Date("2023-10-18"),
+    sector: "seo",
+    link: "/projects/ecommerce-seo-optimization",
+    details: {
+      thumbnail:
+        "https://images.unsplash.com/photo-1571677208775-05aa9c93516d?w=800&h=600&fit=crop",
+      title: "Electronics E-commerce SEO Transformation",
+      description:
+        "Executed complete SEO overhaul for electronics retailer with 50,000+ products, increasing organic traffic by 420% and revenue by $2.3M annually. Improved site speed by 65% and achieved 95% mobile-friendly score.",
+      links: [{ text: "SEO Case Study", url: "/case-studies/techgear-seo" }],
+    },
+    points: {
+      thumbnail:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      list: [
+        {
+          _id: "seo-3",
+          title: "Technical SEO Infrastructure",
+          description:
+            "Rebuilt site architecture with optimized URL structure, implemented structured data markup for 98% of products, and resolved 2,847 technical issues. Achieved average Core Web Vitals scores in 'Good' range across all metrics.",
+        },
+        {
+          _id: "seo-4",
+          title: "Product Content Optimization",
+          description:
+            "Developed data-driven content strategy targeting 15,000+ product-specific keywords. Created automated product description templates that improved search rankings for 78% of product pages while maintaining conversion rates.",
+        },
+      ],
+    },
+  },
+
   // Lead Generation Projects
   {
     _id: "commercial-real-estate-leads",
     title: "Commercial Real Estate Leads",
     description: "Lead generation program for commercial property developers",
-    thumbnail: "/images/projects/commercial-real-estate-leads.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/commercial-real-estate-leads-1.png",
-      "/images/projects/commercial-real-estate-leads-2.png",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop",
     ],
     tags: ["commercial", "landing pages", "CRM"],
     category: "Real Estate",
@@ -486,14 +609,16 @@ export const projects: TProject[] = [
     sector: "lead-generation",
     link: "/projects/commercial-real-estate-leads",
     details: {
-      thumbnail: "/images/projects/commercial-real-estate-leads-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
       title: "High-Value Property Lead Generation",
       description:
         "Developed targeted lead generation system for commercial properties valued $5M+, generating 287 qualified leads in first quarter with 31% conversion rate to serious inquiries.",
       links: [{ text: "Lead Funnel", url: "/funnels/commercial-real-estate" }],
     },
     points: {
-      thumbnail: "/images/projects/commercial-real-estate-leads-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
       list: [
         {
           _id: "lgp-1",
@@ -514,10 +639,11 @@ export const projects: TProject[] = [
     _id: "enterprise-cybersecurity-leads",
     title: "Enterprise Cybersecurity Leads",
     description: "B2B lead program for cybersecurity solutions",
-    thumbnail: "/images/projects/enterprise-cybersecurity-leads.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/enterprise-cybersecurity-leads-1.png",
-      "/images/projects/enterprise-cybersecurity-leads-2.png",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&h=600&fit=crop",
     ],
     tags: ["cybersecurity", "B2B", "webinars"],
     category: "Enterprise Security",
@@ -527,7 +653,8 @@ export const projects: TProject[] = [
     sector: "lead-generation",
     link: "/projects/enterprise-cybersecurity-leads",
     details: {
-      thumbnail: "/images/projects/enterprise-cybersecurity-leads-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop",
       title: "Cybersecurity Solution Pipeline",
       description:
         "Built lead generation engine targeting enterprises with 1000+ employees, delivering 142 sales-qualified leads in first 90 days with average deal size of $187,000.",
@@ -536,7 +663,8 @@ export const projects: TProject[] = [
       ],
     },
     points: {
-      thumbnail: "/images/projects/enterprise-cybersecurity-leads-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop",
       list: [
         {
           _id: "lgp-3",
@@ -560,10 +688,11 @@ export const projects: TProject[] = [
     title: "Product Launch Promo for TechNova",
     description:
       "We edited a dynamic product launch video using client footage, incorporating motion graphics, typography, and color grading to create an engaging brand story.",
-    thumbnail: "/images/projects/product-promo-thumbnail.jpg",
+    thumbnail:
+      "https://images.unsplash.com/photo-1626544827763-d516dce335e2?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/product-promo-1.jpg",
-      "/images/projects/product-promo-2.jpg",
+      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop",
     ],
     tags: ["video editing", "motion graphics", "product promo"],
     category: "Video Editing",
@@ -573,7 +702,8 @@ export const projects: TProject[] = [
     sector: "video-production",
     link: "/projects/product-launch-promo",
     details: {
-      thumbnail: "/images/projects/product-promo-details.jpg",
+      thumbnail:
+        "https://images.unsplash.com/photo-1626544827763-d516dce335e2?w=800&h=600&fit=crop",
       title: "Product Launch Promo for TechNova",
       description:
         "We transformed raw camera footage into a professional promotional video with fast-paced edits, animated product highlights, and vibrant transitions. The goal was to emphasize the product&rsquo;s features in an engaging 60-second video for social media ads.",
@@ -585,7 +715,8 @@ export const projects: TProject[] = [
       ],
     },
     points: {
-      thumbnail: "/images/projects/product-promo-points.jpg",
+      thumbnail:
+        "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop",
       list: [
         {
           _id: "promo-1",
@@ -607,10 +738,11 @@ export const projects: TProject[] = [
     title: "Social Ad Edits for ZenWear Apparel",
     description:
       "We edited a series of short-form videos for Instagram and TikTok, focusing on fast transitions, trendy effects, and vertical formats for mobile viewing.",
-    thumbnail: "/images/projects/zenwear-ads-thumbnail.jpg",
+    thumbnail:
+      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/zenwear-ads-1.jpg",
-      "/images/projects/zenwear-ads-2.jpg",
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1586227740560-8cf2732c1531?w=800&h=600&fit=crop",
     ],
     tags: ["social media", "short-form video", "reels editing"],
     category: "Video Editing",
@@ -620,7 +752,8 @@ export const projects: TProject[] = [
     sector: "video-production",
     link: "/projects/social-ads-zenwear",
     details: {
-      thumbnail: "/images/projects/zenwear-ads-details.jpg",
+      thumbnail:
+        "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&h=600&fit=crop",
       title: "Social Ad Edits for ZenWear",
       description:
         "We edited five high-conversion short videos for ZenWear&rsquo;s seasonal campaign. Each was under 30 seconds, optimized for Instagram Reels and TikTok, featuring viral-style cuts and trendy effects.",
@@ -629,7 +762,8 @@ export const projects: TProject[] = [
       ],
     },
     points: {
-      thumbnail: "/images/projects/zenwear-ads-points.jpg",
+      thumbnail:
+        "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&h=600&fit=crop",
       list: [
         {
           _id: "zenwear-1",
@@ -652,10 +786,11 @@ export const projects: TProject[] = [
     _id: "beverage-brand-refresh",
     title: "Beverage Brand Refresh",
     description: "Complete visual identity redesign for craft beverage company",
-    thumbnail: "/images/projects/beverage-brand-refresh.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/beverage-brand-refresh-1.png",
-      "/images/projects/beverage-brand-refresh-2.png",
+      "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
     ],
     tags: ["packaging", "rebrand", "typography"],
     category: "Food & Beverage",
@@ -665,14 +800,16 @@ export const projects: TProject[] = [
     sector: "graphic-design",
     link: "/projects/beverage-brand-refresh",
     details: {
-      thumbnail: "/images/projects/beverage-brand-refresh-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
       title: "Craft Beverage Rebranding",
       description:
         "Developed comprehensive visual identity system including packaging, merchandise, and environmental graphics that increased shelf standout by 70% and contributed to 35% YOY sales growth.",
       links: [{ text: "Brand Guidelines", url: "/branding/harbor-brew" }],
     },
     points: {
-      thumbnail: "/images/projects/beverage-brand-refresh-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1546548970-71785318a17b?w=800&h=600&fit=crop",
       list: [
         {
           _id: "gdp-1",
@@ -693,10 +830,11 @@ export const projects: TProject[] = [
     _id: "fintech-ui-design-system",
     title: "Fintech UI Design System",
     description: "Comprehensive design system for financial application suite",
-    thumbnail: "/images/projects/fintech-ui-design-system.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/fintech-ui-design-system-1.png",
-      "/images/projects/fintech-ui-design-system-2.png",
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
     ],
     tags: ["design system", "UI kit", "fintech"],
     category: "Financial Technology",
@@ -706,14 +844,16 @@ export const projects: TProject[] = [
     sector: "graphic-design",
     link: "/projects/fintech-ui-design-system",
     details: {
-      thumbnail: "/images/projects/fintech-ui-design-system-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       title: "Financial UI Component Library",
       description:
         "Created comprehensive design system with 150+ components for investment platform serving 500,000+ users. Unified product experience while reducing design debt by 75%.",
       links: [{ text: "Component Library", url: "/libraries/fintech-ui" }],
     },
     points: {
-      thumbnail: "/images/projects/fintech-ui-design-system-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
       list: [
         {
           _id: "gdp-3",
@@ -736,10 +876,11 @@ export const projects: TProject[] = [
     _id: "healthcare-patient-portal",
     title: "Healthcare Patient Portal",
     description: "UX redesign for hospital network patient portal",
-    thumbnail: "/images/projects/healthcare-patient-portal.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/healthcare-patient-portal-1.png",
-      "/images/projects/healthcare-patient-portal-2.png",
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=600&fit=crop",
     ],
     tags: ["healthcare", "user testing", "wireframes"],
     category: "Healthcare",
@@ -749,14 +890,16 @@ export const projects: TProject[] = [
     sector: "ui-ux-design",
     link: "/projects/healthcare-patient-portal",
     details: {
-      thumbnail: "/images/projects/healthcare-patient-portal-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop",
       title: "Patient Portal Transformation",
       description:
         "Redesigned patient portal experience for 2 million users, reducing task completion time by 65% and increasing patient engagement metrics by 48% across the healthcare network.",
       links: [{ text: "UX Case Study", url: "/case-studies/patient-portal" }],
     },
     points: {
-      thumbnail: "/images/projects/healthcare-patient-portal-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop",
       list: [
         {
           _id: "uip-1",
@@ -777,10 +920,11 @@ export const projects: TProject[] = [
     _id: "ecommerce-platform-redesign",
     title: "E-commerce Platform Redesign",
     description: "Complete UX overhaul for fashion retail platform",
-    thumbnail: "/images/projects/ecommerce-platform-redesign.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/ecommerce-platform-redesign-1.png",
-      "/images/projects/ecommerce-platform-redesign-2.png",
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
     ],
     tags: ["e-commerce", "conversion", "checkout"],
     category: "Retail",
@@ -790,14 +934,16 @@ export const projects: TProject[] = [
     sector: "ui-ux-design",
     link: "/projects/ecommerce-platform-redesign",
     details: {
-      thumbnail: "/images/projects/ecommerce-platform-redesign-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
       title: "Fashion E-commerce Experience",
       description:
         "Redesigned shopping experience for fashion retailer, increasing conversion rate by 32% and reducing cart abandonment by 27% through improved UX flows and visual merchandising.",
       links: [{ text: "Redesign Gallery", url: "/gallery/stylehub" }],
     },
     points: {
-      thumbnail: "/images/projects/ecommerce-platform-redesign-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
       list: [
         {
           _id: "uip-3",
@@ -820,10 +966,11 @@ export const projects: TProject[] = [
     _id: "supply-chain-automation",
     title: "Supply Chain Automation",
     description: "Custom inventory and order management system",
-    thumbnail: "/images/projects/supply-chain-automation.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/supply-chain-automation-1.png",
-      "/images/projects/supply-chain-automation-2.png",
+      "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&h=600&fit=crop",
     ],
     tags: ["inventory", "automation", "integration"],
     category: "Logistics",
@@ -833,14 +980,16 @@ export const projects: TProject[] = [
     sector: "business-solutions",
     link: "/projects/supply-chain-automation",
     details: {
-      thumbnail: "/images/projects/supply-chain-automation-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop",
       title: "Inventory Management System",
       description:
         "Built custom supply chain platform integrating warehouse management, inventory forecasting, and order fulfillment. Reduced stockouts by 78% and improved order accuracy to 99.97%.",
       links: [{ text: "Integration Map", url: "/integrations/supply-chain" }],
     },
     points: {
-      thumbnail: "/images/projects/supply-chain-automation-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&h=600&fit=crop",
       list: [
         {
           _id: "bsp-1",
@@ -861,10 +1010,11 @@ export const projects: TProject[] = [
     _id: "sales-performance-dashboard",
     title: "Sales Performance Dashboard",
     description: "Enterprise sales analytics and forecasting platform",
-    thumbnail: "/images/projects/sales-performance-dashboard.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/sales-performance-dashboard-1.png",
-      "/images/projects/sales-performance-dashboard-2.png",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?w=800&h=600&fit=crop",
     ],
     tags: ["CRM", "analytics", "forecasting"],
     category: "Sales",
@@ -874,14 +1024,16 @@ export const projects: TProject[] = [
     sector: "business-solutions",
     link: "/projects/sales-performance-dashboard",
     details: {
-      thumbnail: "/images/projects/sales-performance-dashboard-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
       title: "Sales Intelligence Platform",
       description:
         "Developed custom sales analytics platform integrating 9 data sources, providing real-time performance insights and predictive forecasting. Improved forecast accuracy to 94% and reduced reporting time by 85%.",
       links: [{ text: "Analytics Demo", url: "/demos/sales-dashboard" }],
     },
     points: {
-      thumbnail: "/images/projects/sales-performance-dashboard-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       list: [
         {
           _id: "bsp-3",
@@ -904,10 +1056,11 @@ export const projects: TProject[] = [
     _id: "enterprise-helpdesk-implementation",
     title: "Enterprise Helpdesk Implementation",
     description: "Omnichannel support system for financial services",
-    thumbnail: "/images/projects/enterprise-helpdesk-implementation.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/enterprise-helpdesk-implementation-1.png",
-      "/images/projects/enterprise-helpdesk-implementation-2.png",
+      "https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=800&h=600&fit=crop",
     ],
     tags: ["helpdesk", "ticketing", "SLAs"],
     category: "Financial Services",
@@ -918,7 +1071,7 @@ export const projects: TProject[] = [
     link: "/projects/enterprise-helpdesk-implementation",
     details: {
       thumbnail:
-        "/images/projects/enterprise-helpdesk-implementation-details.png",
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
       title: "Banking Support Transformation",
       description:
         "Implemented enterprise-grade support system handling 25,000+ monthly inquiries across 8 channels. Reduced resolution time by 45% and improved customer satisfaction score to 92%.",
@@ -926,7 +1079,7 @@ export const projects: TProject[] = [
     },
     points: {
       thumbnail:
-        "/images/projects/enterprise-helpdesk-implementation-points.png",
+        "https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&h=600&fit=crop",
       list: [
         {
           _id: "osp-1",
@@ -947,10 +1100,11 @@ export const projects: TProject[] = [
     _id: "ai-chatbot-implementation",
     title: "AI Chatbot Implementation",
     description: "Intelligent virtual agent for e-commerce support",
-    thumbnail: "/images/projects/ai-chatbot-implementation.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
     images: [
-      "/images/projects/ai-chatbot-implementation-1.png",
-      "/images/projects/ai-chatbot-implementation-2.png",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=600&fit=crop",
     ],
     tags: ["chatbot", "NLP", "automation"],
     category: "E-commerce",
@@ -960,14 +1114,16 @@ export const projects: TProject[] = [
     sector: "online-support",
     link: "/projects/ai-chatbot-implementation",
     details: {
-      thumbnail: "/images/projects/ai-chatbot-implementation-details.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
       title: "E-commerce Virtual Assistant",
       description:
         "Designed and deployed AI-powered chatbot handling 68% of customer inquiries autonomously. Reduced support costs by 42% while maintaining 94% customer satisfaction rating.",
       links: [{ text: "Chatbot Demo", url: "/demos/ai-chatbot" }],
     },
     points: {
-      thumbnail: "/images/projects/ai-chatbot-implementation-points.png",
+      thumbnail:
+        "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
       list: [
         {
           _id: "osp-3",

@@ -1,5 +1,6 @@
 import { TBlog } from "@/assets/data/blogs";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 
 type BlogCardProps = {
@@ -18,12 +19,14 @@ const BlogCard = ({ blog, className }: BlogCardProps) => {
       <div className="group/card grid items-center gap-6">
         <Link
           href={"/blogs/" + blog?._id}
-          className="relative aspect-[4/5] w-full cursor-pointer overflow-hidden rounded-xl"
+          className="relative aspect-[3/4] w-full cursor-pointer overflow-hidden rounded-xl"
         >
-          <img
+          <Image
             className="bg-muted size-full object-cover object-center transition-all duration-700 ease-in-out group-hover/card:scale-110"
-            src={blog?.thumbnail}
-            alt={blog?.title}
+            src={blog?.thumbnail || ""}
+            alt={blog?.title || "Blog Thumbnail"}
+            height={700}
+            width={525}
           />
         </Link>
         <div className="space-y-6 md:pr-12">

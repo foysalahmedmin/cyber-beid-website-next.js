@@ -34,13 +34,13 @@ const ClientsSection = () => {
               <div className="group/card grid items-center gap-6">
                 <Link
                   href={"/clients/" + client?._id}
-                  className="relative aspect-[2/1] w-full cursor-pointer overflow-hidden"
+                  className="bg-muted relative aspect-[2/1] w-full cursor-pointer overflow-hidden"
                 >
-                  <img
+                  {/* <img
                     src={client?.image}
                     alt={client?.name}
                     className="size-full object-contain object-center"
-                  />
+                  /> */}
                 </Link>
               </div>
             </div>

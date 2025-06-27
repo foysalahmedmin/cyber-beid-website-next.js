@@ -2,6 +2,7 @@ import { leaderships } from "@/assets/data/leaderships";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import { Button } from "@/components/ui/Button";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
+import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
@@ -25,8 +26,14 @@ const LeadershipsDetailsPage = async ({ params }: Props) => {
       <section className="pt-16">
         <div className="container">
           <div className="grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16 xl:grid-cols-3 xl:gap-24">
-            <div className="relative aspect-[4/5] w-full border shadow lg:-mb-24">
-              <img className="size-full object-cover" src={image} alt={name} />
+            <div className="relative aspect-[3/4] w-full border shadow lg:-mb-24">
+              <Image
+                className="size-full object-cover"
+                src={image || ""}
+                alt={name || ""}
+                height={700}
+                width={525}
+              />
             </div>
             <div className="space-y-8 pb-16 md:space-y-12 lg:py-12">
               <Link

@@ -3,17 +3,17 @@ export type TBlog = {
   title: string;
   description: string;
   details: string;
-  thumbnail: string;
+  thumbnail: string; // Relevant Image From Internet.
   tags: string[];
   date: Date;
   sector:
+    | "application-systems-development"
     | "content-creation"
     | "digital-marketing"
     | "lead-generation"
     | "video-production"
     | "graphic-design"
     | "ui-ux-design"
-    | "application-systems-development"
     | "business-solutions"
     | "online-support";
   link: string;
@@ -70,7 +70,8 @@ export const blogs: TBlog[] = [
         <li>Automated alerts for abnormal patterns</li>
       </ul>
     `,
-    thumbnail: "/images/blogs/scalable-api-architecture.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
     tags: ["API", "Scalability", "Backend"],
     date: new Date("2025-05-01"),
     sector: "application-systems-development",
@@ -131,7 +132,8 @@ export const blogs: TBlog[] = [
         <li>Implement service discovery and API gateway</li>
       </ol>
     `,
-    thumbnail: "/images/blogs/microservices-vs-monolith.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1550439062-609e1531270e?w=800&h=600&fit=crop",
     tags: ["Microservices", "Architecture", "System Design"],
     date: new Date("2025-04-15"),
     sector: "application-systems-development",
@@ -191,7 +193,8 @@ export const blogs: TBlog[] = [
         <li>Maintain detailed integration documentation</li>
       </ol>
     `,
-    thumbnail: "/images/blogs/cloud-integration-best-practices.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
     tags: ["Cloud", "Integration", "DevOps"],
     date: new Date("2025-03-10"),
     sector: "application-systems-development",
@@ -276,7 +279,8 @@ export const blogs: TBlog[] = [
         <li><strong>Throughput increase</strong> - Volume processed per period</li>
       </ul>
     `,
-    thumbnail: "/images/blogs/automating-business-workflows.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
     tags: ["Automation", "Workflow", "Efficiency"],
     date: new Date("2025-02-25"),
     sector: "application-systems-development",
@@ -361,7 +365,8 @@ export const blogs: TBlog[] = [
         <li>Full-scale rollout with continuous optimization</li>
       </ol>
     `,
-    thumbnail: "/images/blogs/digital-transformation-strategies.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     tags: ["Digital Transformation", "SMEs", "Business Growth"],
     date: new Date("2025-01-18"),
     sector: "business-solutions",
@@ -457,7 +462,8 @@ export const blogs: TBlog[] = [
         </tbody>
       </table>
     `,
-    thumbnail: "/images/blogs/crm-implementation-tips.png",
+    thumbnail:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
     tags: ["CRM", "Customer Relations", "Small Business"],
     date: new Date("2025-01-05"),
     sector: "business-solutions",

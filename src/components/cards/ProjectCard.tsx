@@ -1,6 +1,7 @@
 import { TProject } from "@/assets/data/projects";
 import { cn } from "@/lib/utils";
 import { Plus } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 type ProjectCardProps = {
@@ -15,12 +16,14 @@ const ProjectCard = ({ project, className }: ProjectCardProps) => {
     >
       <Link
         href={`/projects/${project?._id}`}
-        className="relative aspect-[4/5] w-full cursor-pointer overflow-hidden rounded-xl"
+        className="relative aspect-[3/4] w-full cursor-pointer overflow-hidden rounded-xl"
       >
-        <img
-          src={project?.thumbnail || "/images/placeholder.png"}
+        <Image
+          src={project?.thumbnail || ""}
           alt={project?.title || "Project Thumbnail"}
           className="bg-muted size-full rounded-xl object-cover object-center transition-transform duration-700 ease-in-out group-hover/card:scale-110"
+          height={700}
+          width={525}
         />
         <div className="group/trigger absolute right-0 bottom-0 flex h-14 flex-row-reverse items-center overflow-hidden">
           <div className="text-muted-foreground hover:text-primary z-10 flex aspect-square h-full items-center justify-center rounded-tl-xl rounded-br-xl bg-white transition-all duration-700 group-hover/trigger:rounded-tl-none">

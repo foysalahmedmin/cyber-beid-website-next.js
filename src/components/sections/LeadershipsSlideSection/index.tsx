@@ -14,6 +14,7 @@ import {
   Title,
 } from "@/components/ui/SectionTitle";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 
 const LeadershipsSlideSection = ({
@@ -42,11 +43,13 @@ const LeadershipsSlideSection = ({
                   className="basis-1/1 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6 lg:basis-1/4"
                 >
                   <div className="group/card grid items-center gap-6">
-                    <div className="aspect-[4/5] w-full cursor-pointer overflow-hidden">
-                      <img
+                    <div className="aspect-[3/4] w-full cursor-pointer overflow-hidden">
+                      <Image
                         className="size-full object-cover object-center transition-all duration-700 ease-in-out group-hover/card:scale-110"
-                        src={leadership?.image}
-                        alt={leadership?.name}
+                        src={leadership?.image || ""}
+                        alt={leadership?.name || ""}
+                        height={700}
+                        width={525}
                       />
                     </div>
                     <div className="space-y-6 md:pr-12">

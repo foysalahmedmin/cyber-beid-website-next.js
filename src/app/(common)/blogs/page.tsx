@@ -3,6 +3,7 @@ import BlogCard from "@/components/cards/BlogCard";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
+import Image from "next/image";
 
 const BlogsPage = () => {
   return (
@@ -29,11 +30,13 @@ const BlogsPage = () => {
                   sustainable growth through innovative digital solutions.
                 </Description>
               </div>
-              <div className="aspect-[5/4] w-full overflow-hidden rounded-xl xl:col-span-2">
-                <img
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-xl xl:col-span-2">
+                <Image
                   className="bg-muted size-full object-cover object-center"
                   src="/images/partials/blog-thumbnail.png"
-                  alt="blog thumbnail"
+                  alt="Blog Thumbnail"
+                  height={750}
+                  width={1000}
                 />
               </div>
             </div>

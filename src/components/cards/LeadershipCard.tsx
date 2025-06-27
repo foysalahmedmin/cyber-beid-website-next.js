@@ -1,5 +1,6 @@
 import { TLeadership } from "@/assets/data/leaderships";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 
 type LeadershipCardProps = {
@@ -14,11 +15,13 @@ const LeadershipCard = ({ leadership, className }: LeadershipCardProps) => {
         className,
       )}
     >
-      <div className="aspect-[4/5] w-full cursor-pointer overflow-hidden rounded-xl">
-        <img
+      <div className="aspect-[3/4] w-full cursor-pointer overflow-hidden rounded-xl">
+        <Image
           className="bg-muted size-full object-cover object-center transition-all duration-700 ease-in-out group-hover/card:scale-110"
-          src={leadership?.image}
-          alt={leadership?.name}
+          src={leadership?.image || ""}
+          alt={leadership?.name || ""}
+          height={700}
+          width={525}
         />
       </div>
       <div className="space-y-6 md:pr-12">

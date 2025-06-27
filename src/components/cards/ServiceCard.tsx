@@ -1,5 +1,6 @@
 import { TService } from "@/assets/data/services";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 
 type ServiceCardProps = {
@@ -10,7 +11,7 @@ const ServiceCard = ({ service, className }: ServiceCardProps) => {
   return (
     <div
       className={cn(
-        "group bg-card relative aspect-[6/3] w-full cursor-pointer overflow-hidden rounded-xl",
+        "group bg-card relative aspect-[2/1] w-full cursor-pointer overflow-hidden rounded-xl",
         className,
       )}
     >
@@ -19,10 +20,12 @@ const ServiceCard = ({ service, className }: ServiceCardProps) => {
         href={"/services/" + service?._id}
         className="size-full"
       >
-        <img
+        <Image
           className="bg-muted size-full object-cover object-center transition-all duration-700 ease-in-out group-hover:scale-110"
-          src={service?.thumbnail}
-          alt={service?.title}
+          src={service?.thumbnail || ""}
+          alt={service?.title || "Service Thumbnail"}
+          height={250}
+          width={500}
         />
         <div className="group-hover:bg-background/50 text-foreground dark absolute inset-0 flex items-end justify-start overflow-hidden transition-all duration-500 group-hover:backdrop-blur-xs">
           <div className="translate-y-full p-6 opacity-0 transition-all duration-500 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
