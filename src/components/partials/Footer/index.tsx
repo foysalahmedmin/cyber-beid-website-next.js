@@ -136,7 +136,7 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="intersection-fade-up py-16 md:py-24">
+    <footer className="intersection-fade-in py-16 md:py-24">
       <div className="container space-y-16 md:space-y-24">
         <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-5">
           <div className="space-y-4 lg:col-span-3 xl:col-span-2 xl:space-y-12">

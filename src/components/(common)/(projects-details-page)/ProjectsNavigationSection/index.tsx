@@ -8,7 +8,7 @@ const ProjectsNavigationSection = ({ id }: { id: string }) => {
   const prevProject =
     index > 0 ? projects[index - 1] : projects[projects.length - 1];
   return (
-    <section className="hover:bg-muted intersection-fade-up py-16 md:py-24">
+    <section className="hover:bg-muted intersection-fade-in py-16 md:py-24">
       <div className="container max-w-4xl">
         <div className="flex justify-between">
           <Link className="flex-1" href={"projects" + prevProject?._id || "/"}>

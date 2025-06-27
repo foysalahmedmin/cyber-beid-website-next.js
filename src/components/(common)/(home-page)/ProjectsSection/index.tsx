@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="intersection-fade-up py-16 md:py-24">
+    <section id="projects" className="intersection-fade-in py-16 md:py-24">
       <div className="container">
         <div className="mb-6 sm:px-4 md:px-6 lg:ml-24">
           <SectionTitle className="">
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
               {projects?.map((project) => (
                 <CarouselItem
                   key={project._id}
-                  className="basis-1/1 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6"
+                  className="basis-1/1 px-2 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6"
                 >
                   <ProjectCard project={project} />
                 </CarouselItem>

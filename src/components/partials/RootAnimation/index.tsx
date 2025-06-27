@@ -10,7 +10,7 @@ const RootAnimation = ({ children }) => {
           const target = entry.target;
 
           if (entry.isIntersecting) {
-            target.classList.add("fade-up");
+            target.classList.add("animate-fade-in");
             obs.unobserve(target);
           }
         });
@@ -18,7 +18,7 @@ const RootAnimation = ({ children }) => {
       { threshold: 0.1 },
     );
 
-    const elements = document.querySelectorAll(".intersection-fade-up");
+    const elements = document.querySelectorAll(".intersection-fade-in");
 
     elements.forEach((element) => {
       if (element) observer.observe(element);

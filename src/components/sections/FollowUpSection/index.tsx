@@ -8,7 +8,7 @@ const FollowUpSection = () => {
       style={{ backgroundImage: "url('/images/partials/followup-bg.png')" }}
       className="dark text-foreground bg-muted bg-cover bg-center bg-no-repeat"
     >
-      <div className="background/50 border-primary intersection-fade-up border-b-8 py-16 md:py-24">
+      <div className="background/50 border-primary intersection-fade-in border-b-8 py-16 md:py-24">
         <div className="container">
           <SectionTitle>
             <Title>
@@ -17,7 +17,7 @@ const FollowUpSection = () => {
               <span className="ml-14 inline-block">together?</span>
             </Title>
           </SectionTitle>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-6">
             <Link href="/services">
               <Button asChild={true} size="lg">
                 <span>Explore Services</span>
@@ -25,7 +25,7 @@ const FollowUpSection = () => {
             </Link>
             <Link href="/contact">
               <Button asChild={true} size="lg" variant="outline">
-                <span>Build a project with us</span>
+                <span>Contact Us</span>
               </Button>
             </Link>
           </div>

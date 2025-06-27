@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="intersection-fade-up py-16 md:py-24">
+    <section id="services" className="intersection-fade-in py-16 md:py-24">
       <div className="container">
         <div className="mb-6">
           <SectionTitle>

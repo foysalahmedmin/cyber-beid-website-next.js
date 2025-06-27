@@ -229,7 +229,7 @@ const MobileNavigation: React.FC<{
 );
 
 const CTAButton: React.FC = () => (
-  <Link href="/contact">
+  <Link className="hidden lg:inline-block" href="/contact">
     <Button asChild={true} variant="outline">
       <span>GET AN ESTIMATE</span>
     </Button>
@@ -254,6 +254,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
       "dark fixed": isHomePage,
       "bg-card sticky": !isHomePage,
       "bg-background/95 shadow-sm": scrollTop > 80 && isHomePage,
+      "bg-background/95": isMobileMenuOpen && isHomePage,
       "-translate-y-full":
         scrollDirection === "down" && scrollTop > 80 && isHomePage,
       "translate-y-0":

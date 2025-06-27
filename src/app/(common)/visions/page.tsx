@@ -15,7 +15,7 @@ const VisionsPage = async () => {
         description="We believe in the power of collaboration, creativity, and technology to solve complex problems. Our team of dedicated strategists, designers, developers, and marketers is committed to creating solutions that help businesses grow, engage users, and stay competitive in a rapidly evolving digital landscape."
         image="/images/(visions-page)/page-header.png"
       />
-      <section className="bg-muted intersection-fade-up py-16 md:py-24">
+      <section className="bg-muted intersection-fade-in py-16 md:py-24">
         <div className="container max-w-5xl">
           <SectionTitle>
             <Subtitle>Our Vision</Subtitle>

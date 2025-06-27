@@ -6,7 +6,7 @@ const FeaturesSection = () => {
   return (
     <section
       id="features"
-      className="bg-muted intersection-fade-up py-16 md:py-24"
+      className="bg-muted intersection-fade-in py-16 md:py-24"
     >
       <div className="container">
         <div className="grid grid-cols-1 gap-8 md:gap-12 lg:grid-cols-4">

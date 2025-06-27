@@ -11,7 +11,7 @@ const LeadershipCard = ({ leadership, className }: LeadershipCardProps) => {
   return (
     <div
       className={cn(
-        "group/card intersection-fade-up grid grid-cols-2 items-center gap-6 md:px-6",
+        "group/card intersection-fade-in grid grid-cols-2 items-center gap-6 md:px-6",
         className,
       )}
     >

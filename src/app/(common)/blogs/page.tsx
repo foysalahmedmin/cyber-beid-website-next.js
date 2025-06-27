@@ -13,7 +13,7 @@ const BlogsPage = () => {
         title="Blogs"
         description="Explore thought leadership on digital transformation, emerging technologies, and innovative strategies that drive business growth in the digital age."
       />
-      <section className="intersection-fade-up py-16 md:py-24">
+      <section className="intersection-fade-in py-16 md:py-24">
         <div className="container">
           <div className="bg-muted overflow-hidden rounded-xl">
             <div className="group grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
@@ -43,7 +43,7 @@ const BlogsPage = () => {
           </div>
         </div>
       </section>
-      <section className="intersection-fade-up py-16 md:py-24">
+      <section className="intersection-fade-in py-16 md:py-24">
         <div className="container">
           <SectionTitle className="mb-16 text-center">
             <Title>Latest Insights & Analysis</Title>

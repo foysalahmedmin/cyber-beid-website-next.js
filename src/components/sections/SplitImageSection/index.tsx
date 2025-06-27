@@ -22,7 +22,7 @@ const SplitImageSection = ({
   className = "",
 }: SplitImageSectionProps) => {
   return (
-    <section className="intersection-fade-up py-16 md:py-24">
+    <section className="intersection-fade-in py-16 md:py-24">
       <div
         className={cn(
           "container grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16",
@@ -32,7 +32,7 @@ const SplitImageSection = ({
         {items?.map((item, index) => {
           const { title, description, subtitle, image } = item;
           return (
-            <div key={index} className="intersection-fade-up w-full">
+            <div key={index} className="intersection-fade-in w-full">
               {(title || subtitle || description) && (
                 <SectionTitle>
                   {subtitle && <Subtitle>{subtitle}</Subtitle>}

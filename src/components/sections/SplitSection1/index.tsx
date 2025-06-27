@@ -22,7 +22,7 @@ const SplitSection1 = ({
   image,
 }: SplitSection1) => {
   return (
-    <section className={cn("intersection-fade-up py-16 md:py-24", className)}>
+    <section className={cn("intersection-fade-in py-16 md:py-24", className)}>
       <div className="container">
         {(title || subtitle || description) && (
           <SectionTitle className="max-w-full">

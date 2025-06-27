@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const BlogsSection = () => {
   return (
-    <section id="blogs" className="intersection-fade-up py-16 md:py-24">
+    <section id="blogs" className="intersection-fade-in py-16 md:py-24">
       <div className="container">
         <div className="grid gap-8 md:gap-14 lg:grid-cols-3">
           <div className="space-y-8 md:space-y-12">
@@ -29,7 +29,7 @@ const BlogsSection = () => {
               </Button>
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:col-span-2">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:col-span-2">
             {blogs
               ?.slice(0, 2)
               ?.map((blog) => <BlogCard key={blog._id} blog={blog} />)}

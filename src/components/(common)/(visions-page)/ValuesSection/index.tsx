@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ValuesSection = () => {
   return (
-    <section className="bg-muted intersection-fade-up py-16 md:py-24">
+    <section className="bg-muted intersection-fade-in py-16 md:py-24">
       <div className="container">
         <SectionTitle>
           <Subtitle>Our Values in Action</Subtitle>

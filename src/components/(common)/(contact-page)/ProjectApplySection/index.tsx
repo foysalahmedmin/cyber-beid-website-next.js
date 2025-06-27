@@ -12,7 +12,7 @@ const construction_types = [
 
 const ProjectApplySection = () => {
   return (
-    <section className="bg-muted intersection-fade-up py-16">
+    <section className="bg-muted intersection-fade-in py-16">
       <div className="container">
         <SectionTitle>
           <Title>Build a project with us </Title>

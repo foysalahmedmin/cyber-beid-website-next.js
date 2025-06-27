@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="intersection-fade-up py-16 md:py-24">
+    <section id="about" className="intersection-fade-in py-16 md:py-24">
       <div className="container">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="order-2 self-stretch lg:order-1">
@@ -61,7 +61,7 @@ const AboutSection = () => {
                 <Link
                   key={index}
                   href={link.href}
-                  className="group hover:border-primary/50 bg-card block rounded-lg border p-4 transition-all duration-200"
+                  className="group intersection-fade-in hover:border-primary/50 bg-card block rounded-lg border p-4 transition-all duration-200"
                 >
                   <div className="mb-2 flex items-center gap-4">
                     <div className="bg-primary/5 group-hover:bg-primary/10 flex size-8 flex-shrink-0 items-center justify-center rounded-lg transition-colors duration-500">

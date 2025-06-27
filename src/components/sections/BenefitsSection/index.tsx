@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const BenefitsSection = () => {
   return (
-    <section className="bg-muted intersection-fade-up py-16 md:py-24">
+    <section className="bg-muted intersection-fade-in py-16 md:py-24">
       <div className="container">
         <SectionTitle>
           <Subtitle>Perks</Subtitle>

@@ -33,7 +33,7 @@ const ProjectsSlideSection = ({
   className,
 }: ProjectsSlideSectionProps) => {
   return (
-    <section className={cn("intersection-fade-up py-16 md:py-24", className)}>
+    <section className={cn("intersection-fade-in py-16 md:py-24", className)}>
       <div className="container">
         <div className="mb-6 sm:px-4 md:px-6">
           <SectionTitle className="">
@@ -54,7 +54,7 @@ const ProjectsSlideSection = ({
               {projects?.map((project) => (
                 <CarouselItem
                   key={project._id}
-                  className="basis-1/1 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6"
+                  className="basis-1/1 px-2 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6"
                 >
                   <ProjectCard project={project} />
                 </CarouselItem>

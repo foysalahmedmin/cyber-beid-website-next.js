@@ -13,7 +13,7 @@ const ProjectCard = ({ project, className }: ProjectCardProps) => {
   return (
     <div
       className={cn(
-        "group/card intersection-fade-up text-card-foreground grid gap-6",
+        "group/card intersection-fade-in text-card-foreground grid gap-6",
         className,
       )}
     >

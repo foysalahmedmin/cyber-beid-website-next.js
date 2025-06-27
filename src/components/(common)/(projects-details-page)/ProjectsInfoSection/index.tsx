@@ -4,7 +4,7 @@ import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 const ProjectInfoSection = ({ project }: { project?: TProject }) => {
   const { title, description, client, sector, location } = project || {};
   return (
-    <section className="intersection-fade-up py-16 md:py-24">
+    <section className="intersection-fade-in py-16 md:py-24">
       <div className="container">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
           <div className="space-y-6">

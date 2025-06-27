@@ -21,7 +21,7 @@ const PageHeaderSection = ({
   metrics: Metrics = [],
 }: PageHeaderSectionProps) => {
   return (
-    <section className={cn("intersection-fade-up", className)}>
+    <section className={cn("intersection-fade-in", className)}>
       <div className="container py-16">
         <Subtitle>{subtitle}</Subtitle>
         <div className="grid grid-cols-1 gap-8 md:gap-12 lg:grid-cols-2">
@@ -52,7 +52,7 @@ const PageHeaderSection = ({
                 <div key={index} className="flex flex-col">
                   <div
                     className={cn(
-                      "intersection-fade-up relative flex aspect-[6/4] w-full items-center justify-center",
+                      "intersection-fade-in relative flex aspect-[6/4] w-full items-center justify-center",
                       alignClassMD,
                       alignClassLG,
                     )}
