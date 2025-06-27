@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const RootAnimation = ({ children }) => {
+const useIntersectionObserver = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries, obs) => {
@@ -18,20 +18,31 @@ const RootAnimation = ({ children }) => {
       { threshold: 0.1 },
     );
 
-    const elements = document.querySelectorAll(".intersection-fade-in");
+    const observeNewElements = () => {
+      const elements = document.querySelectorAll(
+        ".intersection-fade-in:not([data-observed])",
+      );
+      elements.forEach((element) => {
+        element.setAttribute("data-observed", "true");
+        observer.observe(element);
+      });
+    };
 
-    elements.forEach((element) => {
-      if (element) observer.observe(element);
-    });
+    // Observe immediately
+    observeNewElements();
+
+    // Set up a timer to periodically check for new elements
+    const interval = setInterval(observeNewElements, 100);
 
     return () => {
-      elements.forEach((element) => {
-        if (element) observer.unobserve(element);
-      });
       observer.disconnect();
+      clearInterval(interval);
     };
   }, []);
+};
 
+const RootAnimation = ({ children }) => {
+  useIntersectionObserver();
   return <div>{children}</div>;
 };
 

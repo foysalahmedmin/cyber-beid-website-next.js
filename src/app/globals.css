@@ -134,6 +134,13 @@
 /* Utility Styles */
 @layer utilities {
   @import "../assets/styles/utilities/loading.css";
+
+  .intersection-fade-up {
+    transition:
+      opacity 0.5s ease-out,
+      transform 0.5s ease-out;
+  }
+
   .underline-effect,
   .button span {
     transition:
