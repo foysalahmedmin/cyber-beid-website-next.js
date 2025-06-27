@@ -37,7 +37,18 @@ const SplitSection = ({
             <SectionTitle className="mb-0">
               {subtitle && <Subtitle>{subtitle}</Subtitle>}
               {title && <Title>{title}</Title>}
-              {description && <Description>{description}</Description>}
+              {description && (
+                <Description>
+                  <div className="w-full">
+                    <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
+                      <div
+                        className="text-foreground font-sans"
+                        dangerouslySetInnerHTML={{ __html: description || "" }}
+                      />
+                    </div>
+                  </div>
+                </Description>
+              )}
             </SectionTitle>
             {links?.length > 0 && (
               <div>

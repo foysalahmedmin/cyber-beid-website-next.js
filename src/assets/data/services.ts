@@ -43,6 +43,150 @@ export type TService = {
 
 export const services: TService[] = [
   {
+    _id: "application-systems-development",
+    icon: Code2,
+    title: "Application Systems Development",
+    description:
+      "We design and develop high-performance applications across web, desktop, and mobile platforms. From responsive websites and scalable web apps to native and cross-platform mobile apps, our solutions are tailored to your business goals. Using modern frameworks like React, Next.js, Node.js, Flutter, and React Native, we ensure consistency, speed, and reliability across all devices.",
+    thumbnail: "/images/services/application-systems-development.png",
+    link: "/services/application-systems-development/",
+    details: {
+      thumbnail: "/images/services/application-systems-development-details.png",
+      title: "Full-Stack: Web, Desktop & Mobile Application Development",
+      description: `
+        <div class="app-development-details">
+          <h3>End-to-End Application Development Excellence</h3>
+          <p>Our comprehensive <strong>application development services</strong> cover the complete spectrum of digital solutions—from responsive websites and progressive web apps to native iOS/Android applications and cross-platform desktop software. We specialize in <em>full-stack development</em>, <strong>modern UI/UX design</strong>, <strong>API integrations</strong>, and <strong>performance optimization</strong> using cutting-edge technologies.</p>
+
+          <h4>Complete Technology Stack:</h4>
+          <div class="tech-stack">
+            <div class="stack-category">
+              <h5>🌐 Frontend Development</h5>
+              <ul>
+                <li><strong>React.js:</strong> Component-based UI development</li>
+                <li><strong>Next.js:</strong> Server-side rendering and static generation</li>
+                <li><strong>TypeScript:</strong> Type-safe JavaScript development</li>
+                <li><strong>Tailwind CSS:</strong> Utility-first styling framework</li>
+                <li><strong>Vue.js:</strong> Progressive framework for web interfaces</li>
+              </ul>
+            </div>
+            <div class="stack-category">
+              <h5>⚙️ Backend Development</h5>
+              <ul>
+                <li><strong>Node.js:</strong> JavaScript runtime for server-side development</li>
+                <li><strong>Express.js:</strong> Web application framework</li>
+                <li><strong>GraphQL & REST APIs:</strong> Flexible data querying solutions</li>
+                <li><strong>MongoDB & PostgreSQL:</strong> NoSQL and relational databases</li>
+                <li><strong>Redis:</strong> In-memory data structure store</li>
+              </ul>
+            </div>
+            <div class="stack-category">
+              <h5>📱 Mobile Development</h5>
+              <ul>
+                <li><strong>React Native:</strong> Cross-platform mobile apps</li>
+                <li><strong>Flutter:</strong> Google's UI toolkit for mobile</li>
+                <li><strong>Swift:</strong> Native iOS application development</li>
+                <li><strong>Kotlin:</strong> Modern Android development</li>
+                <li><strong>Progressive Web Apps:</strong> Web apps with native features</li>
+              </ul>
+            </div>
+            <div class="stack-category">
+              <h5>🖥️ Desktop Development</h5>
+              <ul>
+                <li><strong>Electron:</strong> Cross-platform desktop apps</li>
+                <li><strong>Tauri:</strong> Lightweight desktop applications</li>
+                <li><strong>.NET Core:</strong> Windows application development</li>
+                <li><strong>Python (Tkinter/PyQt):</strong> Desktop GUI applications</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Development Methodologies:</h4>
+          <div class="methodologies">
+            <div class="methodology">
+              <h5>🚀 Agile Development</h5>
+              <p>Iterative development with regular client feedback and continuous improvement</p>
+            </div>
+            <div class="methodology">
+              <h5>🧪 Test-Driven Development</h5>
+              <p>Comprehensive testing strategies including unit, integration, and end-to-end tests</p>
+            </div>
+            <div class="methodology">
+              <h5>🔄 CI/CD Implementation</h5>
+              <p>Automated deployment pipelines for consistent and reliable releases</p>
+            </div>
+            <div class="methodology">
+              <h5>📊 Performance Monitoring</h5>
+              <p>Real-time application monitoring and optimization for peak performance</p>
+            </div>
+          </div>
+
+          <h4>Specialized Services:</h4>
+          <ul>
+            <li><strong>API Development & Integration:</strong> RESTful and GraphQL APIs with third-party service integrations</li>
+            <li><strong>Database Design & Optimization:</strong> Scalable database architecture and query optimization</li>
+            <li><strong>Cloud Deployment:</strong> AWS, Google Cloud, and Azure deployment strategies</li>
+            <li><strong>Security Implementation:</strong> Authentication, authorization, and data protection</li>
+            <li><strong>Performance Optimization:</strong> Code splitting, lazy loading, and caching strategies</li>
+          </ul>
+
+          <div class="development-process">
+            <h4>Our Development Process:</h4>
+            <ol>
+              <li><strong>Requirements Analysis:</strong> Detailed project scoping and technical specification</li>
+              <li><strong>Architecture Design:</strong> System design and technology stack selection</li>
+              <li><strong>Iterative Development:</strong> Sprint-based development with regular demos</li>
+              <li><strong>Quality Assurance:</strong> Comprehensive testing and code review processes</li>
+              <li><strong>Deployment & Launch:</strong> Production deployment with monitoring setup</li>
+              <li><strong>Maintenance & Support:</strong> Ongoing updates, bug fixes, and feature enhancements</li>
+            </ol>
+          </div>
+        </div>
+      `,
+      links: [
+        { text: "Tech Stack", url: "/technology" },
+        { text: "App Portfolio", url: "/portfolio/apps" },
+      ],
+    },
+    points: {
+      thumbnail: "/images/services/application-systems-development-points.png",
+      list: [
+        {
+          _id: "app-1",
+          title: "Modern Frontend & Web App Development",
+          description:
+            "We craft responsive and interactive user interfaces using React, Next.js, and TypeScript. Our component-based architecture and performance-focused techniques deliver fast, engaging web experiences for landing pages, dashboards, and full-scale web apps.",
+          links: [{ text: "Frontend Examples", url: "/examples/frontend" }],
+        },
+        {
+          _id: "app-2",
+          title: "Backend & API Development",
+          description:
+            "We build robust backend systems using Node.js, Express, and MongoDB. Our services include RESTful and GraphQL API development, secure server-side logic, and scalable database design for dynamic data-driven applications.",
+        },
+        {
+          _id: "app-3",
+          title: "Mobile & Cross-Platform App Development",
+          description:
+            "We develop native apps with Swift and Kotlin, as well as cross-platform apps using Flutter and React Native. Our apps offer seamless performance and a consistent experience across iOS and Android devices.",
+          links: [{ text: "Native Examples", url: "/examples/native" }],
+        },
+        {
+          _id: "app-4",
+          title: "Desktop Application Development",
+          description:
+            "Using technologies like Electron and Tauri, we create powerful desktop applications for Windows, macOS, and Linux—integrated with modern UI and business logic tailored to your workflow.",
+        },
+        {
+          _id: "app-5",
+          title: "Deployment, Maintenance & Optimization",
+          description:
+            "We handle deployment across web, app stores, and desktop platforms, including continuous updates, bug fixes, ASO, and performance tuning. Our security practices and optimization techniques ensure long-term stability and protection against threats.",
+        },
+      ],
+    },
+  },
+  {
     _id: "content-creation",
     icon: PenLine,
     title: "Content Creation",
@@ -798,150 +942,6 @@ export const services: TService[] = [
           title: "Accessibility-Compliant Interface Design",
           description:
             "We design interfaces that meet WCAG 2.1 accessibility standards, ensuring usability for all users regardless of ability. Our accessibility-first approach includes color contrast optimization, screen reader compatibility, keyboard navigation support, and cognitive load reduction.",
-        },
-      ],
-    },
-  },
-  {
-    _id: "application-systems-development",
-    icon: Code2,
-    title: "Application Systems Development",
-    description:
-      "We design and develop high-performance applications across web, desktop, and mobile platforms. From responsive websites and scalable web apps to native and cross-platform mobile apps, our solutions are tailored to your business goals. Using modern frameworks like React, Next.js, Node.js, Flutter, and React Native, we ensure consistency, speed, and reliability across all devices.",
-    thumbnail: "/images/services/application-systems-development.png",
-    link: "/services/application-systems-development/",
-    details: {
-      thumbnail: "/images/services/application-systems-development-details.png",
-      title: "Full-Stack: Web, Desktop & Mobile Application Development",
-      description: `
-        <div class="app-development-details">
-          <h3>End-to-End Application Development Excellence</h3>
-          <p>Our comprehensive <strong>application development services</strong> cover the complete spectrum of digital solutions—from responsive websites and progressive web apps to native iOS/Android applications and cross-platform desktop software. We specialize in <em>full-stack development</em>, <strong>modern UI/UX design</strong>, <strong>API integrations</strong>, and <strong>performance optimization</strong> using cutting-edge technologies.</p>
-
-          <h4>Complete Technology Stack:</h4>
-          <div class="tech-stack">
-            <div class="stack-category">
-              <h5>🌐 Frontend Development</h5>
-              <ul>
-                <li><strong>React.js:</strong> Component-based UI development</li>
-                <li><strong>Next.js:</strong> Server-side rendering and static generation</li>
-                <li><strong>TypeScript:</strong> Type-safe JavaScript development</li>
-                <li><strong>Tailwind CSS:</strong> Utility-first styling framework</li>
-                <li><strong>Vue.js:</strong> Progressive framework for web interfaces</li>
-              </ul>
-            </div>
-            <div class="stack-category">
-              <h5>⚙️ Backend Development</h5>
-              <ul>
-                <li><strong>Node.js:</strong> JavaScript runtime for server-side development</li>
-                <li><strong>Express.js:</strong> Web application framework</li>
-                <li><strong>GraphQL & REST APIs:</strong> Flexible data querying solutions</li>
-                <li><strong>MongoDB & PostgreSQL:</strong> NoSQL and relational databases</li>
-                <li><strong>Redis:</strong> In-memory data structure store</li>
-              </ul>
-            </div>
-            <div class="stack-category">
-              <h5>📱 Mobile Development</h5>
-              <ul>
-                <li><strong>React Native:</strong> Cross-platform mobile apps</li>
-                <li><strong>Flutter:</strong> Google's UI toolkit for mobile</li>
-                <li><strong>Swift:</strong> Native iOS application development</li>
-                <li><strong>Kotlin:</strong> Modern Android development</li>
-                <li><strong>Progressive Web Apps:</strong> Web apps with native features</li>
-              </ul>
-            </div>
-            <div class="stack-category">
-              <h5>🖥️ Desktop Development</h5>
-              <ul>
-                <li><strong>Electron:</strong> Cross-platform desktop apps</li>
-                <li><strong>Tauri:</strong> Lightweight desktop applications</li>
-                <li><strong>.NET Core:</strong> Windows application development</li>
-                <li><strong>Python (Tkinter/PyQt):</strong> Desktop GUI applications</li>
-              </ul>
-            </div>
-          </div>
-
-          <h4>Development Methodologies:</h4>
-          <div class="methodologies">
-            <div class="methodology">
-              <h5>🚀 Agile Development</h5>
-              <p>Iterative development with regular client feedback and continuous improvement</p>
-            </div>
-            <div class="methodology">
-              <h5>🧪 Test-Driven Development</h5>
-              <p>Comprehensive testing strategies including unit, integration, and end-to-end tests</p>
-            </div>
-            <div class="methodology">
-              <h5>🔄 CI/CD Implementation</h5>
-              <p>Automated deployment pipelines for consistent and reliable releases</p>
-            </div>
-            <div class="methodology">
-              <h5>📊 Performance Monitoring</h5>
-              <p>Real-time application monitoring and optimization for peak performance</p>
-            </div>
-          </div>
-
-          <h4>Specialized Services:</h4>
-          <ul>
-            <li><strong>API Development & Integration:</strong> RESTful and GraphQL APIs with third-party service integrations</li>
-            <li><strong>Database Design & Optimization:</strong> Scalable database architecture and query optimization</li>
-            <li><strong>Cloud Deployment:</strong> AWS, Google Cloud, and Azure deployment strategies</li>
-            <li><strong>Security Implementation:</strong> Authentication, authorization, and data protection</li>
-            <li><strong>Performance Optimization:</strong> Code splitting, lazy loading, and caching strategies</li>
-          </ul>
-
-          <div class="development-process">
-            <h4>Our Development Process:</h4>
-            <ol>
-              <li><strong>Requirements Analysis:</strong> Detailed project scoping and technical specification</li>
-              <li><strong>Architecture Design:</strong> System design and technology stack selection</li>
-              <li><strong>Iterative Development:</strong> Sprint-based development with regular demos</li>
-              <li><strong>Quality Assurance:</strong> Comprehensive testing and code review processes</li>
-              <li><strong>Deployment & Launch:</strong> Production deployment with monitoring setup</li>
-              <li><strong>Maintenance & Support:</strong> Ongoing updates, bug fixes, and feature enhancements</li>
-            </ol>
-          </div>
-        </div>
-      `,
-      links: [
-        { text: "Tech Stack", url: "/technology" },
-        { text: "App Portfolio", url: "/portfolio/apps" },
-      ],
-    },
-    points: {
-      thumbnail: "/images/services/application-systems-development-points.png",
-      list: [
-        {
-          _id: "app-1",
-          title: "Modern Frontend & Web App Development",
-          description:
-            "We craft responsive and interactive user interfaces using React, Next.js, and TypeScript. Our component-based architecture and performance-focused techniques deliver fast, engaging web experiences for landing pages, dashboards, and full-scale web apps.",
-          links: [{ text: "Frontend Examples", url: "/examples/frontend" }],
-        },
-        {
-          _id: "app-2",
-          title: "Backend & API Development",
-          description:
-            "We build robust backend systems using Node.js, Express, and MongoDB. Our services include RESTful and GraphQL API development, secure server-side logic, and scalable database design for dynamic data-driven applications.",
-        },
-        {
-          _id: "app-3",
-          title: "Mobile & Cross-Platform App Development",
-          description:
-            "We develop native apps with Swift and Kotlin, as well as cross-platform apps using Flutter and React Native. Our apps offer seamless performance and a consistent experience across iOS and Android devices.",
-          links: [{ text: "Native Examples", url: "/examples/native" }],
-        },
-        {
-          _id: "app-4",
-          title: "Desktop Application Development",
-          description:
-            "Using technologies like Electron and Tauri, we create powerful desktop applications for Windows, macOS, and Linux—integrated with modern UI and business logic tailored to your workflow.",
-        },
-        {
-          _id: "app-5",
-          title: "Deployment, Maintenance & Optimization",
-          description:
-            "We handle deployment across web, app stores, and desktop platforms, including continuous updates, bug fixes, ASO, and performance tuning. Our security practices and optimization techniques ensure long-term stability and protection against threats.",
         },
       ],
     },

@@ -10,6 +10,7 @@ export type TProject = {
   location: string;
   date: Date;
   sector:
+    | "application-systems-development"
     | "content-creation"
     | "digital-marketing"
     | "seo"
@@ -17,7 +18,6 @@ export type TProject = {
     | "video-production"
     | "graphic-design"
     | "ui-ux-design"
-    | "application-systems-development"
     | "business-solutions"
     | "online-support";
   link: string;
@@ -45,6 +45,172 @@ export type TProject = {
 };
 
 export const projects: TProject[] = [
+  // Application-Systems Development Projects
+  {
+    _id: "energy-management-dashboard",
+    title: "Energy Management Dashboard",
+    description: "Real-time energy monitoring web application",
+    thumbnail: "/images/projects/energy-management-dashboard.png",
+    images: [
+      "/images/projects/energy-management-dashboard-1.png",
+      "/images/projects/energy-management-dashboard-2.png",
+    ],
+    tags: ["web application", "dashboard", "real-time", "IoT"],
+    category: "Energy",
+    client: "EcoPower Solutions",
+    location: "Denver, CO",
+    date: new Date("2023-04-10"),
+    sector: "application-systems-development",
+    link: "/projects/energy-management-dashboard",
+    details: {
+      thumbnail: "/images/projects/energy-management-dashboard-details.png",
+      title: "Enterprise Energy Monitoring",
+      description:
+        "Built real-time energy management platform processing data from 15,000+ IoT sensors, helping commercial clients reduce energy consumption by 18% on average through actionable insights.",
+      links: [{ text: "Tech Specs", url: "/tech/energy-dashboard" }],
+    },
+    points: {
+      thumbnail: "/images/projects/energy-management-dashboard-points.png",
+      list: [
+        {
+          _id: "wdp-1",
+          title: "Real-Time Data Processing",
+          description:
+            "Developed data ingestion pipeline handling 2.5 million data points per hour with sub-second latency. Implemented WebSocket architecture for live dashboard updates and alerting.",
+        },
+        {
+          _id: "wdp-2",
+          title: "Predictive Analytics Engine",
+          description:
+            "Built machine learning models forecasting energy usage patterns and identifying optimization opportunities. Integrated with visualization tools that presented actionable recommendations to facility managers.",
+        },
+      ],
+    },
+  },
+  {
+    _id: "interactive-learning-platform",
+    title: "Interactive Learning Platform",
+    description: "Next-gen educational platform for professional training",
+    thumbnail: "/images/projects/interactive-learning-platform.png",
+    images: [
+      "/images/projects/interactive-learning-platform-1.png",
+      "/images/projects/interactive-learning-platform-2.png",
+    ],
+    tags: ["web application", "education", "interactive", "lms"],
+    category: "EdTech",
+    client: "SkillFront",
+    location: "Raleigh, NC",
+    date: new Date("2023-07-22"),
+    sector: "application-systems-development",
+    link: "/projects/interactive-learning-platform",
+    details: {
+      thumbnail: "/images/projects/interactive-learning-platform-details.png",
+      title: "Professional Learning Ecosystem",
+      description:
+        "Developed comprehensive learning management system with interactive labs, progress tracking, and certification features. Platform supports 50,000+ active users with 92% course completion rate.",
+      links: [{ text: "Platform Demo", url: "/demos/learning-platform" }],
+    },
+    points: {
+      thumbnail: "/images/projects/interactive-learning-platform-points.png",
+      list: [
+        {
+          _id: "wdp-3",
+          title: "Virtual Lab Environment",
+          description:
+            "Created browser-based coding environments and simulation tools that allowed hands-on practice without local setup. Reduced setup time from hours to seconds while maintaining security.",
+        },
+        {
+          _id: "wdp-4",
+          title: "Adaptive Learning Pathways",
+          description:
+            "Developed algorithm-driven content recommendations based on learner progress and knowledge gaps. Personalized pathways improved skill mastery rates by 43% compared to linear courses.",
+        },
+      ],
+    },
+  },
+  {
+    _id: "field-service-management-app",
+    title: "Field Service Management App",
+    description: "Mobile solution for field technicians and dispatchers",
+    thumbnail: "/images/projects/field-service-management-app.png",
+    images: [
+      "/images/projects/field-service-management-app-1.png",
+      "/images/projects/field-service-management-app-2.png",
+    ],
+    tags: ["mobile application", "offline", "geolocation", "scheduling"],
+    category: "Field Services",
+    client: "ServicePro Solutions",
+    location: "Dallas, TX",
+    date: new Date("2023-03-05"),
+    sector: "application-systems-development",
+    link: "/projects/field-service-management-app",
+    details: {
+      thumbnail: "/images/projects/field-service-management-app-details.png",
+      title: "Field Operations Platform",
+      description:
+        "Built cross-platform mobile application for field service management that reduced job completion time by 27% and improved first-time fix rate by 33% for nationwide service provider.",
+      links: [{ text: "App Features", url: "/features/field-service" }],
+    },
+    points: {
+      thumbnail: "/images/projects/field-service-management-app-points.png",
+      list: [
+        {
+          _id: "map-1",
+          title: "Offline-First Architecture",
+          description:
+            "Developed robust offline capability allowing technicians to access job details, manuals, and forms without connectivity. Data synchronization system ensured seamless updates when reconnected.",
+        },
+        {
+          _id: "map-2",
+          title: "Augmented Reality Assistance",
+          description:
+            "Integrated AR features that overlay repair instructions onto equipment views through device camera. Reduced diagnostic time by 45% and improved repair accuracy for complex machinery.",
+        },
+      ],
+    },
+  },
+  {
+    _id: "mental-wellness-application",
+    title: "Mental Wellness Application",
+    description: "AI-powered mental health support platform",
+    thumbnail: "/images/projects/mental-wellness-application.png",
+    images: [
+      "/images/projects/mental-wellness-application-1.png",
+      "/images/projects/mental-wellness-application-2.png",
+    ],
+    tags: ["mobile application", "health", "AI", "privacy"],
+    category: "Healthcare",
+    client: "MindBalance",
+    location: "San Diego, CA",
+    date: new Date("2023-05-18"),
+    sector: "application-systems-development",
+    link: "/projects/mental-wellness-application",
+    details: {
+      thumbnail: "/images/projects/mental-wellness-application-details.png",
+      title: "Personalized Mental Wellness",
+      description:
+        "Developed HIPAA-compliant mobile application providing personalized mental health support to 250,000+ users. Clinical studies showed 32% reduction in anxiety symptoms among regular users.",
+      links: [{ text: "Privacy Overview", url: "/security/mindbalance" }],
+    },
+    points: {
+      thumbnail: "/images/projects/mental-wellness-application-points.png",
+      list: [
+        {
+          _id: "map-3",
+          title: "AI Mood Tracking",
+          description:
+            "Created passive monitoring system analyzing user interactions and voice patterns to detect mood changes. Provided personalized interventions with 89% user-reported accuracy.",
+        },
+        {
+          _id: "map-4",
+          title: "Clinical Integration",
+          description:
+            "Developed secure provider portal allowing therapists to monitor client progress between sessions. Feature adoption by clinicians reached 78% within 6 months of launch.",
+        },
+      ],
+    },
+  },
+
   // Content Creation Projects
   {
     _id: "global-tech-blog-network",
@@ -644,172 +810,6 @@ export const projects: TProject[] = [
           title: "Personalized Size Prediction",
           description:
             "Created machine learning-powered size recommendation system that reduced sizing-related returns by 35% while improving customer confidence in purchases.",
-        },
-      ],
-    },
-  },
-
-  // Application-Systems Development Projects
-  {
-    _id: "energy-management-dashboard",
-    title: "Energy Management Dashboard",
-    description: "Real-time energy monitoring web application",
-    thumbnail: "/images/projects/energy-management-dashboard.png",
-    images: [
-      "/images/projects/energy-management-dashboard-1.png",
-      "/images/projects/energy-management-dashboard-2.png",
-    ],
-    tags: ["web application", "dashboard", "real-time", "IoT"],
-    category: "Energy",
-    client: "EcoPower Solutions",
-    location: "Denver, CO",
-    date: new Date("2023-04-10"),
-    sector: "application-systems-development",
-    link: "/projects/energy-management-dashboard",
-    details: {
-      thumbnail: "/images/projects/energy-management-dashboard-details.png",
-      title: "Enterprise Energy Monitoring",
-      description:
-        "Built real-time energy management platform processing data from 15,000+ IoT sensors, helping commercial clients reduce energy consumption by 18% on average through actionable insights.",
-      links: [{ text: "Tech Specs", url: "/tech/energy-dashboard" }],
-    },
-    points: {
-      thumbnail: "/images/projects/energy-management-dashboard-points.png",
-      list: [
-        {
-          _id: "wdp-1",
-          title: "Real-Time Data Processing",
-          description:
-            "Developed data ingestion pipeline handling 2.5 million data points per hour with sub-second latency. Implemented WebSocket architecture for live dashboard updates and alerting.",
-        },
-        {
-          _id: "wdp-2",
-          title: "Predictive Analytics Engine",
-          description:
-            "Built machine learning models forecasting energy usage patterns and identifying optimization opportunities. Integrated with visualization tools that presented actionable recommendations to facility managers.",
-        },
-      ],
-    },
-  },
-  {
-    _id: "interactive-learning-platform",
-    title: "Interactive Learning Platform",
-    description: "Next-gen educational platform for professional training",
-    thumbnail: "/images/projects/interactive-learning-platform.png",
-    images: [
-      "/images/projects/interactive-learning-platform-1.png",
-      "/images/projects/interactive-learning-platform-2.png",
-    ],
-    tags: ["web application", "education", "interactive", "lms"],
-    category: "EdTech",
-    client: "SkillFront",
-    location: "Raleigh, NC",
-    date: new Date("2023-07-22"),
-    sector: "application-systems-development",
-    link: "/projects/interactive-learning-platform",
-    details: {
-      thumbnail: "/images/projects/interactive-learning-platform-details.png",
-      title: "Professional Learning Ecosystem",
-      description:
-        "Developed comprehensive learning management system with interactive labs, progress tracking, and certification features. Platform supports 50,000+ active users with 92% course completion rate.",
-      links: [{ text: "Platform Demo", url: "/demos/learning-platform" }],
-    },
-    points: {
-      thumbnail: "/images/projects/interactive-learning-platform-points.png",
-      list: [
-        {
-          _id: "wdp-3",
-          title: "Virtual Lab Environment",
-          description:
-            "Created browser-based coding environments and simulation tools that allowed hands-on practice without local setup. Reduced setup time from hours to seconds while maintaining security.",
-        },
-        {
-          _id: "wdp-4",
-          title: "Adaptive Learning Pathways",
-          description:
-            "Developed algorithm-driven content recommendations based on learner progress and knowledge gaps. Personalized pathways improved skill mastery rates by 43% compared to linear courses.",
-        },
-      ],
-    },
-  },
-  {
-    _id: "field-service-management-app",
-    title: "Field Service Management App",
-    description: "Mobile solution for field technicians and dispatchers",
-    thumbnail: "/images/projects/field-service-management-app.png",
-    images: [
-      "/images/projects/field-service-management-app-1.png",
-      "/images/projects/field-service-management-app-2.png",
-    ],
-    tags: ["mobile application", "offline", "geolocation", "scheduling"],
-    category: "Field Services",
-    client: "ServicePro Solutions",
-    location: "Dallas, TX",
-    date: new Date("2023-03-05"),
-    sector: "application-systems-development",
-    link: "/projects/field-service-management-app",
-    details: {
-      thumbnail: "/images/projects/field-service-management-app-details.png",
-      title: "Field Operations Platform",
-      description:
-        "Built cross-platform mobile application for field service management that reduced job completion time by 27% and improved first-time fix rate by 33% for nationwide service provider.",
-      links: [{ text: "App Features", url: "/features/field-service" }],
-    },
-    points: {
-      thumbnail: "/images/projects/field-service-management-app-points.png",
-      list: [
-        {
-          _id: "map-1",
-          title: "Offline-First Architecture",
-          description:
-            "Developed robust offline capability allowing technicians to access job details, manuals, and forms without connectivity. Data synchronization system ensured seamless updates when reconnected.",
-        },
-        {
-          _id: "map-2",
-          title: "Augmented Reality Assistance",
-          description:
-            "Integrated AR features that overlay repair instructions onto equipment views through device camera. Reduced diagnostic time by 45% and improved repair accuracy for complex machinery.",
-        },
-      ],
-    },
-  },
-  {
-    _id: "mental-wellness-application",
-    title: "Mental Wellness Application",
-    description: "AI-powered mental health support platform",
-    thumbnail: "/images/projects/mental-wellness-application.png",
-    images: [
-      "/images/projects/mental-wellness-application-1.png",
-      "/images/projects/mental-wellness-application-2.png",
-    ],
-    tags: ["mobile application", "health", "AI", "privacy"],
-    category: "Healthcare",
-    client: "MindBalance",
-    location: "San Diego, CA",
-    date: new Date("2023-05-18"),
-    sector: "application-systems-development",
-    link: "/projects/mental-wellness-application",
-    details: {
-      thumbnail: "/images/projects/mental-wellness-application-details.png",
-      title: "Personalized Mental Wellness",
-      description:
-        "Developed HIPAA-compliant mobile application providing personalized mental health support to 250,000+ users. Clinical studies showed 32% reduction in anxiety symptoms among regular users.",
-      links: [{ text: "Privacy Overview", url: "/security/mindbalance" }],
-    },
-    points: {
-      thumbnail: "/images/projects/mental-wellness-application-points.png",
-      list: [
-        {
-          _id: "map-3",
-          title: "AI Mood Tracking",
-          description:
-            "Created passive monitoring system analyzing user interactions and voice patterns to detect mood changes. Provided personalized interventions with 89% user-reported accuracy.",
-        },
-        {
-          _id: "map-4",
-          title: "Clinical Integration",
-          description:
-            "Developed secure provider portal allowing therapists to monitor client progress between sessions. Feature adoption by clinicians reached 78% within 6 months of launch.",
         },
       ],
     },

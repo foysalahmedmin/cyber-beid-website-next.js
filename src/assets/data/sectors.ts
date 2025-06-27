@@ -13,6 +13,7 @@ import {
 
 export type TSector = {
   _id:
+    | "application-systems-development"
     | "content-creation"
     | "digital-marketing"
     | "seo"
@@ -20,13 +21,13 @@ export type TSector = {
     | "video-production"
     | "graphic-design"
     | "ui-ux-design"
-    | "application-systems-development"
     | "business-solutions"
     | "online-support";
   icon: LucideIcon;
   title: string;
   description: string;
   value:
+    | "application-systems-development"
     | "content-creation"
     | "digital-marketing"
     | "seo"
@@ -34,12 +35,19 @@ export type TSector = {
     | "video-production"
     | "graphic-design"
     | "ui-ux-design"
-    | "application-systems-development"
     | "business-solutions"
     | "online-support";
 };
 
 export const sectors: TSector[] = [
+  {
+    _id: "application-systems-development",
+    icon: Code2,
+    title: "Application & Systems Development",
+    description:
+      "Custom software solutions including web, desktop, and mobile app development with scalable architectures.",
+    value: "application-systems-development",
+  },
   {
     _id: "content-creation",
     icon: PenLine,
@@ -95,14 +103,6 @@ export const sectors: TSector[] = [
     description:
       "User-focused interface design that blends aesthetics with functionality for seamless digital experiences.",
     value: "ui-ux-design",
-  },
-  {
-    _id: "application-systems-development",
-    icon: Code2,
-    title: "Application & Systems Development",
-    description:
-      "Custom software solutions including web, desktop, and mobile app development with scalable architectures.",
-    value: "application-systems-development",
   },
   {
     _id: "business-solutions",
