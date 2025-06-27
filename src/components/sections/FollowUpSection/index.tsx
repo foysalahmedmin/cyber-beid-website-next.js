@@ -18,21 +18,13 @@ const FollowUpSection = () => {
             </Title>
           </SectionTitle>
           <div className="flex items-center gap-6">
-            <Link href="/contact">
-              <Button
-                asChild={true}
-                className="hover:bg-primary uppercase"
-                size="lg"
-              >
-                <span>Build a project with us</span>
+            <Link href="/services">
+              <Button asChild={true} size="lg">
+                <span>Explore Services</span>
               </Button>
             </Link>
             <Link href="/contact">
-              <Button
-                asChild={true}
-                className="hover:bg-primary uppercase"
-                size="lg"
-              >
+              <Button asChild={true} size="lg" variant="outline">
                 <span>Build a project with us</span>
               </Button>
             </Link>

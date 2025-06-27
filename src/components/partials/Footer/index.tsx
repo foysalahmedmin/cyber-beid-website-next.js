@@ -13,13 +13,13 @@ const data = [
       },
       {
         type: "link",
-        text: "+880 195 060 1811",
-        href: "tel:+8801950601811",
+        text: "+64 28 470 0533",
+        href: "tel:+64284700533",
       },
       {
         type: "link",
-        text: "CyberBeidnyc@gmail.com",
-        href: "mailto:CyberBeidnyc@gmail.com",
+        text: "cyberbeid@gmail.com",
+        href: "mailto:cyberbeid@gmail.com",
       },
     ],
   },
@@ -77,9 +77,14 @@ const data = [
 const links = [
   {
     type: "link",
-    text: "Leaderships",
-    href: "/leaderships",
+    text: "About",
+    href: "/about",
   },
+  // {
+  //   type: "link",
+  //   text: "Leaderships",
+  //   href: "/leaderships",
+  // },
   {
     type: "link",
     text: "Services",
@@ -114,17 +119,17 @@ const links = [
 const socials = [
   {
     text: "Facebook",
-    href: "https://www.facebook.com/CyberBeidinc",
+    href: "https://www.facebook.com/cyberbeid",
     target: "_blank",
   },
   {
     text: "Linkedin",
-    href: "https://www.linkedin.com/CyberBeidinc",
+    href: "https://www.linkedin.com/cyberbeid",
     target: "_blank",
   },
   {
     text: "Instagram",
-    href: "https://www.instagram.com/CyberBeidinc",
+    href: "https://www.instagram.com/cyberbeid",
     target: "_blank",
   },
 ];
@@ -153,13 +158,13 @@ const Footer = () => {
               </div>
             </Link>
             <div className="flex flex-wrap gap-4">
-              <Link target="_blank" href="tel:+8801950601811">
-                <Button className="foreground" size="lg">
-                  <span>+880 195 060 1811</span>
+              <Link target="_blank" href="tel:+64284700533">
+                <Button size="lg">
+                  <span>+64 28 470 0533</span>
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button className="foreground" size="lg">
+                <Button size="lg" variant="outline">
                   <span>CONTACT US</span>
                 </Button>
               </Link>
@@ -206,9 +211,9 @@ const Footer = () => {
             ©2025
             <Link
               className="primary underline-effect hover:text-primary"
-              href="https://CyberBeidnyc.com"
+              href="https://www.cyberbeid.nz"
             >
-              CyberBeid Inc.
+              CyberBeid.
             </Link>
           </div>
           <div className="flex flex-wrap items-center gap-4 lg:justify-center">

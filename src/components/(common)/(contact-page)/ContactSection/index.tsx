@@ -1,38 +1,22 @@
+import { services } from "@/assets/data/services";
 import { Button } from "@/components/ui/Button";
 import { FormControl } from "@/components/ui/FormControl";
 import Link from "next/link";
-const services = [
-  { value: "", label: "Select" },
-  { value: "Construction", label: "Construction" },
-  { value: "Pre-Construction Services", label: "Pre-Construction Services" },
-  { value: "Design - Build", label: "Design - Build" },
-  { value: "Lump-Sum Contracting", label: "Lump-Sum Contracting" },
-];
-const regions = [
-  { value: "", label: "Select" },
-  { value: "Alaska", label: "Alaska" },
-  { value: "Midwest", label: "Midwest" },
-  { value: "Northwest", label: "Northwest" },
-  { value: "North Central", label: "North Central" },
-  { value: "Northeast", label: "Northeast" },
-  { value: "Pacific Islands Southwest", label: "Pacific Islands Southwest" },
-  { value: "South Central", label: "South Central" },
-  { value: "Southeast", label: "Southeast" },
-];
+
 const locations = [
   {
     type: "text",
-    text: "95-28 147th Place, Queens, NY 11435, United States",
+    text: "Wellington, New Zealand",
   },
   {
     type: "link",
-    text: "+1 (646) 392-5450",
-    href: "tel:+16463925450",
+    text: "+64 28 470 0533",
+    href: "tel:+64284700533",
   },
   {
     type: "link",
-    text: "CyberBeidnyc@gmail.com",
-    href: "mailto:CyberBeidnyc@gmail.com",
+    text: "cyberbeid@gmail.com",
+    href: "mailto:cyberbeid@gmail.com",
   },
 ];
 const ContactSection = () => {
@@ -44,7 +28,7 @@ const ContactSection = () => {
             <h2 className="text-4xl">Our location </h2>
             <div>
               <strong className="mb-4 block font-medium uppercase">
-                New York
+                New Zealand
               </strong>
               <ul>
                 {locations.map((item, index) => (
@@ -74,21 +58,29 @@ const ContactSection = () => {
                     <span className="block">Select Inquiry</span>
                     <FormControl as="select">
                       {services?.map((service) => (
-                        <option key={service.value} value={service.value}>
-                          {service.label}
+                        <option key={service._id} value={service._id}>
+                          {service?.title}
                         </option>
                       ))}
                     </FormControl>
                   </label>
                   <label className="w-full space-y-2">
-                    <span className="block">Select Region </span>
-                    <FormControl as="select">
-                      {regions?.map((region) => (
-                        <option key={region.value} value={region.value}>
-                          {region.label}
-                        </option>
-                      ))}
-                    </FormControl>
+                    <span className="block">Country </span>
+                    <FormControl
+                      as="input"
+                      type="text"
+                      placeholder="Country"
+                      name="country"
+                    />
+                  </label>
+                  <label className="w-full space-y-2">
+                    <span className="block">Region </span>
+                    <FormControl
+                      as="input"
+                      type="text"
+                      placeholder="Region"
+                      name="region"
+                    />
                   </label>
                   <label className="w-full space-y-2">
                     <span className="block">First Name </span>
@@ -96,6 +88,7 @@ const ContactSection = () => {
                       as="input"
                       type="text"
                       placeholder="First Name"
+                      name="first-name"
                     />
                   </label>
                   <label className="w-full space-y-2">
@@ -104,6 +97,7 @@ const ContactSection = () => {
                       as="input"
                       type="text"
                       placeholder="Last Name"
+                      name="last-name"
                     />
                   </label>
                   <label className="w-full space-y-2">
@@ -112,7 +106,7 @@ const ContactSection = () => {
                       as="input"
                       type="tel"
                       placeholder="Phone Number"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      name="phone"
                     />
                   </label>
                   <label className="w-full space-y-2">
@@ -121,6 +115,7 @@ const ContactSection = () => {
                       as="input"
                       type="email"
                       placeholder="Email Address"
+                      name="email"
                     />
                   </label>
                   <label className="w-full space-y-2 lg:col-span-2">
@@ -130,11 +125,12 @@ const ContactSection = () => {
                       className="primary h-auto py-2"
                       placeholder="Description"
                       rows={4}
+                      name="description"
                     />
                   </label>
                 </div>
                 <div className="mt-6 md:mt-8">
-                  <Button className="foreground" variant="outline" size="lg">
+                  <Button variant="outline" size="lg">
                     <span>SEND</span>
                   </Button>
                 </div>

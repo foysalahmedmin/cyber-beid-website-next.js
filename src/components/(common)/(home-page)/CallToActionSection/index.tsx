@@ -20,9 +20,14 @@ const CallToActionSection = () => {
               turn great ideas into reality.
             </Description>
           </SectionTitle>
-          <div>
-            <Link href="/contact" className="inline-block">
+          <div className="inline-flex flex-wrap items-center justify-center gap-4">
+            <Link href="/services">
               <Button asChild={true} size="lg">
+                <span>Explore Our Services</span>
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button asChild={true} size="lg" variant="outline">
                 <span>CONTACT US</span>
               </Button>
             </Link>

@@ -278,7 +278,7 @@ export const projects: TProject[] = [
     title: "Health & Wellness Video Series",
     description: "Educational video content production for healthcare provider",
     thumbnail:
-      "https://images.unsplash.com/photo-1581591524425-c7c0970e7b1a?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=800&h=600&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",

@@ -82,9 +82,14 @@ const AboutSection = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="flex justify-start">
-              <Link href="/contact">
+            <div className="flex flex-wrap items-center justify-start gap-4">
+              <Link href="/about">
                 <Button asChild={true} size="lg">
+                  <span>More About Us</span>
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button asChild={true} size="lg" variant="outline">
                   <span>Contact With Us</span>
                 </Button>
               </Link>

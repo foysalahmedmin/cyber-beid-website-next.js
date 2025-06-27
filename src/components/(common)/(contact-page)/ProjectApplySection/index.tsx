@@ -110,7 +110,7 @@ const ProjectApplySection = () => {
                 </Link>
               </small>
               <div className="mt-6 md:mt-8">
-                <Button className="foreground" variant="outline" size="lg">
+                <Button variant="outline" size="lg">
                   <span>SEND</span>
                 </Button>
               </div>

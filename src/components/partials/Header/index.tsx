@@ -24,7 +24,8 @@ type HeaderProps = {
 const ALL_PAGE_NAV_LINKS: NavLink[] = [
   { href: "/", name: "Home" },
   { href: "/services", name: "Services" },
-  { href: "/leaderships", name: "Leaderships" },
+  { href: "/about", name: "About" },
+  // { href: "/leaderships", name: "Leaderships" },
   { href: "/projects", name: "Projects" },
   { href: "/blogs", name: "Blogs" },
 ] as const;
@@ -33,7 +34,7 @@ const HOME_PAGE_NAV_LINKS: NavLink[] = [
   { href: "#home", name: "Home" },
   { href: "#services", name: "Services" },
   { href: "#about", name: "About" },
-  { href: "#leaderships", name: "Leaderships" },
+  // { href: "#leaderships", name: "Leaderships" },
   { href: "#features", name: "Features" },
   { href: "#projects", name: "Projects" },
   { href: "#blogs", name: "Blogs" },
@@ -43,9 +44,10 @@ const VISIBLE_SECTIONS = [
   "home",
   "services",
   "about",
-  "leaderships",
+  // "leaderships",
   "features",
   "projects",
+  "blogs",
 ];
 
 // Custom hook for mobile menu
@@ -227,8 +229,8 @@ const MobileNavigation: React.FC<{
 );
 
 const CTAButton: React.FC = () => (
-  <Link href="#contact" aria-label="Get an estimate">
-    <Button asChild>
+  <Link href="/contact">
+    <Button asChild={true} variant="outline">
       <span>GET AN ESTIMATE</span>
     </Button>
   </Link>

@@ -66,9 +66,9 @@ export const timelines: TTimeline[] = [
   {
     _id: 2,
     year: "2018",
-    title: "Mijanur Rahman, the President & CEO of CyberBeid Inc.",
+    title: "Mijanur Rahman, the President & CEO of CyberBeid.",
     description:
-      "Mijanur Rahman, the President & CEO of CyberBeid Inc., founded the company in 2018 to build on the foundation laid by his father, Abul Kalam.",
+      "Mijanur Rahman, the President & CEO of CyberBeid., founded the company in 2018 to build on the foundation laid by his father, Abul Kalam.",
     image: "/images/(history-page)/8.png",
   },
   {

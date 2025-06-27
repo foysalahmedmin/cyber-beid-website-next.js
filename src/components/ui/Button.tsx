@@ -7,12 +7,9 @@ import type {
   ComponentPropsWithoutRef,
   ElementRef,
   ElementType,
-  RefObject} from "react";
-import React, {
-  forwardRef,
-  useImperativeHandle,
-  useRef,
+  RefObject,
 } from "react";
+import React, { forwardRef, useImperativeHandle, useRef } from "react";
 
 type SupportedElements = "button" | "input" | "textarea" | "select";
 
@@ -35,7 +32,7 @@ const buttonVariants = cva(
         gradient:
           "bg-gradient-to-r from-primary to-secondary text-white border-transparent",
         outline:
-          "border hover:border-accent hover:text-accent hover:bg-transparent bg-accent text-accent-foreground",
+          "border hover:border-accent hover:text-accent text-accent-foreground",
         ghost:
           "bg-transparent text-accent hover:bg-accent/10 hover:text-accent-foreground",
         link: "text-blue-500 hover:text-blue-700 underline",
@@ -66,7 +63,7 @@ const buttonVariants = cva(
       shape: "default",
       loading: "center",
     },
-  }
+  },
 );
 
 const Button = forwardRef<
@@ -88,13 +85,13 @@ const Button = forwardRef<
       isAnimation = false,
       ...props
     },
-    ref
+    ref,
   ) => {
     const buttonRef = useRef<HTMLButtonElement | null>(null);
 
     useImperativeHandle(
       ref,
-      () => buttonRef.current as ElementRef<SupportedElements>
+      () => buttonRef.current as ElementRef<SupportedElements>,
     );
     useRippleEffect(buttonRef as RefObject<HTMLElement>, !isAnimation);
 
@@ -113,13 +110,13 @@ const Button = forwardRef<
           }),
           {
             [cn("loading", loadingClassName)]: isLoading,
-          }
+          },
         )}
         ref={buttonRef}
         {...props}
       />
     );
-  }
+  },
 );
 
 Button.displayName = "Button";

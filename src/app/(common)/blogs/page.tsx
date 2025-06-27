@@ -33,7 +33,7 @@ const BlogsPage = () => {
               <div className="aspect-[4/3] w-full overflow-hidden rounded-xl xl:col-span-2">
                 <Image
                   className="bg-muted size-full object-cover object-center"
-                  src="/images/partials/blog-thumbnail.png"
+                  src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=800&h=600&fit=crop"
                   alt="Blog Thumbnail"
                   height={750}
                   width={1000}

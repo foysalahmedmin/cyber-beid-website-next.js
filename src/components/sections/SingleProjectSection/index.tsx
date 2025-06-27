@@ -23,7 +23,7 @@ const SingleProjectSection = ({
       <div className="container">
         <SectionTitle className="">
           {<Subtitle>Feature Project</Subtitle>}
-          {<Title>{project?.title}</Title>}
+          {<Title>{project?.title || "Unknown"}</Title>}
           {
             <Description className="text-xl md:text-3xl">
               {project?.description}

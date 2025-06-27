@@ -11,7 +11,7 @@ const QuickContactSection = () => {
           <Phone className="text-primary my-1 size-6" />
           <div>
             <strong className="block text-xl font-normal">
-              +880 195 060 1811
+              +64 28 470 0533
             </strong>
             <p>Call us now for more details</p>
           </div>

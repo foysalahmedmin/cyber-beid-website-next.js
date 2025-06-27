@@ -5,15 +5,15 @@ import SplitSection from "@/components/sections/SplitSection";
 
 const metrics = [
   {
-    title: "100+",
+    title: "50+",
     description: "Projects done",
   },
   {
-    title: "20+",
+    title: "0.5+",
     description: "Years of experience",
   },
   {
-    title: "30+",
+    title: "10+",
     description: "Team members",
   },
 ];
@@ -25,11 +25,12 @@ const LeadershipsPage = () => {
         subtitle="Leaderships"
         title="The champions of a construction revolution"
         description="Mercy's leaders come from all walks of life and business. What they share: a persistent drive to explore and change the way the world builds. Meet the people who lead our quest for better."
+        image="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=12000&q=80"
         metrics={metrics}
       />
       <SplitSection
         className="bg-muted"
-        title="Abul Kalam"
+        title="Foysal Ahmed"
         description={
           <div className="text-xl">
             Chief People Officer
@@ -44,11 +45,11 @@ const LeadershipsPage = () => {
             detail, and a commitment to exceeding expectations.
           </div>
         }
-        image="/images/leaderships/1.png"
+        image="/images/leaderships/foysalahmedmin.png"
         links={[
           {
             text: "Read More",
-            url: "/leaderships/abul-kalam",
+            url: "/leaderships/foysalahmedmin",
           },
         ]}
       />
