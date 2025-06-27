@@ -35,7 +35,7 @@ const FeaturesSection = () => {
                 <div
                   key={feature?._id}
                   className={cn(
-                    "max-w-60 space-y-4",
+                    "intersection-fade-in max-w-60 space-y-4",
                     alignClassMD,
                     alignClassLG,
                   )}

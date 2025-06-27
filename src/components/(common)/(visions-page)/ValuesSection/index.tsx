@@ -26,7 +26,7 @@ const ValuesSection = () => {
               <div
                 key={item?._id}
                 className={cn(
-                  "flex max-w-80 flex-col gap-y-4",
+                  "intersection-fade-in flex max-w-80 flex-col gap-y-4",
                   alignClassMD,
                   alignClassLG,
                 )}

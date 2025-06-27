@@ -1,5 +1,4 @@
 import { points } from "@/assets/data/visions";
-import LeadershipsSection from "@/components/(common)/(visions-page)/LeadershipsSection";
 import ValuesSection from "@/components/(common)/(visions-page)/ValuesSection";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
@@ -34,7 +33,7 @@ const VisionsPage = async () => {
         description="These values shape how we approach every project and client relationship. Whether building high-performance web platforms, launching impactful campaigns, or streamlining business systems, we prioritize excellence, open communication, and long-term success for our partners."
         image="/images/(visions-page)/core-values.png"
       />
-      <LeadershipsSection />
+      {/* <LeadershipsSection /> */}
       <FollowUpSection />
     </main>
   );

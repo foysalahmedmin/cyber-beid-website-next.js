@@ -9,9 +9,9 @@ const CallToActionSection = () => {
       style={{
         backgroundImage: "url('/images/(home-page)/call-to-action-bg.png')",
       }}
-      className="dark text-foreground bg-cover bg-center"
+      className="dark intersection-fade-in text-foreground bg-cover bg-center"
     >
-      <div className="bg-background/50 intersection-fade-in py-16 md:py-24">
+      <div className="bg-background/50 py-16 md:py-24">
         <div className="container text-center">
           <SectionTitle variant="center">
             <Title>Build with us</Title>

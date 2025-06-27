@@ -5,13 +5,16 @@ import { useEffect } from "react";
 const useIntersectionObserver = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries, obs) => {
+      (entries) => {
         entries.forEach((entry) => {
           const target = entry.target;
 
           if (entry.isIntersecting) {
-            target.classList.add("animate-fade-in");
-            obs.unobserve(target);
+            target.classList.add("opacity-100", "translate-y-0");
+            target.classList.remove("opacity-0", "translate-y-20");
+          } else {
+            target.classList.remove("opacity-100", "translate-y-0");
+            target.classList.add("opacity-0", "translate-y-20");
           }
         });
       },
@@ -28,15 +31,33 @@ const useIntersectionObserver = () => {
       });
     };
 
-    // Observe immediately
+    // Initial observation
     observeNewElements();
 
-    // Set up a timer to periodically check for new elements
-    const interval = setInterval(observeNewElements, 100);
+    // Watch for DOM changes efficiently
+    const mutationObserver = new MutationObserver((mutations) => {
+      let shouldObserve = false;
+
+      mutations.forEach((mutation) => {
+        if (mutation.type === "childList" && mutation.addedNodes.length > 0) {
+          shouldObserve = true;
+        }
+      });
+
+      if (shouldObserve) {
+        // Small delay to ensure DOM is settled
+        setTimeout(observeNewElements, 50);
+      }
+    });
+
+    mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
 
     return () => {
       observer.disconnect();
-      clearInterval(interval);
+      mutationObserver.disconnect();
     };
   }, []);
 };

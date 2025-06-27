@@ -32,7 +32,7 @@ const PageHeaderSection = ({
       {image && (
         <div
           style={{ backgroundImage: `url('${image}')` }}
-          className="bg-muted aspect-[2/1] w-full bg-cover bg-center bg-no-repeat lg:aspect-auto lg:h-[60vh]"
+          className="bg-muted intersection-fade-in aspect-[2/1] w-full bg-cover bg-center bg-no-repeat lg:aspect-auto lg:h-[60vh]"
         />
       )}
       {Metrics?.length > 0 && (

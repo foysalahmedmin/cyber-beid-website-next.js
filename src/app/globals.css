@@ -135,10 +135,8 @@
 @layer utilities {
   @import "../assets/styles/utilities/loading.css";
 
-  .intersection-fade-up {
-    transition:
-      opacity 0.5s ease-out,
-      transform 0.5s ease-out;
+  .intersection-fade-in {
+    @apply transition-all duration-900;
   }
 
   .underline-effect,
