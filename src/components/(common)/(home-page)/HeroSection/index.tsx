@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="dark text-foreground bg-background/25 relative flex aspect-video w-full items-center py-24"
+      className="dark text-foreground bg-background/25 relative flex aspect-video w-full items-center py-24 xl:aspect-auto xl:h-screen"
     >
       {/* <IframeVideScreen
         src="https://www.youtube.com/embed/ldnEy7tj8Ho?autoplay=1&mute=1&controls=0&rel=0&playsinline=1&loop=1&playlist=ldnEy7tj8Ho&modestbranding=1&enablejsapi=1"
