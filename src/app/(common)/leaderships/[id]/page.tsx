@@ -25,8 +25,8 @@ const LeadershipsDetailsPage = async ({ params }: Props) => {
       <section className="pt-16">
         <div className="container">
           <div className="grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16 xl:grid-cols-3 xl:gap-24">
-            <div className="w-ful relative aspect-[5/4] lg:-mb-24">
-              <img src={image} alt={name} />
+            <div className="relative aspect-[4/5] w-full border shadow lg:-mb-24">
+              <img className="size-full object-cover" src={image} alt={name} />
             </div>
             <div className="space-y-8 pb-16 md:space-y-12 lg:py-12">
               <Link
@@ -75,13 +75,16 @@ const LeadershipsDetailsPage = async ({ params }: Props) => {
             </div>
           </div>
         </div>
-        <div className="bg-muted py-16 md:py-24 lg:pt-48">
-          <div className="container max-w-5xl">
-            {description
-              ?.split("\n")
-              .map((paragraph, index) =>
-                paragraph ? <p key={index}>{paragraph}</p> : <br key={index} />,
-              )}
+        <div className="bg-muted py-16 md:py-24 lg:pt-40">
+          <div className="container max-w-7xl">
+            <div className="w-full">
+              <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
+                <div
+                  className="text-foreground font-sans"
+                  dangerouslySetInnerHTML={{ __html: description || "" }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

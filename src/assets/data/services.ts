@@ -1,6 +1,5 @@
 import {
   Briefcase,
-  Clapperboard,
   Code2,
   Headphones,
   LayoutDashboard,
@@ -8,6 +7,7 @@ import {
   Megaphone,
   Paintbrush,
   PenLine,
+  Search,
   UserPlus,
 } from "lucide-react";
 
@@ -21,7 +21,7 @@ export type TService = {
   details: {
     thumbnail: string;
     title: string;
-    description: string;
+    description: string; // HTML String and more details.
     links?: {
       text?: string;
       url?: string;
@@ -53,8 +53,44 @@ export const services: TService[] = [
     details: {
       thumbnail: "/images/services/content-creation-details.png",
       title: "Content Creation",
-      description:
-        "We create comprehensive content solutions including blog articles, social media posts, video scripts, and product descriptions. Our team specializes in brand-aligned storytelling, SEO optimization, and audience engagement strategies tailored to your specific business goals and platform requirements.",
+      description: `
+        <div class="content-details">
+          <h3>Comprehensive Content Solutions for Every Platform</h3>
+          <p>We create <strong>comprehensive content solutions</strong> that drive engagement and conversions across all digital channels. Our expert team specializes in developing <em>brand-aligned storytelling</em>, implementing <strong>advanced SEO optimization techniques</strong>, and crafting audience engagement strategies that are specifically tailored to your unique business goals and platform requirements.</p>
+          
+          <h4>What Sets Our Content Apart:</h4>
+          <ul>
+            <li><strong>Strategic Brand Alignment:</strong> Every piece of content reinforces your brand voice and messaging consistency</li>
+            <li><strong>Data-Driven Approach:</strong> We use analytics and audience insights to inform content decisions</li>
+            <li><strong>Multi-Format Expertise:</strong> From long-form articles to micro-content for social media</li>
+            <li><strong>SEO Integration:</strong> Content optimized for search visibility without sacrificing readability</li>
+          </ul>
+
+          <h4>Our Content Services Include:</h4>
+          <div class="service-grid">
+            <div class="service-item">
+              <h5>Blog Articles & Long-Form Content</h5>
+              <p>In-depth, research-backed articles that establish thought leadership and drive organic traffic</p>
+            </div>
+            <div class="service-item">
+              <h5>Social Media Content</h5>
+              <p>Platform-specific content designed for maximum engagement and shareability</p>
+            </div>
+            <div class="service-item">
+              <h5>Video Scripts & Storyboards</h5>
+              <p>Compelling narratives for video content across all platforms and formats</p>
+            </div>
+            <div class="service-item">
+              <h5>Product Descriptions</h5>
+              <p>Persuasive copy that highlights benefits and drives conversions</p>
+            </div>
+          </div>
+
+          <blockquote>
+            <p>"Quality content is not about quantity—it's about creating valuable experiences that resonate with your audience and drive meaningful engagement."</p>
+          </blockquote>
+        </div>
+      `,
       links: [
         { text: "Content Portfolio", url: "/portfolio/content" },
         { text: "Case Studies", url: "/case-studies/content" },
@@ -97,8 +133,49 @@ export const services: TService[] = [
     details: {
       thumbnail: "/images/services/digital-marketing-details.png",
       title: "Digital Marketing",
-      description:
-        "Our full-spectrum services include SEO optimization, social media management, email campaigns, influencer collaborations, and performance advertising across Google, Facebook, Instagram, YouTube, LinkedIn and programmatic platforms. We build integrated strategies targeting your ideal audience segments throughout their journey.",
+      description: `
+        <div class="digital-marketing-details">
+          <h3>Full-Spectrum Digital Marketing Excellence</h3>
+          <p>Our <strong>comprehensive digital marketing solutions</strong> encompass every aspect of online marketing, from <em>search engine optimization</em> to <strong>performance advertising</strong> across all major platforms. We build integrated strategies that target your ideal audience segments throughout their entire customer journey.</p>
+
+          <h4>Complete Marketing Ecosystem:</h4>
+          <div class="marketing-services">
+            <div class="service-category">
+              <h5>🎯 Search Engine Optimization (SEO)</h5>
+              <p>Technical SEO, content optimization, and link building strategies that drive organic visibility and qualified traffic</p>
+            </div>
+            <div class="service-category">
+              <h5>📱 Social Media Management</h5>
+              <p>Content creation, community management, and social advertising across Facebook, Instagram, LinkedIn, Twitter, and TikTok</p>
+            </div>
+            <div class="service-category">
+              <h5>📧 Email Marketing Campaigns</h5>
+              <p>Automated nurture sequences, segmentation strategies, and performance optimization for maximum ROI</p>
+            </div>
+            <div class="service-category">
+              <h5>🤝 Influencer Collaborations</h5>
+              <p>Strategic partnerships with industry influencers to amplify brand reach and credibility</p>
+            </div>
+            <div class="service-category">
+              <h5>💰 Performance Advertising</h5>
+              <p>Google Ads, Facebook Ads, LinkedIn Ads, YouTube advertising, and programmatic display campaigns</p>
+            </div>
+          </div>
+
+          <h4>Platform Expertise:</h4>
+          <ul>
+            <li><strong>Google:</strong> Search, Display, Shopping, YouTube, and Discovery campaigns</li>
+            <li><strong>Meta:</strong> Facebook and Instagram advertising with advanced targeting</li>
+            <li><strong>LinkedIn:</strong> B2B focused campaigns for professional audiences</li>
+            <li><strong>Programmatic:</strong> Automated buying across premium ad exchanges</li>
+          </ul>
+
+          <div class="results-highlight">
+            <h4>What You Can Expect:</h4>
+            <p>Our integrated approach ensures <strong>consistent messaging</strong> while leveraging each platform's unique strengths. We focus on <em>maximizing reach and conversions</em> through strategic budget allocation, continuous optimization, and data-driven decision making.</p>
+          </div>
+        </div>
+      `,
       links: [
         { text: "Marketing Packages", url: "/packages/marketing" },
         { text: "Ad Portfolio", url: "/portfolio/ads" },
@@ -111,7 +188,7 @@ export const services: TService[] = [
           _id: "dm-1",
           title: "Integrated Channel Strategy",
           description:
-            "We design synchronized campaigns across search, social, email, content networks, and paid advertising platforms. Our channel integration ensures consistent messaging while leveraging each platform&rsquo;s unique strengths to maximize reach and conversions.",
+            "We design synchronized campaigns across search, social, email, content networks, and paid advertising platforms. Our channel integration ensures consistent messaging while leveraging each platform's unique strengths to maximize reach and conversions.",
           links: [{ text: "Channel Strategy", url: "/strategy/channels" }],
         },
         {
@@ -138,18 +215,200 @@ export const services: TService[] = [
     },
   },
   {
+    _id: "seo",
+    icon: Search,
+    title: "Search Engine Optimization (SEO)",
+    description:
+      "Data-driven SEO strategies that increase organic visibility, drive qualified traffic, and accelerate revenue growth.",
+    thumbnail: "/images/services/seo.png",
+    link: "/services/seo",
+    details: {
+      thumbnail: "/images/services/seo-details.png",
+      title: "Enterprise-Grade SEO Solutions",
+      description: `
+        <div class="seo-details">
+          <h3>Scientific SEO That Delivers Results</h3>
+          <p>We engineer <strong>holistic SEO ecosystems</strong> that combine technical excellence, content intelligence, and authoritative backlink profiles. Our scientific approach delivers <em>sustainable rankings</em> in competitive SERPs while future-proofing your website against algorithm updates.</p>
+
+          <div class="seo-methodology">
+            <h4>Our Proven SEO Methodology:</h4>
+            <div class="methodology-steps">
+              <div class="step">
+                <h5>🔍 1. Comprehensive Technical Audit</h5>
+                <p>We analyze your website's technical foundation, identifying crawl issues, indexation problems, and Core Web Vitals optimization opportunities</p>
+              </div>
+              <div class="step">
+                <h5>📊 2. Data-Driven Keyword Research</h5>
+                <p>Using advanced tools and behavioral data, we identify high-intent commercial queries throughout the buyer journey</p>
+              </div>
+              <div class="step">
+                <h5>📝 3. Content Strategy & Optimization</h5>
+                <p>AI-augmented content creation aligned with E-E-A-T principles, featuring topical authority clusters and entity optimization</p>
+              </div>
+              <div class="step">
+                <h5>🔗 4. Authority Building Campaign</h5>
+                <p>Strategic digital PR and authoritative backlink acquisition through data partnerships and competitive gap analysis</p>
+              </div>
+              <div class="step">
+                <h5>📈 5. Performance Monitoring</h5>
+                <p>Machine learning-powered rank tracking with predictive analytics and ROI attribution modeling</p>
+              </div>
+            </div>
+          </div>
+
+          <h4>Advanced SEO Capabilities:</h4>
+          <ul>
+            <li><strong>Technical SEO:</strong> Site architecture optimization, Core Web Vitals enhancement, and schema markup implementation</li>
+            <li><strong>Content Intelligence:</strong> Semantic search optimization and search demand forecasting</li>
+            <li><strong>Local SEO:</strong> Geo-specific optimization with GMB management and localized content hubs</li>
+            <li><strong>Enterprise SEO:</strong> Large-scale website optimization and international SEO strategies</li>
+          </ul>
+
+          <div class="results-section">
+            <h4>What Sets Us Apart:</h4>
+            <blockquote>
+              <p>We don't just optimize for search engines—we optimize for search <em>intelligence</em>. Our approach combines traditional SEO best practices with cutting-edge AI and machine learning techniques to deliver sustainable, long-term results.</p>
+            </blockquote>
+          </div>
+
+          <div class="tools-technologies">
+            <h4>Tools & Technologies We Use:</h4>
+            <p><strong>Analytics:</strong> Google Analytics 4, Google Search Console, SEMrush, Ahrefs, Screaming Frog</p>
+            <p><strong>Content Optimization:</strong> Surfer SEO, Clearscope, MarketMuse</p>
+            <p><strong>Technical SEO:</strong> Lighthouse, PageSpeed Insights, GTMetrix</p>
+          </div>
+        </div>
+      `,
+      links: [
+        { text: "View Case Studies", url: "/case-studies/seo" },
+        { text: "SEO Audit Sample", url: "/resources/seo-audit-sample.pdf" },
+      ],
+    },
+    points: {
+      thumbnail: "/images/services/seo-points.png",
+      list: [
+        {
+          _id: "technical-seo",
+          title: "Technical Foundation",
+          description:
+            "Site architecture optimization, Core Web Vitals enhancement, crawl efficiency maximization, and indexation management with comprehensive schema markup implementation.",
+          links: [
+            {
+              text: "Technical Checklist",
+              url: "/resources/technical-seo-checklist",
+            },
+          ],
+        },
+        {
+          _id: "keyword-strategy",
+          title: "Intent-Driven Keyword Strategy",
+          description:
+            "Scientifically validated keyword mapping using behavioral data and semantic search patterns to capture high-intent commercial queries throughout the buyer journey.",
+          links: [
+            {
+              text: "Keyword Research Template",
+              url: "/resources/keyword-template",
+            },
+          ],
+        },
+        {
+          _id: "content-optimization",
+          title: "AI-Augmented Content Optimization",
+          description:
+            "LLM-enhanced content creation aligned with E-E-A-T principles, featuring topical authority clusters, entity optimization, and search demand forecasting.",
+          links: [{ text: "Content Samples", url: "/portfolio/content" }],
+        },
+        {
+          _id: "backlink-engineering",
+          title: "Authority Building",
+          description:
+            "Strategic digital PR campaigns and authoritative backlink acquisition through data partnerships, resource amplification, and competitive gap exploitation.",
+          links: [
+            { text: "Link Building Report", url: "/resources/link-building" },
+          ],
+        },
+        {
+          _id: "local-seo",
+          title: "Hyperlocal Domination",
+          description:
+            "Geo-specific SEO with GMB optimization, localized content hubs, and proximity-based ranking signals for multi-location enterprises.",
+          links: [{ text: "Local SEO Kit", url: "/resources/local-seo-kit" }],
+        },
+        {
+          _id: "seo-analytics",
+          title: "Predictive Analytics",
+          description:
+            "Machine learning-powered rank tracking, SERP feature forecasting, and ROI attribution modeling with custom dashboards integrating GA4, GSC, and CRM data.",
+          links: [{ text: "Analytics Demo", url: "/demo/seo-dashboard" }],
+        },
+      ],
+    },
+  },
+  {
     _id: "lead-generation",
     icon: UserPlus,
     title: "Lead Generation",
     description:
-      "Our lead generation service helps you attract and convert potential customers through a combination of landing pages, email funnels, paid ads, and outreach campaigns. We use data-driven techniques to target your ideal audience, build interest, and nurture leads until they're ready to buy. It&rsquo;s not just about getting leads—it&rsquo;s about getting the right ones.",
+      "Our lead generation service helps you attract and convert potential customers through a combination of landing pages, email funnels, paid ads, and outreach campaigns. We use data-driven techniques to target your ideal audience, build interest, and nurture leads until they're ready to buy. It's not just about getting leads—it's about getting the right ones.",
     thumbnail: "/images/services/lead-generation.png",
     link: "/services/lead-generation/",
     details: {
       thumbnail: "/images/services/lead-generation-details.png",
       title: "Lead Generation",
-      description:
-        "We implement full-funnel lead generation solutions including landing page optimization, lead capture forms, email nurturing sequences, and targeted outreach campaigns. Our focus is on attracting marketing-qualified leads (MQLs) and converting them to sales-ready prospects.",
+      description: `
+        <div class="lead-generation-details">
+          <h3>Strategic Lead Generation That Converts</h3>
+          <p>We implement <strong>full-funnel lead generation solutions</strong> designed to attract, nurture, and convert high-quality prospects into sales-ready leads. Our comprehensive approach combines cutting-edge technology with proven marketing strategies to deliver <em>marketing-qualified leads (MQLs)</em> that your sales team can confidently pursue.</p>
+
+          <h4>Complete Lead Generation Ecosystem:</h4>
+          <div class="lead-gen-components">
+            <div class="component">
+              <h5>🎯 Precision Targeting</h5>
+              <p>Advanced audience segmentation using demographic, behavioral, and intent data to reach your ideal customer profile</p>
+            </div>
+            <div class="component">
+              <h5>📄 Landing Page Optimization</h5>
+              <p>High-converting landing pages with A/B tested elements, compelling copy, and optimized conversion paths</p>
+            </div>
+            <div class="component">
+              <h5>📧 Email Nurturing Sequences</h5>
+              <p>Automated drip campaigns that educate prospects and guide them through the decision-making process</p>
+            </div>
+            <div class="component">
+              <h5>🎨 Lead Magnets & Content Offers</h5>
+              <p>Valuable resources like whitepapers, webinars, and tools that capture contact information</p>
+            </div>
+            <div class="component">
+              <h5>📞 Targeted Outreach Campaigns</h5>
+              <p>Personalized email and LinkedIn outreach to decision-makers in your target market</p>
+            </div>
+          </div>
+
+          <h4>Our Lead Generation Process:</h4>
+          <ol>
+            <li><strong>Ideal Customer Profile (ICP) Development:</strong> We analyze your best customers to create detailed buyer personas</li>
+            <li><strong>Multi-Channel Campaign Strategy:</strong> Develop integrated campaigns across paid ads, content marketing, and outreach</li>
+            <li><strong>Lead Capture & Qualification:</strong> Implement forms, chatbots, and qualification frameworks</li>
+            <li><strong>Nurturing & Scoring:</strong> Automated workflows that score and nurture leads based on engagement</li>
+            <li><strong>Sales Handoff:</strong> Seamless transition of qualified leads to your sales team with complete context</li>
+          </ol>
+
+          <div class="results-metrics">
+            <h4>Key Performance Indicators We Track:</h4>
+            <ul>
+              <li><strong>Lead Quality Score:</strong> BANT qualification and fit scoring</li>
+              <li><strong>Conversion Rates:</strong> From visitor to lead to customer</li>
+              <li><strong>Cost Per Lead (CPL):</strong> Optimized across all channels</li>
+              <li><strong>Lead-to-Customer Rate:</strong> Quality over quantity focus</li>
+              <li><strong>Sales Cycle Length:</strong> Time from lead to closed deal</li>
+            </ul>
+          </div>
+
+          <blockquote>
+            <p>"Effective lead generation isn't about casting the widest net—it's about attracting the right prospects who are genuinely interested in your solution and ready to engage with your sales team."</p>
+          </blockquote>
+        </div>
+      `,
       links: [{ text: "Lead Gen Tools", url: "/tools/leadgen" }],
     },
     points: {
@@ -177,58 +436,127 @@ export const services: TService[] = [
       ],
     },
   },
-  {
-    _id: "video-production",
-    icon: Clapperboard,
-    title: "Video Editing Service",
-    description:
-      "We deliver professional video editing solutions tailored to your brand, audience, and message. From social media clips to corporate promos and cinematic storytelling, our editors bring your footage to life with precision, creativity, and consistency.",
-    thumbnail: "/images/services/video-production.png",
-    link: "/services/video-production/",
-    details: {
-      thumbnail: "/images/services/video-production-details.png",
-      title: "Video Editing Service",
-      description:
-        "Our video editing services include everything from basic cuts and transitions to advanced motion graphics, color grading, and sound design. We work closely with your creative vision to produce high-quality video content that aligns with your brand’s identity and communication goals.",
-      links: [{ text: "View Portfolio", url: "/portfolio/videos" }],
-    },
-    points: {
-      thumbnail: "/images/services/video-production-points.png",
-      list: [
-        {
-          _id: "video-1",
-          title: "Cinematic Editing & Storytelling",
-          description:
-            "We craft compelling narratives by combining visuals, pacing, and audio in a way that keeps your audience engaged. Ideal for product launches, brand stories, and promotional content.",
-        },
-        {
-          _id: "video-2",
-          title: "Social Media & Short-Form Content",
-          description:
-            "We produce attention-grabbing edits optimized for platforms like Instagram, TikTok, and YouTube Shorts. Fast-paced, trend-aware, and designed for high engagement.",
-          links: [{ text: "See Social Edits", url: "/examples/social-videos" }],
-        },
-        {
-          _id: "video-3",
-          title: "Motion Graphics & Animation",
-          description:
-            "Enhance your videos with animated logos, titles, lower thirds, and infographics. Our motion designers add visual polish that communicates professionalism and creativity.",
-        },
-        {
-          _id: "video-4",
-          title: "Color Grading & Sound Design",
-          description:
-            "We ensure every frame and every note is polished. Our color grading and sound design process gives your videos a cinematic, broadcast-quality finish.",
-        },
-        {
-          _id: "video-5",
-          title: "Revisions & Collaboration",
-          description:
-            "We work with you iteratively, offering flexible revision rounds and clear communication to ensure the final output aligns perfectly with your expectations.",
-        },
-      ],
-    },
-  },
+  // {
+  //   _id: "video-production",
+  //   icon: Clapperboard,
+  //   title: "Video Editing Service",
+  //   description:
+  //     "We deliver professional video editing solutions tailored to your brand, audience, and message. From social media clips to corporate promos and cinematic storytelling, our editors bring your footage to life with precision, creativity, and consistency.",
+  //   thumbnail: "/images/services/video-production.png",
+  //   link: "/services/video-production/",
+  //   details: {
+  //     thumbnail: "/images/services/video-production-details.png",
+  //     title: "Video Editing Service",
+  //     description: `
+  //       <div class="video-editing-details">
+  //         <h3>Professional Video Editing That Captivates</h3>
+  //         <p>Our <strong>professional video editing services</strong> transform raw footage into compelling visual stories that resonate with your audience. From basic cuts and transitions to <em>advanced motion graphics</em>, <strong>color grading</strong>, and <strong>sound design</strong>, we work closely with your creative vision to produce high-quality video content that perfectly aligns with your brand's identity and communication goals.</p>
+
+  //         <h4>Complete Video Production Pipeline:</h4>
+  //         <div class="video-services">
+  //           <div class="service-tier">
+  //             <h5>🎬 Cinematic & Brand Videos</h5>
+  //             <ul>
+  //               <li>Corporate promotional videos</li>
+  //               <li>Product launch campaigns</li>
+  //               <li>Brand storytelling pieces</li>
+  //               <li>Documentary-style content</li>
+  //               <li>Training and educational videos</li>
+  //             </ul>
+  //           </div>
+  //           <div class="service-tier">
+  //             <h5>📱 Social Media Content</h5>
+  //             <ul>
+  //               <li>Instagram Reels and Stories</li>
+  //               <li>TikTok trend-based content</li>
+  //               <li>YouTube Shorts optimization</li>
+  //               <li>LinkedIn video posts</li>
+  //               <li>Facebook video ads</li>
+  //             </ul>
+  //           </div>
+  //           <div class="service-tier">
+  //             <h5>🎨 Motion Graphics & Animation</h5>
+  //             <ul>
+  //               <li>Animated logos and intros</li>
+  //               <li>Lower thirds and titles</li>
+  //               <li>Data visualization</li>
+  //               <li>Infographic animations</li>
+  //               <li>2D and 3D motion graphics</li>
+  //             </ul>
+  //           </div>
+  //         </div>
+
+  //         <h4>Our Video Editing Expertise:</h4>
+  //         <div class="expertise-areas">
+  //           <div class="expertise">
+  //             <h5>🎯 Strategic Storytelling</h5>
+  //             <p>We craft compelling narratives by combining visuals, pacing, and audio to keep your audience engaged from start to finish</p>
+  //           </div>
+  //           <div class="expertise">
+  //             <h5>🎨 Visual Enhancement</h5>
+  //             <p>Professional color grading, visual effects, and motion graphics that elevate your content's production value</p>
+  //           </div>
+  //           <div class="expertise">
+  //             <h5>🔊 Audio Perfection</h5>
+  //             <p>Crystal-clear sound design, music selection, and audio mixing for broadcast-quality results</p>
+  //           </div>
+  //           <div class="expertise">
+  //             <h5>📊 Platform Optimization</h5>
+  //             <p>Format and aspect ratio optimization for different platforms and viewing contexts</p>
+  //           </div>
+  //         </div>
+
+  //         <h4>Software & Tools We Use:</h4>
+  //         <p><strong>Professional Editing:</strong> Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve</p>
+  //         <p><strong>Motion Graphics:</strong> Adobe After Effects, Cinema 4D, Blender</p>
+  //         <p><strong>Audio Production:</strong> Adobe Audition, Pro Tools, Logic Pro</p>
+  //         <p><strong>Color Grading:</strong> DaVinci Resolve, Adobe SpeedGrade</p>
+
+  //         <div class="collaboration-process">
+  //           <h4>Our Collaborative Process:</h4>
+  //           <p>We believe in <strong>iterative collaboration</strong> throughout the editing process. Our flexible revision system and clear communication channels ensure that the final output perfectly aligns with your vision and expectations. We provide regular updates, preview links, and detailed feedback sessions to keep you involved every step of the way.</p>
+  //         </div>
+  //       </div>
+  //     `,
+  //     links: [{ text: "View Portfolio", url: "/portfolio/videos" }],
+  //   },
+  //   points: {
+  //     thumbnail: "/images/services/video-production-points.png",
+  //     list: [
+  //       {
+  //         _id: "video-1",
+  //         title: "Cinematic Editing & Storytelling",
+  //         description:
+  //           "We craft compelling narratives by combining visuals, pacing, and audio in a way that keeps your audience engaged. Ideal for product launches, brand stories, and promotional content.",
+  //       },
+  //       {
+  //         _id: "video-2",
+  //         title: "Social Media & Short-Form Content",
+  //         description:
+  //           "We produce attention-grabbing edits optimized for platforms like Instagram, TikTok, and YouTube Shorts. Fast-paced, trend-aware, and designed for high engagement.",
+  //         links: [{ text: "See Social Edits", url: "/examples/social-videos" }],
+  //       },
+  //       {
+  //         _id: "video-3",
+  //         title: "Motion Graphics & Animation",
+  //         description:
+  //           "Enhance your videos with animated logos, titles, lower thirds, and infographics. Our motion designers add visual polish that communicates professionalism and creativity.",
+  //       },
+  //       {
+  //         _id: "video-4",
+  //         title: "Color Grading & Sound Design",
+  //         description:
+  //           "We ensure every frame and every note is polished. Our color grading and sound design process gives your videos a cinematic, broadcast-quality finish.",
+  //       },
+  //       {
+  //         _id: "video-5",
+  //         title: "Revisions & Collaboration",
+  //         description:
+  //           "We work with you iteratively, offering flexible revision rounds and clear communication to ensure the final output aligns perfectly with your expectations.",
+  //       },
+  //     ],
+  //   },
+  // },
   {
     _id: "graphic-design",
     icon: Paintbrush,
@@ -240,8 +568,90 @@ export const services: TService[] = [
     details: {
       thumbnail: "/images/services/graphic-design-details.png",
       title: "Graphic Design",
-      description:
-        "Our design services cover brand identity development, marketing collateral creation, digital assets, and visual system implementation. We focus on creating visually compelling designs that communicate your brand values and messaging effectively.",
+      description: `
+        <div class="graphic-design-details">
+          <h3>Visual Identity That Makes an Impact</h3>
+          <p>Our comprehensive <strong>graphic design services</strong> encompass every aspect of visual communication, from <em>brand identity development</em> to <strong>marketing collateral creation</strong> and <strong>digital asset production</strong>. We specialize in creating visually compelling designs that effectively communicate your brand values and messaging while maintaining consistency across all touchpoints.</p>
+
+          <h4>Complete Design Solutions:</h4>
+          <div class="design-categories">
+            <div class="category">
+              <h5>🎨 Brand Identity & Logo Design</h5>
+              <ul>
+                <li>Logo design and brand mark creation</li>
+                <li>Color palette development</li>
+                <li>Typography system selection</li>
+                <li>Brand guideline documentation</li>
+                <li>Visual identity applications</li>
+              </ul>
+            </div>
+            <div class="category">
+              <h5>📄 Print & Marketing Materials</h5>
+              <ul>
+                <li>Business cards and stationery</li>
+                <li>Brochures and sales sheets</li>
+                <li>Presentation templates</li>
+                <li>Trade show displays</li>
+                <li>Packaging design</li>
+              </ul>
+            </div>
+            <div class="category">
+              <h5>💻 Digital Graphics & Assets</h5>
+              <ul>
+                <li>Website graphics and banners</li>
+                <li>Social media templates</li>
+                <li>Email campaign graphics</li>
+                <li>Digital advertising creatives</li>
+                <li>App interface elements</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Our Design Philosophy:</h4>
+          <blockquote>
+            <p>Great design is not just about making things look beautiful—it's about creating <strong>meaningful connections</strong> between brands and their audiences through strategic visual communication.</p>
+          </blockquote>
+
+          <div class="design-process">
+            <h4>Our Proven Design Process:</h4>
+            <ol>
+              <li><strong>Discovery & Research:</strong> Understanding your brand, audience, and competitive landscape</li>
+              <li><strong>Concept Development:</strong> Creating multiple design directions based on strategic insights</li>
+              <li><strong>Design Refinement:</strong> Iterating on chosen concepts with your feedback</li>
+              <li><strong>Final Production:</strong> Delivering print-ready and web-optimized files</li>
+              <li><strong>Brand Guidelines:</strong> Providing documentation for consistent brand application</li>
+            </ol>
+          </div>
+
+          <h4>Why Choose Our Design Services:</h4>
+          <div class="value-propositions">
+            <div class="value-prop">
+              <h5>🎯 Strategic Approach</h5>
+              <p>Every design decision is backed by research and aligned with your business objectives</p>
+            </div>
+            <div class="value-prop">
+              <h5>🔄 Flexible Revisions</h5>
+              <p>We work collaboratively to ensure the final design exceeds your expectations</p>
+            </div>
+            <div class="value-prop">
+              <h5>📱 Multi-Platform Optimization</h5>
+              <p>Designs optimized for both print and digital applications with proper file formats</p>
+            </div>
+            <div class="value-prop">
+              <h5>⚡ Fast Turnaround</h5>
+              <p>Efficient workflow processes that deliver high-quality designs on schedule</p>
+            </div>
+          </div>
+
+          <div class="software-tools">
+            <h4>Professional Design Tools:</h4>
+            <p><strong>Vector Graphics:</strong> Adobe Illustrator, Sketch, Figma</p>
+            <p><strong>Image Editing:</strong> Adobe Photoshop, Affinity Photo</p>
+            <p><strong>Layout Design:</strong> Adobe InDesign, Canva Pro</p>
+            <p><strong>Prototyping:</strong> Adobe XD, Figma, InVision</p>
+          </div>
+        </div>
+      `,
       links: [{ text: "Design Portfolio", url: "/portfolio/design" }],
     },
     points: {
@@ -280,8 +690,91 @@ export const services: TService[] = [
     details: {
       thumbnail: "/images/services/ui-ux-design-details.png",
       title: "UI/UX Design",
-      description:
-        "We provide user-centered design solutions including user research, information architecture, wireframing, prototyping, and usability testing. Our process focuses on creating seamless user experiences that align with business objectives.",
+      description: `
+        <div class="uiux-design-details">
+          <h3>User-Centered Design That Converts</h3>
+          <p>We provide comprehensive <strong>user-centered design solutions</strong> that bridge the gap between user needs and business objectives. Our process encompasses <em>extensive user research</em>, <strong>information architecture</strong>, <strong>wireframing</strong>, <strong>prototyping</strong>, and <strong>usability testing</strong> to create seamless user experiences that drive engagement and conversions.</p>
+
+          <h4>Complete UX/UI Design Process:</h4>
+          <div class="design-phases">
+            <div class="phase">
+              <h5>🔍 Research & Discovery</h5>
+              <ul>
+                <li>User interviews and surveys</li>
+                <li>Competitive analysis</li>
+                <li>Market research and trends</li>
+                <li>Stakeholder workshops</li>
+                <li>Business requirements gathering</li>
+              </ul>
+            </div>
+            <div class="phase">
+              <h5>🗺️ Information Architecture</h5>
+              <ul>
+                <li>User journey mapping</li>
+                <li>Site map creation</li>
+                <li>Content strategy</li>
+                <li>Navigation structure</li>
+                <li>Task flow optimization</li>
+              </ul>
+            </div>
+            <div class="phase">
+              <h5>✏️ Wireframing & Prototyping</h5>
+              <ul>
+                <li>Low-fidelity wireframes</li>
+                <li>Interactive prototypes</li>
+                <li>High-fidelity mockups</li>
+                <li>Design system creation</li>
+                <li>Component libraries</li>
+              </ul>
+            </div>
+            <div class="phase">
+              <h5>🎨 Visual Design</h5>
+              <ul>
+                <li>Brand-aligned UI design</li>
+                <li>Typography and color systems</li>
+                <li>Icon and illustration design</li>
+                <li>Responsive design layouts</li>
+                <li>Micro-interaction design</li>
+              </ul>
+            </div>
+            <div class="phase">
+              <h5>🧪 Testing & Validation</h5>
+              <ul>
+                <li>Usability testing sessions</li>
+                <li>A/B testing implementation</li>
+                <li>Accessibility audits</li>
+                <li>Performance optimization</li>
+                <li>Post-launch analytics</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Accessibility-First Design Approach:</h4>
+          <div class="accessibility-focus">
+            <p>We design interfaces that meet <strong>WCAG 2.1 AA accessibility standards</strong>, ensuring usability for all users regardless of ability. Our accessibility-first approach includes:</p>
+            <ul>
+              <li><strong>Color Contrast:</strong> Ensuring sufficient contrast ratios for readability</li>
+              <li><strong>Screen Reader Support:</strong> Semantic HTML and ARIA labels</li>
+              <li><strong>Keyboard Navigation:</strong> Full functionality without mouse interaction</li>
+              <li><strong>Cognitive Load Reduction:</strong> Clear information hierarchy and intuitive layouts</li>
+              <li><strong>Mobile Accessibility:</strong> Touch-friendly interfaces with appropriate sizing</li>
+            </ul>
+          </div>
+
+          <h4>Design Tools & Technologies:</h4>
+          <p><strong>Design & Prototyping:</strong> Figma, Adobe XD, Sketch, InVision</p>
+          <p><strong>User Testing:</strong> Maze, UserTesting, Hotjar, Google Analytics</p>
+          <p><strong>Collaboration:</strong> Miro, FigJam, Notion, Slack</p>
+          <p><strong>Development Handoff:</strong> Zeplin, Abstract, Figma Dev Mode</p>
+
+          <div class="results-focus">
+            <h4>Measurable Results We Deliver:</h4>
+            <blockquote>
+              <p>Our user-centered design approach consistently delivers <strong>improved conversion rates</strong>, <em>reduced bounce rates</em>, and <strong>increased user satisfaction scores</strong>. We don't just make things look good—we make them work better for your users and your business.</p>
+            </blockquote>
+          </div>
+        </div>
+      `,
       links: [{ text: "Design Process", url: "/process/uiux" }],
     },
     points: {
@@ -320,8 +813,96 @@ export const services: TService[] = [
     details: {
       thumbnail: "/images/services/application-systems-development-details.png",
       title: "Full-Stack: Web, Desktop & Mobile Application Development",
-      description:
-        "Our development services cover the full spectrum—from websites and web apps to iOS, Android, and desktop solutions. We specialize in full-stack development, UI/UX design, API integrations, and performance optimization using technologies like React, Next.js, Node.js, Swift, Kotlin, Flutter, and Electron.",
+      description: `
+        <div class="app-development-details">
+          <h3>End-to-End Application Development Excellence</h3>
+          <p>Our comprehensive <strong>application development services</strong> cover the complete spectrum of digital solutions—from responsive websites and progressive web apps to native iOS/Android applications and cross-platform desktop software. We specialize in <em>full-stack development</em>, <strong>modern UI/UX design</strong>, <strong>API integrations</strong>, and <strong>performance optimization</strong> using cutting-edge technologies.</p>
+
+          <h4>Complete Technology Stack:</h4>
+          <div class="tech-stack">
+            <div class="stack-category">
+              <h5>🌐 Frontend Development</h5>
+              <ul>
+                <li><strong>React.js:</strong> Component-based UI development</li>
+                <li><strong>Next.js:</strong> Server-side rendering and static generation</li>
+                <li><strong>TypeScript:</strong> Type-safe JavaScript development</li>
+                <li><strong>Tailwind CSS:</strong> Utility-first styling framework</li>
+                <li><strong>Vue.js:</strong> Progressive framework for web interfaces</li>
+              </ul>
+            </div>
+            <div class="stack-category">
+              <h5>⚙️ Backend Development</h5>
+              <ul>
+                <li><strong>Node.js:</strong> JavaScript runtime for server-side development</li>
+                <li><strong>Express.js:</strong> Web application framework</li>
+                <li><strong>GraphQL & REST APIs:</strong> Flexible data querying solutions</li>
+                <li><strong>MongoDB & PostgreSQL:</strong> NoSQL and relational databases</li>
+                <li><strong>Redis:</strong> In-memory data structure store</li>
+              </ul>
+            </div>
+            <div class="stack-category">
+              <h5>📱 Mobile Development</h5>
+              <ul>
+                <li><strong>React Native:</strong> Cross-platform mobile apps</li>
+                <li><strong>Flutter:</strong> Google's UI toolkit for mobile</li>
+                <li><strong>Swift:</strong> Native iOS application development</li>
+                <li><strong>Kotlin:</strong> Modern Android development</li>
+                <li><strong>Progressive Web Apps:</strong> Web apps with native features</li>
+              </ul>
+            </div>
+            <div class="stack-category">
+              <h5>🖥️ Desktop Development</h5>
+              <ul>
+                <li><strong>Electron:</strong> Cross-platform desktop apps</li>
+                <li><strong>Tauri:</strong> Lightweight desktop applications</li>
+                <li><strong>.NET Core:</strong> Windows application development</li>
+                <li><strong>Python (Tkinter/PyQt):</strong> Desktop GUI applications</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Development Methodologies:</h4>
+          <div class="methodologies">
+            <div class="methodology">
+              <h5>🚀 Agile Development</h5>
+              <p>Iterative development with regular client feedback and continuous improvement</p>
+            </div>
+            <div class="methodology">
+              <h5>🧪 Test-Driven Development</h5>
+              <p>Comprehensive testing strategies including unit, integration, and end-to-end tests</p>
+            </div>
+            <div class="methodology">
+              <h5>🔄 CI/CD Implementation</h5>
+              <p>Automated deployment pipelines for consistent and reliable releases</p>
+            </div>
+            <div class="methodology">
+              <h5>📊 Performance Monitoring</h5>
+              <p>Real-time application monitoring and optimization for peak performance</p>
+            </div>
+          </div>
+
+          <h4>Specialized Services:</h4>
+          <ul>
+            <li><strong>API Development & Integration:</strong> RESTful and GraphQL APIs with third-party service integrations</li>
+            <li><strong>Database Design & Optimization:</strong> Scalable database architecture and query optimization</li>
+            <li><strong>Cloud Deployment:</strong> AWS, Google Cloud, and Azure deployment strategies</li>
+            <li><strong>Security Implementation:</strong> Authentication, authorization, and data protection</li>
+            <li><strong>Performance Optimization:</strong> Code splitting, lazy loading, and caching strategies</li>
+          </ul>
+
+          <div class="development-process">
+            <h4>Our Development Process:</h4>
+            <ol>
+              <li><strong>Requirements Analysis:</strong> Detailed project scoping and technical specification</li>
+              <li><strong>Architecture Design:</strong> System design and technology stack selection</li>
+              <li><strong>Iterative Development:</strong> Sprint-based development with regular demos</li>
+              <li><strong>Quality Assurance:</strong> Comprehensive testing and code review processes</li>
+              <li><strong>Deployment & Launch:</strong> Production deployment with monitoring setup</li>
+              <li><strong>Maintenance & Support:</strong> Ongoing updates, bug fixes, and feature enhancements</li>
+            </ol>
+          </div>
+        </div>
+      `,
       links: [
         { text: "Tech Stack", url: "/technology" },
         { text: "App Portfolio", url: "/portfolio/apps" },
@@ -376,8 +957,101 @@ export const services: TService[] = [
     details: {
       thumbnail: "/images/services/business-solutions-details.png",
       title: "Business Solutions",
-      description:
-        "We provide digital transformation services including CRM implementation, workflow automation, ERP integration, and custom business application development. Our solutions are designed to optimize operations and drive business growth.",
+      description: `
+        <div class="business-solutions-details">
+          <h3>Digital Transformation That Drives Growth</h3>
+          <p>We provide comprehensive <strong>digital transformation services</strong> designed to streamline operations, automate workflows, and accelerate business growth. Our solutions include <em>CRM implementation</em>, <strong>workflow automation</strong>, <strong>ERP integration</strong>, and <strong>custom business application development</strong> tailored to optimize your unique operational requirements.</p>
+
+          <h4>Complete Business Solution Portfolio:</h4>
+          <div class="solution-categories">
+            <div class="solution-category">
+              <h5>🔄 Workflow Automation</h5>
+              <ul>
+                <li>Process mapping and optimization</li>
+                <li>Automated task routing and approval workflows</li>
+                <li>Document management systems</li>
+                <li>Notification and alert systems</li>
+                <li>Integration with existing tools</li>
+              </ul>
+            </div>
+            <div class="solution-category">
+              <h5>🏢 CRM & ERP Systems</h5>
+              <ul>
+                <li>Salesforce implementation and customization</li>
+                <li>HubSpot setup and automation</li>
+                <li>Odoo ERP deployment</li>
+                <li>Custom CRM development</li>
+                <li>Data migration and integration</li>
+              </ul>
+            </div>
+            <div class="solution-category">
+              <h5>📊 Business Intelligence</h5>
+              <ul>
+                <li>Custom dashboard development</li>
+                <li>Real-time analytics and reporting</li>
+                <li>KPI tracking and visualization</li>
+                <li>Data warehouse setup</li>
+                <li>Predictive analytics implementation</li>
+              </ul>
+            </div>
+            <div class="solution-category">
+              <h5>🛠️ Custom Applications</h5>
+              <ul>
+                <li>Inventory management systems</li>
+                <li>Project management tools</li>
+                <li>Employee management platforms</li>
+                <li>Customer portal development</li>
+                <li>API integrations and connectors</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Digital Transformation Process:</h4>
+          <div class="transformation-process">
+            <div class="process-step">
+              <h5>1. 🔍 Assessment & Analysis</h5>
+              <p>Comprehensive audit of current systems, processes, and technology stack to identify optimization opportunities</p>
+            </div>
+            <div class="process-step">
+              <h5>2. 📋 Strategy Development</h5>
+              <p>Custom digital transformation roadmap aligned with business objectives and growth goals</p>
+            </div>
+            <div class="process-step">
+              <h5>3. 🛠️ Implementation</h5>
+              <p>Phased rollout of solutions with minimal disruption to ongoing operations</p>
+            </div>
+            <div class="process-step">
+              <h5>4. 📈 Training & Adoption</h5>
+              <p>Comprehensive user training and change management to ensure successful adoption</p>
+            </div>
+            <div class="process-step">
+              <h5>5. 🔧 Optimization & Support</h5>
+              <p>Ongoing monitoring, optimization, and support to maximize ROI and system performance</p>
+            </div>
+          </div>
+
+          <h4>Key Benefits of Our Business Solutions:</h4>
+          <ul>
+            <li><strong>Increased Efficiency:</strong> Automate repetitive tasks and streamline workflows</li>
+            <li><strong>Better Decision Making:</strong> Real-time data insights and comprehensive reporting</li>
+            <li><strong>Cost Reduction:</strong> Eliminate manual processes and reduce operational overhead</li>
+            <li><strong>Scalability:</strong> Solutions that grow with your business needs</li>
+            <li><strong>Integration:</strong> Seamless connectivity between existing and new systems</li>
+          </ul>
+
+          <div class="technology-partners">
+            <h4>Technology Partners & Platforms:</h4>
+            <p><strong>CRM/ERP:</strong> Salesforce, HubSpot, Odoo, Microsoft Dynamics, Zoho</p>
+            <p><strong>Automation:</strong> Zapier, Microsoft Power Automate, Custom APIs</p>
+            <p><strong>Analytics:</strong> Tableau, Power BI, Google Analytics, Custom Dashboards</p>
+            <p><strong>Cloud Platforms:</strong> AWS, Google Cloud, Microsoft Azure</p>
+          </div>
+
+          <blockquote>
+            <p>"Digital transformation isn't just about technology—it's about reimagining how your business operates to create sustainable competitive advantages and exceptional customer experiences."</p>
+          </blockquote>
+        </div>
+      `,
       links: [{ text: "Solutions Overview", url: "/solutions" }],
     },
     points: {
@@ -412,14 +1086,119 @@ export const services: TService[] = [
     icon: Headphones,
     title: "Online Support",
     description:
-      "Our online support service ensures that your digital platforms are always operational and your customers receive timely help. We offer live chat setup, ticketing systems, virtual assistance, and knowledge base management. Whether it&rsquo;s technical support or customer service, we're here to help you stay responsive and reliable.",
+      "Our online support service ensures that your digital platforms are always operational and your customers receive timely help. We offer live chat setup, ticketing systems, virtual assistance, and knowledge base management. Whether it's technical support or customer service, we're here to help you stay responsive and reliable.",
     thumbnail: "/images/services/online-support.png",
     link: "/services/online-support/",
     details: {
       thumbnail: "/images/services/online-support-details.png",
       title: "Online Support",
-      description:
-        "We provide comprehensive digital support solutions including helpdesk implementation, live chat systems, knowledge base development, and ticketing systems. Our services ensure prompt customer assistance and platform reliability.",
+      description: `
+        <div class="online-support-details">
+          <h3>24/7 Digital Support Solutions</h3>
+          <p>We provide comprehensive <strong>digital support solutions</strong> that ensure your customers receive exceptional service around the clock. Our services include <em>helpdesk implementation</em>, <strong>live chat systems</strong>, <strong>knowledge base development</strong>, and <strong>ticketing systems</strong> designed to enhance customer satisfaction while reducing support overhead.</p>
+
+          <h4>Complete Support Ecosystem:</h4>
+          <div class="support-services">
+            <div class="support-category">
+              <h5>🎫 Helpdesk & Ticketing</h5>
+              <ul>
+                <li>Multi-channel ticket management</li>
+                <li>Automated ticket routing and prioritization</li>
+                <li>SLA management and escalation rules</li>
+                <li>Performance analytics and reporting</li>
+                <li>Custom workflow configuration</li>
+              </ul>
+            </div>
+            <div class="support-category">
+              <h5>💬 Live Chat & Messaging</h5>
+              <ul>
+                <li>Real-time customer chat support</li>
+                <li>AI-powered chatbot implementation</li>
+                <li>Seamless human agent handoffs</li>
+                <li>Multi-language support capabilities</li>
+                <li>Mobile-responsive chat widgets</li>
+              </ul>
+            </div>
+            <div class="support-category">
+              <h5>📚 Knowledge Management</h5>
+              <ul>
+                <li>Comprehensive FAQ development</li>
+                <li>Searchable knowledge base creation</li>
+                <li>Video tutorial production</li>
+                <li>Self-service portal design</li>
+                <li>Content maintenance and updates</li>
+              </ul>
+            </div>
+            <div class="support-category">
+              <h5>📞 Virtual Assistance</h5>
+              <ul>
+                <li>Remote technical support</li>
+                <li>Customer onboarding assistance</li>
+                <li>Product training and guidance</li>
+                <li>Account management support</li>
+                <li>Multilingual support services</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Advanced Support Features:</h4>
+          <div class="advanced-features">
+            <div class="feature">
+              <h5>🤖 AI-Powered Automation</h5>
+              <p>Intelligent chatbots with natural language processing that handle routine inquiries and escalate complex issues to human agents</p>
+            </div>
+            <div class="feature">
+              <h5>📊 Analytics & Insights</h5>
+              <p>Comprehensive reporting on support metrics, customer satisfaction, and agent performance with actionable insights</p>
+            </div>
+            <div class="feature">
+              <h5>🔗 System Integrations</h5>
+              <p>Seamless integration with CRM, email marketing, and business management systems for unified customer data</p>
+            </div>
+            <div class="feature">
+              <h5>📱 Omnichannel Support</h5>
+              <p>Consistent support experience across email, chat, phone, social media, and mobile applications</p>
+            </div>
+          </div>
+
+          <h4>Support Platform Expertise:</h4>
+          <p><strong>Helpdesk Solutions:</strong> Zendesk, Freshdesk, Intercom, Help Scout, Custom Solutions</p>
+          <p><strong>Live Chat Tools:</strong> Intercom, Drift, Crisp, Tawk.to, Custom Chat Systems</p>
+          <p><strong>Chatbot Platforms:</strong> Dialogflow, Microsoft Bot Framework, Custom AI Solutions</p>
+          <p><strong>Knowledge Base:</strong> Confluence, Notion, GitBook, Custom Knowledge Systems</p>
+
+          <h4>Support Service Levels:</h4>
+          <div class="service-levels">
+            <div class="level">
+              <h5>🥉 Essential Support</h5>
+              <p>Basic ticketing system and knowledge base setup with email-based support</p>
+            </div>
+            <div class="level">
+              <h5>🥈 Professional Support</h5>
+              <p>Live chat integration, AI chatbots, and comprehensive knowledge management</p>
+            </div>
+            <div class="level">
+              <h5>🥇 Enterprise Support</h5>
+              <p>24/7 managed support services with dedicated agents and custom integrations</p>
+            </div>
+          </div>
+
+          <blockquote>
+            <p>"Exceptional customer support isn't just about solving problems—it's about creating positive experiences that build lasting relationships and drive customer loyalty."</p>
+          </blockquote>
+
+          <div class="support-metrics">
+            <h4>Key Performance Indicators We Track:</h4>
+            <ul>
+              <li><strong>First Response Time:</strong> Average time to initial customer contact</li>
+              <li><strong>Resolution Time:</strong> Average time to complete issue resolution</li>
+              <li><strong>Customer Satisfaction (CSAT):</strong> Post-interaction satisfaction scores</li>
+              <li><strong>Ticket Volume Trends:</strong> Patterns in support request types and frequency</li>
+              <li><strong>Self-Service Success Rate:</strong> Percentage of issues resolved through knowledge base</li>
+            </ul>
+          </div>
+        </div>
+      `,
       links: [{ text: "Support Plans", url: "/plans/support" }],
     },
     points: {

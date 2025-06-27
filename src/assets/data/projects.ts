@@ -12,6 +12,7 @@ export type TProject = {
   sector:
     | "content-creation"
     | "digital-marketing"
+    | "seo"
     | "lead-generation"
     | "video-production"
     | "graphic-design"

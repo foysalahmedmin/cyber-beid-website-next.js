@@ -1,6 +1,5 @@
 import {
   Briefcase,
-  Clapperboard,
   Code2,
   Headphones,
   LayoutDashboard,
@@ -8,6 +7,7 @@ import {
   Megaphone,
   Paintbrush,
   PenLine,
+  Search,
   UserPlus,
 } from "lucide-react";
 
@@ -15,6 +15,7 @@ export type TSector = {
   _id:
     | "content-creation"
     | "digital-marketing"
+    | "seo"
     | "lead-generation"
     | "video-production"
     | "graphic-design"
@@ -28,6 +29,7 @@ export type TSector = {
   value:
     | "content-creation"
     | "digital-marketing"
+    | "seo"
     | "lead-generation"
     | "video-production"
     | "graphic-design"
@@ -55,6 +57,14 @@ export const sectors: TSector[] = [
     value: "digital-marketing",
   },
   {
+    _id: "seo",
+    icon: Search,
+    title: "SEO",
+    description:
+      "Search engine optimization to rank higher in search results and drive organic traffic to your website.",
+    value: "seo",
+  },
+  {
     _id: "lead-generation",
     icon: UserPlus,
     title: "Lead Generation",
@@ -62,14 +72,14 @@ export const sectors: TSector[] = [
       "Result-driven strategies to attract, capture, and convert potential customers for your business.",
     value: "lead-generation",
   },
-  {
-    _id: "video-production",
-    icon: Clapperboard,
-    title: "Video Production",
-    description:
-      "Professional video editing, motion graphics, and promotional content tailored for digital platforms.",
-    value: "video-production",
-  },
+  // {
+  //   _id: "video-production",
+  //   icon: Clapperboard,
+  //   title: "Video Production",
+  //   description:
+  //     "Professional video editing, motion graphics, and promotional content tailored for digital platforms.",
+  //   value: "video-production",
+  // },
   {
     _id: "graphic-design",
     icon: Paintbrush,
