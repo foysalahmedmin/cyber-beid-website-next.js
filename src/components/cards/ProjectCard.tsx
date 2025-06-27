@@ -12,7 +12,10 @@ type ProjectCardProps = {
 const ProjectCard = ({ project, className }: ProjectCardProps) => {
   return (
     <div
-      className={cn("group/card text-card-foreground grid gap-6", className)}
+      className={cn(
+        "group/card intersection-fade-up text-card-foreground grid gap-6",
+        className,
+      )}
     >
       <Link
         href={`/projects/${project?._id}`}

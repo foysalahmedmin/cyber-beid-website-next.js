@@ -10,7 +10,7 @@ import {
 const ServicesPage = () => {
   return (
     <main>
-      <section className="py-16 md:py-24">
+      <section className="intersection-fade-up py-16 md:py-24">
         <div className="container">
           <SectionTitle>
             <Subtitle>Our Services</Subtitle>

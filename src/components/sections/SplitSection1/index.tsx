@@ -22,13 +22,24 @@ const SplitSection1 = ({
   image,
 }: SplitSection1) => {
   return (
-    <section className={cn("py-16 md:py-24", className)}>
+    <section className={cn("intersection-fade-up py-16 md:py-24", className)}>
       <div className="container">
         {(title || subtitle || description) && (
           <SectionTitle className="max-w-full">
             {subtitle && <Subtitle>{subtitle}</Subtitle>}
             {title && <Title>{title}</Title>}
-            {description && <Description>{description}</Description>}
+            {description && (
+              <Description>
+                <div className="w-full">
+                  <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
+                    <div
+                      className="text-foreground font-sans"
+                      dangerouslySetInnerHTML={{ __html: description || "" }}
+                    />
+                  </div>
+                </div>
+              </Description>
+            )}
           </SectionTitle>
         )}
         <div className="group/card grid items-center gap-6">

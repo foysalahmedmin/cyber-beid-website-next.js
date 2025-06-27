@@ -32,7 +32,7 @@ const SplitSection2 = ({
   links = [],
 }: SplitSectionProps) => {
   return (
-    <section className={cn("py-16 md:py-24", className)}>
+    <section className={cn("intersection-fade-up py-16 md:py-24", className)}>
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="lg:order-2">
@@ -45,12 +45,7 @@ const SplitSection2 = ({
               <div>
                 {links?.map((link, index) => (
                   <Link key={index} href={link?.url}>
-                    <Button
-                      asChild={true}
-                      className="foreground"
-                      variant="outline"
-                      size="lg"
-                    >
+                    <Button asChild={true} variant="outline" size="lg">
                       <span>{link?.text}</span>
                     </Button>
                   </Link>

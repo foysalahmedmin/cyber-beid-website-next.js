@@ -21,7 +21,7 @@ const PageHeaderSection = ({
   metrics: Metrics = [],
 }: PageHeaderSectionProps) => {
   return (
-    <section className={className}>
+    <section className={cn("intersection-fade-up", className)}>
       <div className="container py-16">
         <Subtitle>{subtitle}</Subtitle>
         <div className="grid grid-cols-1 gap-8 md:gap-12 lg:grid-cols-2">
@@ -32,7 +32,7 @@ const PageHeaderSection = ({
       {image && (
         <div
           style={{ backgroundImage: `url('${image}')` }}
-          className="bg-muted h-[60vh] bg-cover bg-center bg-no-repeat"
+          className="bg-muted aspect-[2/1] w-full bg-cover bg-center bg-no-repeat lg:aspect-auto lg:h-[60vh]"
         />
       )}
       {Metrics?.length > 0 && (
@@ -52,7 +52,7 @@ const PageHeaderSection = ({
                 <div key={index} className="flex flex-col">
                   <div
                     className={cn(
-                      "relative flex aspect-[6/4] w-full items-center justify-center",
+                      "intersection-fade-up relative flex aspect-[6/4] w-full items-center justify-center",
                       alignClassMD,
                       alignClassLG,
                     )}

@@ -19,7 +19,7 @@ const SingleProjectSection = ({
   project,
 }: SingleProjectSectionProps) => {
   return (
-    <section className={cn("py-16 md:py-24", className)}>
+    <section className={cn("intersection-fade-up py-16 md:py-24", className)}>
       <div className="container">
         <SectionTitle className="">
           {<Subtitle>Feature Project</Subtitle>}

@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 md:py-24">
+    <section id="about" className="intersection-fade-up py-16 md:py-24">
       <div className="container">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="order-2 self-stretch lg:order-1">

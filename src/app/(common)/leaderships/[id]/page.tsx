@@ -82,7 +82,7 @@ const LeadershipsDetailsPage = async ({ params }: Props) => {
             </div>
           </div>
         </div>
-        <div className="bg-muted py-16 md:py-24 lg:pt-40">
+        <div className="bg-muted intersection-fade-up py-16 md:py-24 lg:pt-40">
           <div className="container max-w-7xl">
             <div className="w-full">
               <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">

@@ -12,7 +12,7 @@ const BlogCard = ({ blog, className }: BlogCardProps) => {
   return (
     <div
       className={cn(
-        "group basis-1/1 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6",
+        "group intersection-fade-up basis-1/1 sm:basis-1/2 sm:px-4 md:basis-1/3 md:px-6",
         className,
       )}
     >

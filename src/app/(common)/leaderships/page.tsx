@@ -30,21 +30,11 @@ const LeadershipsPage = () => {
       />
       <SplitSection
         className="bg-muted"
+        subtitle="Co-Founder & Project Manager"
         title="Foysal Ahmed"
-        description={
-          <div className="text-xl">
-            Chief People Officer
-            <br /> <br />
-            Abul Kalam embarked on his journey in the construction industry in
-            New York in 1991 with a clear vision to create enduring structures
-            and contribute meaningfully to the built environment. From humble
-            beginnings, he worked diligently to establish himself as a leading
-            figure in the field, gaining the trust and respect of clients,
-            collaborators, and the wider community. His work was characterized
-            by an unwavering dedication to quality, meticulous attention to
-            detail, and a commitment to exceeding expectations.
-          </div>
-        }
+        description={`<div class="text-xl">
+            Visionary co-founder driving CyberBeid's mission to deliver human-centric technology solutions through ethical innovation and strategic leadership.
+          </div>`}
         image="/images/leaderships/foysalahmedmin.png"
         links={[
           {

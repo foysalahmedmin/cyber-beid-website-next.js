@@ -31,14 +31,13 @@ const AboutPage = () => {
       <SplitSection
         className="bg-muted"
         title="Our Digital Philosophy"
-        description={
-          <div className="space-y-4">
+        description={`<div class"space-y-4">
             <p>
               At CyberBaid, we believe technology should serve human potential.
               Our approach combines technical excellence with deep market
               understanding to create digital solutions that:
             </p>
-            <ul className="list-disc space-y-2 pl-6">
+            <ul class="list-disc space-y-2 pl-6">
               <li>
                 Solve real business challenges through data-driven insights
               </li>
@@ -53,8 +52,7 @@ const AboutPage = () => {
               digital transformation as a competitive advantage rather than just
               an operational requirement.
             </p>
-          </div>
-        }
+          </div>`}
         image="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&fit=crop"
         links={[
           {

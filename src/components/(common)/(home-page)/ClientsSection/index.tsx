@@ -20,7 +20,7 @@ const clients = [
 
 const ClientsSection = () => {
   return (
-    <section id="clients" className="py-16 md:py-24">
+    <section id="clients" className="intersection-fade-up py-16 md:py-24">
       <div className="container flex max-w-4xl flex-wrap items-center gap-8">
         <div className="">
           <h2 className="text-3xl">Our clients</h2>

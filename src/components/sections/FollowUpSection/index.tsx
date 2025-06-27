@@ -8,7 +8,7 @@ const FollowUpSection = () => {
       style={{ backgroundImage: "url('/images/partials/followup-bg.png')" }}
       className="dark text-foreground bg-muted bg-cover bg-center bg-no-repeat"
     >
-      <div className="background/50 border-primary border-b-8 py-16 md:py-24">
+      <div className="background/50 border-primary intersection-fade-up border-b-8 py-16 md:py-24">
         <div className="container">
           <SectionTitle>
             <Title>

@@ -5,12 +5,14 @@ import Link from "next/link";
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="intersection-fade-up py-16 md:py-24">
       <div className="container">
         <div className="mb-6">
           <SectionTitle>
             <Subtitle>Our services</Subtitle>
-            <Title>On-time delivery of powerful, cost-effective digital solutions</Title>
+            <Title>
+              On-time delivery of powerful, cost-effective digital solutions
+            </Title>
           </SectionTitle>
           <Link
             href={"/services"}

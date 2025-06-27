@@ -22,37 +22,39 @@ const SplitImageSection = ({
   className = "",
 }: SplitImageSectionProps) => {
   return (
-    <section
-      className={cn(
-        "container grid grid-cols-1 items-center gap-8 py-16 md:gap-12 md:py-24 lg:grid-cols-2 lg:gap-16",
-        className,
-      )}
-    >
-      {items?.map((item, index) => {
-        const { title, description, subtitle, image } = item;
-        return (
-          <div key={index} className="w-full">
-            {(title || subtitle || description) && (
-              <SectionTitle>
-                {subtitle && <Subtitle>{subtitle}</Subtitle>}
-                {title && <Title>{title}</Title>}
-                {description && (
-                  <Description className="text-xl">{description}</Description>
-                )}
-              </SectionTitle>
-            )}
-            <div className="aspect-[3/4] w-full overflow-hidden rounded-xl">
-              <Image
-                className="bg-muted size-full object-cover object-center"
-                src={image || ""}
-                alt="hero-split-image"
-                height={700}
-                width={525}
-              />
+    <section className="intersection-fade-up py-16 md:py-24">
+      <div
+        className={cn(
+          "container grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16",
+          className,
+        )}
+      >
+        {items?.map((item, index) => {
+          const { title, description, subtitle, image } = item;
+          return (
+            <div key={index} className="intersection-fade-up w-full">
+              {(title || subtitle || description) && (
+                <SectionTitle>
+                  {subtitle && <Subtitle>{subtitle}</Subtitle>}
+                  {title && <Title>{title}</Title>}
+                  {description && (
+                    <Description className="text-xl">{description}</Description>
+                  )}
+                </SectionTitle>
+              )}
+              <div className="aspect-[3/4] w-full overflow-hidden rounded-xl">
+                <Image
+                  className="bg-muted size-full object-cover object-center"
+                  src={image || ""}
+                  alt="hero-split-image"
+                  height={700}
+                  width={525}
+                />
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 };

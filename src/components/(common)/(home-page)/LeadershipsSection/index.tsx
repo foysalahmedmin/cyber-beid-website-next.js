@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const LeadershipsSection = () => {
   return (
-    <section id="leaderships" className="py-16 md:py-24">
+    <section id="leaderships" className="intersection-fade-up py-16 md:py-24">
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-3">
           <div className="space-y-8 md:space-y-12">

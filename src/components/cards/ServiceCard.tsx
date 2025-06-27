@@ -11,7 +11,7 @@ const ServiceCard = ({ service, className }: ServiceCardProps) => {
   return (
     <div
       className={cn(
-        "group bg-card relative aspect-[2/1] w-full cursor-pointer overflow-hidden rounded-xl",
+        "group bg-card intersection-fade-up relative aspect-[2/1] w-full cursor-pointer overflow-hidden rounded-xl",
         className,
       )}
     >

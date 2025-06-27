@@ -18,7 +18,7 @@ import {
 const ProjectsPage = () => {
   return (
     <main>
-      <section className="py-16 md:py-24">
+      <section className="intersection-fade-up py-16 md:py-24">
         <div className="container">
           <SectionTitle>
             <Subtitle>Our Works</Subtitle>
@@ -32,13 +32,11 @@ const ProjectsPage = () => {
             <Tabs value="all">
               <TabsList className="mb-8 justify-start gap-6 md:mb-12">
                 <TabsTrigger value="all">
-                    <span className="capitalize font-semibold">
-                      All
-                    </span>
-                  </TabsTrigger>
+                  <span className="font-semibold capitalize">All</span>
+                </TabsTrigger>
                 {sectors?.map((sector) => (
                   <TabsTrigger key={sector._id} value={sector._id}>
-                    <span className="capitalize font-semibold">
+                    <span className="font-semibold capitalize">
                       {sector?.title}
                     </span>
                   </TabsTrigger>
@@ -46,12 +44,13 @@ const ProjectsPage = () => {
               </TabsList>
               <TabsContent>
                 <TabsItem value="all">
-                      <ProjectsTabSection projects={projects} />
-                    </TabsItem>
+                  <ProjectsTabSection projects={projects} />
+                </TabsItem>
                 {sectors?.map((sector) => {
-                  const filtered_projects = projects?.filter((project) =>
-                          project?.sector === sector._id
-                        ) || [];
+                  const filtered_projects =
+                    projects?.filter(
+                      (project) => project?.sector === sector._id,
+                    ) || [];
                   return (
                     <TabsItem key={sector._id} value={sector._id}>
                       <ProjectsTabSection projects={filtered_projects} />

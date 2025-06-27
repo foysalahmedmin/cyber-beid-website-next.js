@@ -109,7 +109,7 @@ const VendorRegistrationPage = () => {
 client demands are met and the service quality is maintained on the highest level
 possible."
       />
-      <section className="py-16">
+      <section className="intersection-fade-up py-16">
         <div className="container">
           <div className="flex flex-col gap-8 md:flex-row-reverse md:gap-12">
             <div className="space-y-8 md:flex-1 md:space-y-12">

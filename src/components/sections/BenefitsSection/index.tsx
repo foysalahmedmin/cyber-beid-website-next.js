@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const BenefitsSection = () => {
   return (
-    <section className="bg-muted py-16 md:py-24">
+    <section className="bg-muted intersection-fade-up py-16 md:py-24">
       <div className="container">
         <SectionTitle>
           <Subtitle>Perks</Subtitle>
@@ -27,7 +27,7 @@ const BenefitsSection = () => {
                 className={cn(
                   "flex max-w-80 flex-col gap-y-4",
                   alignClassMD,
-                  alignClassLG
+                  alignClassLG,
                 )}
               >
                 <item.icon className="inline-block size-16" strokeWidth={1} />

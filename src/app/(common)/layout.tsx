@@ -1,5 +1,6 @@
 import Footer from "@/components/partials/Footer";
 import Header from "@/components/partials/Header";
+import RootAnimation from "@/components/partials/RootAnimation";
 import type { Metadata } from "next";
 import React from "react";
 
@@ -16,7 +17,7 @@ export default function CommonLayout({
   return (
     <>
       <Header />
-      {children}
+      <RootAnimation>{children}</RootAnimation>
       <Footer />
     </>
   );

@@ -33,7 +33,7 @@ const ProjectsSlideSection = ({
   className,
 }: ProjectsSlideSectionProps) => {
   return (
-    <section className={cn("py-16 md:py-24", className)}>
+    <section className={cn("intersection-fade-up py-16 md:py-24", className)}>
       <div className="container">
         <div className="mb-6 sm:px-4 md:px-6">
           <SectionTitle className="">

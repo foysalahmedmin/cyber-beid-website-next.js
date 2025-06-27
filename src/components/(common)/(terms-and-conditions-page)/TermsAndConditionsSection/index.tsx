@@ -75,7 +75,7 @@ const sections: TSection[] = [
 
 const TermsAndConditionsSection = () => {
   return (
-    <section className="py-16 md:py-24">
+    <section className="intersection-fade-up py-16 md:py-24">
       <div className="container">
         <SectionTitle>
           <Subtitle>Terms</Subtitle>

@@ -22,7 +22,7 @@ const SplitStickySection = ({
   className = "",
 }: SplitStickySectionProps) => {
   return (
-    <section className={cn("py-16 md:py-24", className)}>
+    <section className={cn("intersection-fade-up py-16 md:py-24", className)}>
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="sticky top-20 bottom-0 h-[calc(100vh-5rem)] w-full overflow-hidden rounded-xl">
@@ -36,7 +36,7 @@ const SplitStickySection = ({
             {contents?.map((content, index) => (
               <div
                 key={index}
-                className="flex min-h-[calc(100vh-5rem)] items-center py-8 md:py-12"
+                className="intersection-fade-up flex min-h-[calc(100vh-5rem)] items-center py-8 md:py-12"
               >
                 <div>
                   <SectionTitle>
@@ -48,13 +48,8 @@ const SplitStickySection = ({
                   {content?.links?.length && (
                     <div>
                       {content?.links?.map((link, index) => (
-                        <Link key={index} href={link?.url || "#"}>
-                          <Button
-                            asChild={true}
-                            className="foreground"
-                            variant="outline"
-                            size="lg"
-                          >
+                        <Link key={index} href={"#"}>
+                          <Button asChild={true} variant="outline" size="lg">
                             <span>{link?.text}</span>
                           </Button>
                         </Link>

@@ -22,12 +22,14 @@ const BlogsDetailsPage = async ({ params }: Props) => {
       />
       <section>
         <div className="container">
-          <div className="border-b py-16 md:py-24">
-            <div className="prose prose-headings:font-normal dark:prose-invert">
-              <article
-                className="text-foreground font-outfit"
-                dangerouslySetInnerHTML={{ __html: details || "" }}
-              />
+          <div className="intersection-fade-up border-b py-16 md:py-24">
+            <div className="w-full">
+              <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
+                <article
+                  className="text-foreground font-sans"
+                  dangerouslySetInnerHTML={{ __html: details || "" }}
+                />
+              </div>
             </div>
           </div>
         </div>

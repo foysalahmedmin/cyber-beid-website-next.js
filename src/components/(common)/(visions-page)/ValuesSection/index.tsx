@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ValuesSection = () => {
   return (
-    <section className="bg-muted py-16 md:py-24">
+    <section className="bg-muted intersection-fade-up py-16 md:py-24">
       <div className="container">
         <SectionTitle>
           <Subtitle>Our Values in Action</Subtitle>
@@ -28,7 +28,7 @@ const ValuesSection = () => {
                 className={cn(
                   "flex max-w-80 flex-col gap-y-4",
                   alignClassMD,
-                  alignClassLG
+                  alignClassLG,
                 )}
               >
                 <item.icon className="inline-block size-16" strokeWidth={1} />
