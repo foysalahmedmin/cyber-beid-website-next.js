@@ -31,8 +31,8 @@ const locations = [
   },
   {
     type: "link",
-    text: "cyberdocnyc@gmail.com",
-    href: "mailto:cyberdocnyc@gmail.com",
+    text: "CyberBeidnyc@gmail.com",
+    href: "mailto:CyberBeidnyc@gmail.com",
   },
 ];
 const ContactSection = () => {

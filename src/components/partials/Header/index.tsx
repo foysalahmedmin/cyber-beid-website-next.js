@@ -100,14 +100,14 @@ const Logo: React.FC = () => (
   >
     <Image
       src="/logo.svg"
-      alt="CyberDoc Logo"
+      alt="CyberBeid Logo"
       width={48}
       height={48}
       className="size-12 rounded-lg object-contain object-left"
       priority
     />
     <div className="leading-none">
-      <h5 className="font-semibold">CyberDoc</h5>
+      <h5 className="font-semibold">CyberBeid</h5>
       <span className="text-xs leading-0">Renovation Experts</span>
     </div>
   </Link>

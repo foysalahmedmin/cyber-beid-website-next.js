@@ -9,17 +9,17 @@ const sections: TSection[] = [
   {
     title: "1. Services Overview",
     description:
-      "CyberDoc provides digital solutions including web development, application development, UI/UX design, digital marketing, and business automation services. By engaging with our services, you agree to these terms governing our professional relationship.",
+      "CyberBeid provides digital solutions including web development, application development, UI/UX design, digital marketing, and business automation services. By engaging with our services, you agree to these terms governing our professional relationship.",
   },
   {
     title: "2. Service Engagement",
     description:
-      "All projects begin with a formal proposal outlining scope, deliverables, timeline, and pricing. Client approval of the proposal constitutes agreement to these terms. CyberDoc reserves the right to decline projects that conflict with our ethical guidelines or technical capabilities.",
+      "All projects begin with a formal proposal outlining scope, deliverables, timeline, and pricing. Client approval of the proposal constitutes agreement to these terms. CyberBeid reserves the right to decline projects that conflict with our ethical guidelines or technical capabilities.",
   },
   {
     title: "3. Intellectual Property Rights",
     description:
-      "Upon full payment, clients receive exclusive rights to final deliverables. CyberDoc retains rights to:\n• Pre-existing code libraries and frameworks\n• Project methodologies and processes\n• Non-client-specific solutions developed during engagement\nWe may showcase completed work in our portfolio unless otherwise agreed in writing.",
+      "Upon full payment, clients receive exclusive rights to final deliverables. CyberBeid retains rights to:\n• Pre-existing code libraries and frameworks\n• Project methodologies and processes\n• Non-client-specific solutions developed during engagement\nWe may showcase completed work in our portfolio unless otherwise agreed in writing.",
   },
   {
     title: "4. Confidentiality",
@@ -39,17 +39,17 @@ const sections: TSection[] = [
   {
     title: "7. Warranties & Limitations",
     description:
-      "CyberDoc warrants deliverables for 90 days post-launch against material defects. We are not liable for:\n• Third-party platform changes\n• Client-modified code\n• Issues arising from unclear requirements\n• Force majeure events\nMaximum liability is limited to project fees paid.",
+      "CyberBeid warrants deliverables for 90 days post-launch against material defects. We are not liable for:\n• Third-party platform changes\n• Client-modified code\n• Issues arising from unclear requirements\n• Force majeure events\nMaximum liability is limited to project fees paid.",
   },
   {
     title: "8. Termination Policy",
     description:
-      "Either party may terminate with 30 days written notice. Upon termination:\n• Client pays for work completed\n• CyberDoc delivers completed work\n• Pre-paid amounts for uncompleted work are refunded\n• Client receives all work-in-progress assets",
+      "Either party may terminate with 30 days written notice. Upon termination:\n• Client pays for work completed\n• CyberBeid delivers completed work\n• Pre-paid amounts for uncompleted work are refunded\n• Client receives all work-in-progress assets",
   },
   {
     title: "9. Data Handling",
     description:
-      "Client retains ownership of all provided data. CyberDoc will:\n• Process data only for project purposes\n• Implement industry-standard security\n• Delete or return data upon request\n• Never sell or share client data",
+      "Client retains ownership of all provided data. CyberBeid will:\n• Process data only for project purposes\n• Implement industry-standard security\n• Delete or return data upon request\n• Never sell or share client data",
   },
   {
     title: "10. Third-Party Services",
@@ -69,7 +69,7 @@ const sections: TSection[] = [
   {
     title: "13. Contact & Dispute Resolution",
     description:
-      "For concerns or disputes:\n\nCyberDoc Solutions\nAttn: Legal Department\nEmail: legal@cyberdoc.com\nPhone: +1 (555) 123-4567\n\nWe commit to responding to formal complaints within 10 business days.",
+      "For concerns or disputes:\n\nCyberBeid Solutions\nAttn: Legal Department\nEmail: legal@CyberBeid.com\nPhone: +1 (555) 123-4567\n\nWe commit to responding to formal complaints within 10 business days.",
   },
 ];
 

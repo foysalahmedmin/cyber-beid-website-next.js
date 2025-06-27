@@ -9,7 +9,7 @@ const sections: TSection[] = [
   {
     title: "Introduction",
     description:
-      "At CyberDoc, we are committed to protecting your privacy. This policy outlines how we collect, use, and safeguard your personal information when you use our website and services.",
+      "At CyberBeid, we are committed to protecting your privacy. This policy outlines how we collect, use, and safeguard your personal information when you use our website and services.",
   },
   {
     title: "Information We Collect",
@@ -69,7 +69,7 @@ const sections: TSection[] = [
   {
     title: "Contact Us",
     description:
-      "For privacy-related inquiries:\n\nCyberDoc\nAttn: Privacy Officer\nEmail: foysalahmedmin@gamil.com\nPhone: +1 (555) 123-4567\n\nWe respond to all requests within 30 days.",
+      "For privacy-related inquiries:\n\nCyberBeid\nAttn: Privacy Officer\nEmail: foysalahmedmin@gamil.com\nPhone: +1 (555) 123-4567\n\nWe respond to all requests within 30 days.",
   },
 ];
 

@@ -18,8 +18,8 @@ const data = [
       },
       {
         type: "link",
-        text: "cyberdocnyc@gmail.com",
-        href: "mailto:cyberdocnyc@gmail.com",
+        text: "CyberBeidnyc@gmail.com",
+        href: "mailto:CyberBeidnyc@gmail.com",
       },
     ],
   },
@@ -114,17 +114,17 @@ const links = [
 const socials = [
   {
     text: "Facebook",
-    href: "https://www.facebook.com/cyberdocinc",
+    href: "https://www.facebook.com/CyberBeidinc",
     target: "_blank",
   },
   {
     text: "Linkedin",
-    href: "https://www.linkedin.com/cyberdocinc",
+    href: "https://www.linkedin.com/CyberBeidinc",
     target: "_blank",
   },
   {
     text: "Instagram",
-    href: "https://www.instagram.com/cyberdocinc",
+    href: "https://www.instagram.com/CyberBeidinc",
     target: "_blank",
   },
 ];
@@ -148,7 +148,7 @@ const Footer = () => {
                 className="size-12 rounded-lg object-contain object-left"
               />
               <div className="leading-none">
-                <h5 className="font-semibold">CyberDoc</h5>
+                <h5 className="font-semibold">CyberBeid</h5>
                 <span className="text-xs leading-0">Renovation Experts</span>
               </div>
             </Link>
@@ -206,9 +206,9 @@ const Footer = () => {
             ©2025
             <Link
               className="primary underline-effect hover:text-primary"
-              href="https://cyberdocnyc.com"
+              href="https://CyberBeidnyc.com"
             >
-              CyberDoc Inc.
+              CyberBeid Inc.
             </Link>
           </div>
           <div className="flex flex-wrap items-center gap-4 lg:justify-center">

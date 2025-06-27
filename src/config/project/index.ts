@@ -1,5 +1,5 @@
 export const PROJECT = {
-  name: "CyberDoc",
+  name: "CyberBeid",
   website: "https://foysalahmedmin.com",
   description: "Digital solutions.",
   version: "1.0.0",

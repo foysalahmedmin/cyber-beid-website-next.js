@@ -41,7 +41,7 @@ const AboutSection = () => {
               <Subtitle>About Us</Subtitle>
               <Title>We Build Digital Solutions That Drive Growth</Title>
               <Description>
-                CyberDoc is a leading digital solutions company specializing in
+                CyberBeid is a leading digital solutions company specializing in
                 web development, mobile applications, and cloud technologies.
                 Since 2018, we&apos;ve helped businesses of all sizes transform
                 their digital presence and achieve their goals through

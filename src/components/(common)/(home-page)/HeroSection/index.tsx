@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="max-w-2xl space-y-6 lg:space-y-8">
           <h1 className="text-5xl lg:text-7xl">
-            Welcome to <br /> CyberDoc
+            Welcome to <br /> CyberBeid
           </h1>
           <div>
             <Button size="lg">
