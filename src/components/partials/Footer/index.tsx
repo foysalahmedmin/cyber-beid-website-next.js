@@ -154,7 +154,9 @@ const Footer = () => {
                 priority
               />
               <div className="pt-2 leading-4">
-                <p className="font-mokoto-glitch text-primary">CyberBeid</p>
+                <p className="font-mokoto-glitch dark:text-foreground text-primary">
+                  CyberBeid
+                </p>
                 <span className="text-xs font-thin">Renovation Experts</span>
               </div>
             </Link>

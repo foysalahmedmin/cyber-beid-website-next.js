@@ -4,7 +4,7 @@ import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import ProjectsSlideSection from "@/components/sections/ProjectsSlideSection";
 import SingleProjectSection from "@/components/sections/SingleProjectSection";
-import SplitSection from "@/components/sections/SplitSection";
+import SplitFloatSection from "@/components/sections/SplitFloatSection";
 import SplitStickySection from "@/components/sections/SplitStickySection";
 
 type Props = {
@@ -23,7 +23,7 @@ const ServicesDetailsPage = async ({ params }: Props) => {
         description={description}
         image={thumbnail}
       />
-      <SplitSection
+      <SplitFloatSection
         subtitle="Details"
         title={details?.title}
         description={details?.description}

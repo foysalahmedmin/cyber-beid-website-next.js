@@ -109,7 +109,9 @@ const Logo: React.FC = () => (
       priority
     />
     <div className="pt-2 leading-4">
-      <p className="font-mokoto-glitch">CyberBeid</p>
+      <p className="font-mokoto-glitch dark:text-foreground text-primary">
+        CyberBeid
+      </p>
       <span className="text-xs font-thin">Renovation Experts</span>
     </div>
   </Link>
