@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="dark text-foreground relative flex min-h-[60vh] w-full items-center py-24 xl:min-h-[80vh]"
+      className="dark text-foreground relative flex min-h-[60vh] w-full items-center py-24 pt-40 xl:min-h-[80vh]"
     >
       <video
         src="/hero.mp4"
@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="max-w-2xl space-y-6 lg:space-y-8">
           <h1 className="text-4xl uppercase lg:text-6xl">
-            <span className="border-primary inline-block border-l-2 pl-2 lg:border-l-4 lg:pl-4">
+            <span className="border-primary inline-block border-l-2 pl-4 font-semibold lg:border-l-8 lg:pl-4">
               Transform Your Business
             </span>{" "}
             <br />
@@ -29,10 +29,9 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="max-w-lg lg:text-xl">
-            CyberBaid delivers cutting-edge digital solutions - from SEO and
-            content creation to custom applications - that drive growth, enhance
-            visibility, and future-proof your business.
+          <p className="text-muted-foreground max-w-lg lg:text-xl">
+            CyberBaid delivers digital solutions—from SEO and content to custom
+            apps—that boost growth, visibility, and future-proof your business.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -53,7 +52,7 @@ const HeroSection = () => {
             </Link>
           </div>
 
-          <div className="grid max-w-md grid-cols-2 gap-4 pt-6 sm:grid-cols-4 md:max-w-lg md:grid-cols-6">
+          <div className="grid max-w-xl grid-cols-3 gap-4 pt-6 md:max-w-lg md:grid-cols-6">
             {[
               { value: "App", desc: "Development" },
               { value: "Content", desc: "Creation" },
@@ -62,9 +61,16 @@ const HeroSection = () => {
               { value: "UI/UX", desc: "Design" },
               { value: "Business", desc: "Solutions" },
             ].map((item, index) => (
-              <div key={index} className="border-primary border-l-2 pl-3">
-                <div className="text-lg font-semibold">{item.value}</div>
-                <div className="text-muted-foreground text-sm">{item.desc}</div>
+              <div
+                key={index}
+                className="border-primary border-l-2 pl-2 lg:pl-4"
+              >
+                <div className="text-sm font-semibold md:text-base">
+                  {item.value}
+                </div>
+                <div className="text-muted-foreground text-xs md:text-sm">
+                  {item.desc}
+                </div>
               </div>
             ))}
           </div>
