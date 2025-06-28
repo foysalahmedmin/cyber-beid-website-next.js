@@ -151,10 +151,11 @@ const Footer = () => {
                 width={48}
                 height={48}
                 className="bg-primary size-12 rounded-full object-contain object-left"
+                priority
               />
-              <div className="leading-none">
-                <h5 className="font-semibold">CyberBeid</h5>
-                <span className="text-xs leading-0">Renovation Experts</span>
+              <div className="pt-1.5 leading-4">
+                <p className="font-mokoto-glitch">CyberBeid</p>
+                <span className="text-xs font-thin">Renovation Experts</span>
               </div>
             </Link>
             <div className="flex flex-wrap gap-4">

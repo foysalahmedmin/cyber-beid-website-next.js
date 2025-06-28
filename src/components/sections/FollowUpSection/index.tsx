@@ -24,7 +24,12 @@ const FollowUpSection = () => {
               </Button>
             </Link>
             <Link href="/contact">
-              <Button asChild={true} size="lg" variant="outline">
+              <Button
+                className="foreground"
+                asChild={true}
+                size="lg"
+                variant="outline"
+              >
                 <span>Contact Us</span>
               </Button>
             </Link>

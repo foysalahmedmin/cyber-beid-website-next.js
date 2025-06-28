@@ -26,9 +26,7 @@ const AboutSection = () => {
               {/* Stats card overlay */}
               <div className="bg-card absolute right-0 bottom-0 hidden rounded-xl border p-6 shadow-xl lg:block">
                 <div className="text-center">
-                  <div className="text-primary mb-1 text-3xl font-bold">
-                    150+
-                  </div>
+                  <div className="mb-1 text-4xl">50+</div>
                   <div className="text-sm">Projects Completed</div>
                 </div>
               </div>

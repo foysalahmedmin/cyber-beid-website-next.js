@@ -30,9 +30,9 @@ const buttonVariants = cva(
         default:
           "bg-accent text-accent-foreground hover:bg-foreground hover:text-background",
         gradient:
-          "bg-gradient-to-r from-primary to-secondary text-white border-transparent",
+          "bg-gradient-to-r from-primary to-secondary text-background border-transparent",
         outline:
-          "border border-foreground text-foreground hover:border-accent hover:text-accent",
+          "border border-accent text-accent hover:border-foreground hover:text-foreground",
         ghost:
           "bg-transparent text-accent hover:bg-accent/10 hover:text-accent-foreground",
         link: "text-blue-500 hover:text-blue-700 underline",

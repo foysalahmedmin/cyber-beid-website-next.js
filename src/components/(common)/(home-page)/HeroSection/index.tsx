@@ -19,12 +19,14 @@ const HeroSection = () => {
 
       <div className="container">
         <div className="max-w-2xl space-y-6 lg:space-y-8">
-          <h1 className="text-5xl font-bold lg:text-7xl">
-            <span className="border-primary inline-block border-l-2 pl-2 lg:border-4">
+          <h1 className="text-4xl uppercase lg:text-6xl">
+            <span className="border-primary inline-block border-l-2 pl-2 lg:border-l-4 lg:pl-4">
               Transform Your Business
             </span>{" "}
             <br />
-            <span className="text-primary">Digitally</span>
+            <span className="font-mokoto-glitch mt-6 inline-block">
+              Digitally
+            </span>
           </h1>
 
           <p className="max-w-lg lg:text-xl">
@@ -40,18 +42,25 @@ const HeroSection = () => {
               </Button>
             </Link>
             <Link href="/contact">
-              <Button asChild={true} size="lg" variant="outline">
+              <Button
+                className="foreground"
+                asChild={true}
+                size="lg"
+                variant="outline"
+              >
                 <span>Get Started</span>
               </Button>
             </Link>
           </div>
 
-          <div className="grid max-w-md grid-cols-2 gap-4 pt-6 sm:grid-cols-4">
+          <div className="grid max-w-md grid-cols-2 gap-4 pt-6 sm:grid-cols-4 md:max-w-lg md:grid-cols-6">
             {[
-              { value: "SEO", desc: "Optimization" },
-              { value: "Content", desc: "Creation" },
               { value: "App", desc: "Development" },
+              { value: "Content", desc: "Creation" },
               { value: "Digital", desc: "Marketing" },
+              { value: "SEO", desc: "Optimization" },
+              { value: "UI/UX", desc: "Design" },
+              { value: "Business", desc: "Solutions" },
             ].map((item, index) => (
               <div key={index} className="border-primary border-l-2 pl-3">
                 <div className="text-lg font-semibold">{item.value}</div>

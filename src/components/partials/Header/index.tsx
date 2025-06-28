@@ -108,9 +108,9 @@ const Logo: React.FC = () => (
       className="bg-primary size-12 rounded-full object-contain object-left"
       priority
     />
-    <div className="leading-none">
-      <h5 className="font-semibold">CyberBeid</h5>
-      <span className="text-xs leading-0">Renovation Experts</span>
+    <div className="pt-1.5 leading-4">
+      <p className="font-mokoto-glitch">CyberBeid</p>
+      <span className="text-xs font-thin">Renovation Experts</span>
     </div>
   </Link>
 );
@@ -125,7 +125,7 @@ const NavItem: React.FC<{
   const isActive = visibleSection === url.hash.replace("#", "");
 
   const linkClassName = cn(
-    "underline-effect primary text-sm whitespace-nowrap uppercase transition-colors duration-200",
+    "underline-effect foreground text-sm whitespace-nowrap uppercase transition-colors duration-200",
     {
       active: isActive,
     },
@@ -230,8 +230,8 @@ const MobileNavigation: React.FC<{
 
 const CTAButton: React.FC = () => (
   <Link className="hidden lg:inline-block" href="/contact">
-    <Button asChild={true} variant="outline">
-      <span>GET AN ESTIMATE</span>
+    <Button className="foreground" asChild={true} variant="outline">
+      <span>CONTACT</span>
     </Button>
   </Link>
 );
