@@ -108,7 +108,7 @@ const Logo: React.FC = () => (
       className="bg-primary size-12 rounded-full object-contain object-left"
       priority
     />
-    <div className="pt-1.5 leading-4">
+    <div className="pt-2 leading-4">
       <p className="font-mokoto-glitch">CyberBeid</p>
       <span className="text-xs font-thin">Renovation Experts</span>
     </div>

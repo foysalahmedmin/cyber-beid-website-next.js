@@ -153,8 +153,8 @@ const Footer = () => {
                 className="bg-primary size-12 rounded-full object-contain object-left"
                 priority
               />
-              <div className="pt-1.5 leading-4">
-                <p className="font-mokoto-glitch">CyberBeid</p>
+              <div className="pt-2 leading-4">
+                <p className="font-mokoto-glitch text-primary">CyberBeid</p>
                 <span className="text-xs font-thin">Renovation Experts</span>
               </div>
             </Link>
