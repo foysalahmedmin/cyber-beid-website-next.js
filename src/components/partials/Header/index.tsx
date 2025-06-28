@@ -26,7 +26,7 @@ const ALL_PAGE_NAV_LINKS: NavLink[] = [
   { href: "/services", name: "Services" },
   { href: "/about", name: "About" },
   // { href: "/leaderships", name: "Leaderships" },
-  { href: "/projects", name: "Projects" },
+  // { href: "/projects", name: "Projects" },
   { href: "/blogs", name: "Blogs" },
 ] as const;
 
@@ -36,7 +36,7 @@ const HOME_PAGE_NAV_LINKS: NavLink[] = [
   { href: "#about", name: "About" },
   // { href: "#leaderships", name: "Leaderships" },
   { href: "#features", name: "Features" },
-  { href: "#projects", name: "Projects" },
+  // { href: "#projects", name: "Projects" },
   { href: "#blogs", name: "Blogs" },
 ] as const;
 

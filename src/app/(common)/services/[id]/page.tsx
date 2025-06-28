@@ -2,7 +2,6 @@ import { projects } from "@/assets/data/projects";
 import { services } from "@/assets/data/services";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
-import ProjectsSlideSection from "@/components/sections/ProjectsSlideSection";
 import SingleProjectSection from "@/components/sections/SingleProjectSection";
 import SplitFloatSection from "@/components/sections/SplitFloatSection";
 import SplitStickySection from "@/components/sections/SplitStickySection";
@@ -33,12 +32,12 @@ const ServicesDetailsPage = async ({ params }: Props) => {
         project={projects?.find((project) => project?.sector === service?._id)}
       />
       <SplitStickySection image={points?.thumbnail} contents={points?.list} />
-      <ProjectsSlideSection
+      {/* <ProjectsSlideSection
         title="Explore Similar Projects"
         projects={projects?.filter(
           (project) => project?.sector === service?._id,
         )}
-      />
+      /> */}
       <FollowUpSection />
     </main>
   );

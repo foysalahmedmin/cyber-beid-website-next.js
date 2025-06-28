@@ -1,46 +1,52 @@
 import { services } from "@/assets/data/services";
 import { Button } from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
 const data = [
-  {
-    title: "Our location",
-    items: [
-      {
-        type: "text",
-        text: "Wellington, New Zealand",
-      },
-      {
-        type: "link",
-        text: "+64 28 470 0533",
-        href: "tel:+64284700533",
-      },
-      {
-        type: "link",
-        text: "cyberbeid@gmail.com",
-        href: "mailto:cyberbeid@gmail.com",
-      },
-    ],
-  },
+  // {
+  //   title: "Our location",
+  //   items: [
+  //     {
+  //       type: "text",
+  //       text: "Wellington, New Zealand",
+  //     },
+  //     {
+  //       type: "link",
+  //       text: "+64 28 470 0533",
+  //       href: "tel:+64284700533",
+  //     },
+  //     {
+  //       type: "link",
+  //       text: "cyberbeid@gmail.com",
+  //       href: "mailto:cyberbeid@gmail.com",
+  //     },
+  //   ],
+  // },
   {
     title: "About",
     items: [
       {
         type: "link",
-        text: "Leaderships",
-        href: "/leaderships",
+        text: "About",
+        href: "/about",
       },
+      // {
+      //   type: "link",
+      //   text: "Leaderships",
+      //   href: "/leaderships",
+      // },
       {
         type: "link",
         text: "Services",
         href: "/services",
       },
-      {
-        type: "link",
-        text: "Projects",
-        href: "/projects",
-      },
+      // {
+      //   type: "link",
+      //   text: "Projects",
+      //   href: "/projects",
+      // },
       {
         type: "link",
         text: "Blogs",
@@ -161,11 +167,11 @@ const Footer = () => {
               </div>
             </Link>
             <div className="flex flex-wrap gap-4">
-              <Link target="_blank" href="tel:+64284700533">
+              {/* <Link target="_blank" href="tel:+64284700533">
                 <Button size="lg">
                   <span>+64 28 470 0533</span>
                 </Button>
-              </Link>
+              </Link> */}
               <Link href="/contact">
                 <Button size="lg" variant="outline">
                   <span>CONTACT US</span>
@@ -174,10 +180,19 @@ const Footer = () => {
             </div>
           </div>
           {data?.map((obj, index) => (
-            <div key={index}>
+            <div
+              key={index}
+              className={cn("", {
+                "lg:col-span-2": obj?.items?.length > 6,
+              })}
+            >
               <strong className="mb-4 block font-medium">{obj?.title}</strong>
               {obj?.items?.length > 0 && (
-                <ul className="space-y-2">
+                <ul
+                  className={cn("space-y-2", {
+                    "grid lg:grid-cols-2": obj?.items?.length > 6,
+                  })}
+                >
                   {obj?.items.map((item, index) => (
                     <li className="font-light" key={index}>
                       {item?.type === "link" ? (

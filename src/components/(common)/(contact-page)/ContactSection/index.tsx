@@ -1,30 +1,29 @@
 import { services } from "@/assets/data/services";
 import { Button } from "@/components/ui/Button";
 import { FormControl } from "@/components/ui/FormControl";
-import Link from "next/link";
 
-const locations = [
-  {
-    type: "text",
-    text: "Wellington, New Zealand",
-  },
-  {
-    type: "link",
-    text: "+64 28 470 0533",
-    href: "tel:+64284700533",
-  },
-  {
-    type: "link",
-    text: "cyberbeid@gmail.com",
-    href: "mailto:cyberbeid@gmail.com",
-  },
-];
+// const locations = [
+//   {
+//     type: "text",
+//     text: "Wellington, New Zealand",
+//   },
+//   {
+//     type: "link",
+//     text: "+64 28 470 0533",
+//     href: "tel:+64284700533",
+//   },
+//   {
+//     type: "link",
+//     text: "cyberbeid@gmail.com",
+//     href: "mailto:cyberbeid@gmail.com",
+//   },
+// ];
 const ContactSection = () => {
   return (
     <section className="intersection-fade-in py-16">
       <div className="container">
         <div className="flex flex-col gap-8 md:flex-row-reverse md:gap-12">
-          <div className="space-y-8 md:flex-1 md:space-y-12">
+          {/* <div className="space-y-8 md:flex-1 md:space-y-12">
             <h2 className="text-4xl">Our location </h2>
             <div>
               <strong className="mb-4 block font-medium uppercase">
@@ -48,13 +47,13 @@ const ContactSection = () => {
               </ul>
             </div>
           </div>
-          <div className="bg-border hidden md:block md:w-0.5 md:self-stretch" />
+          <div className="bg-border hidden md:block md:w-0.5 md:self-stretch" /> */}
           <div className="space-y-8 md:flex-1 md:space-y-12">
             <h2 className="text-4xl">How can we help? </h2>
             <div>
               <form action="">
                 <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-                  <label className="w-full space-y-2">
+                  <label className="w-full space-y-2 lg:col-span-2">
                     <span className="block">Select Inquiry</span>
                     <FormControl as="select">
                       {services?.map((service) => (
@@ -82,22 +81,13 @@ const ContactSection = () => {
                       name="region"
                     />
                   </label>
-                  <label className="w-full space-y-2">
-                    <span className="block">First Name </span>
+                  <label className="w-full space-y-2 lg:col-span-2">
+                    <span className="block">Name </span>
                     <FormControl
                       as="input"
                       type="text"
                       placeholder="First Name"
-                      name="first-name"
-                    />
-                  </label>
-                  <label className="w-full space-y-2">
-                    <span className="block">Last Name </span>
-                    <FormControl
-                      as="input"
-                      type="text"
-                      placeholder="Last Name"
-                      name="last-name"
+                      name="name"
                     />
                   </label>
                   <label className="w-full space-y-2">
@@ -130,7 +120,7 @@ const ContactSection = () => {
                   </label>
                 </div>
                 <div className="mt-6 md:mt-8">
-                  <Button variant="outline" size="lg">
+                  <Button size="lg">
                     <span>SEND</span>
                   </Button>
                 </div>

@@ -4,12 +4,6 @@ import { FormControl } from "@/components/ui/FormControl";
 import { SectionTitle, Title } from "@/components/ui/SectionTitle";
 import Link from "next/link";
 
-const construction_types = [
-  { value: "Buildings", label: "Buildings" },
-  { value: "Civil", label: "Civil" },
-  { value: "Industrial", label: "Industrial" },
-];
-
 const ProjectApplySection = () => {
   return (
     <section className="bg-muted intersection-fade-in py-16">
@@ -18,24 +12,6 @@ const ProjectApplySection = () => {
           <Title>Build a project with us </Title>
         </SectionTitle>
         <form className="block space-y-16 md:max-w-1/2">
-          <div className="space-y-8 md:space-y-12">
-            <h2 className="text-4xl">Choose your project type</h2>
-            <div className="flex flex-wrap items-center gap-4">
-              {construction_types?.map((item, index) => (
-                <label
-                  key={index}
-                  className="bg-card inline-flex h-16 cursor-pointer items-center gap-2 border px-4"
-                >
-                  <Checkbox
-                    className="foreground rounded-none"
-                    value={item?.value}
-                    name="construction-type"
-                  />{" "}
-                  <span className="leading-none">{item?.label}</span>
-                </label>
-              ))}
-            </div>
-          </div>
           <div className="space-y-8 md:space-y-12">
             <h2 className="text-4xl">Describe your project</h2>
             <label className="block">
@@ -52,16 +28,8 @@ const ProjectApplySection = () => {
             <div className="space-y-6 md:space-y-8">
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                 <label className="w-full space-y-2">
-                  <span className="block">First Name </span>
-                  <FormControl
-                    as="input"
-                    type="text"
-                    placeholder="First Name"
-                  />
-                </label>
-                <label className="w-full space-y-2">
-                  <span className="block">Last Name </span>
-                  <FormControl as="input" type="text" placeholder="Last Name" />
+                  <span className="block">Name </span>
+                  <FormControl as="input" type="text" placeholder="Name" />
                 </label>
                 <label className="w-full space-y-2">
                   <span className="block">Phone Number </span>
@@ -69,7 +37,6 @@ const ProjectApplySection = () => {
                     as="input"
                     type="tel"
                     placeholder="Phone Number"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   />
                 </label>
                 <label className="w-full space-y-2">

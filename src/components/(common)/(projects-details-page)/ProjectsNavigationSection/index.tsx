@@ -9,7 +9,7 @@ const ProjectsNavigationSection = ({ id }: { id: string }) => {
     index > 0 ? projects[index - 1] : projects[projects.length - 1];
   return (
     <section className="hover:bg-muted intersection-fade-in py-16 md:py-24">
-      <div className="container max-w-4xl">
+      <div className="container max-w-4xl overflow-hidden">
         <div className="flex justify-between">
           <Link className="flex-1" href={"projects" + prevProject?._id || "/"}>
             <div className="hover:text-primary flex w-full items-center justify-start gap-6 text-left">
@@ -34,7 +34,7 @@ const ProjectsNavigationSection = ({ id }: { id: string }) => {
                 <span className="text-muted-foreground block text-sm">
                   Previous
                 </span>
-                <h4 className="underline-effect md:text-xl">
+                <h4 className="underline-effect text-sm md:text-xl">
                   {prevProject?.title}
                 </h4>
               </div>
@@ -47,7 +47,7 @@ const ProjectsNavigationSection = ({ id }: { id: string }) => {
                 <span className="text-muted-foreground block text-sm">
                   Next
                 </span>
-                <h4 className="underline-effect md:text-xl">
+                <h4 className="underline-effect text-sm md:text-xl">
                   {nextProject?.title}
                 </h4>
               </div>

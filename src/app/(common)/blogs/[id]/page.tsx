@@ -1,8 +1,6 @@
 import { blogs } from "@/assets/data/blogs";
-import { projects } from "@/assets/data/projects";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
-import ProjectsSlideSection from "@/components/sections/ProjectsSlideSection";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -34,12 +32,12 @@ const BlogsDetailsPage = async ({ params }: Props) => {
           </div>
         </div>
       </section>
-      <ProjectsSlideSection
+      {/* <ProjectsSlideSection
         title="Explore Similar Projects"
         projects={projects?.filter(
           (project) => project?.sector === blog?.sector,
         )}
-      />
+      /> */}
       <FollowUpSection />
     </main>
   );
