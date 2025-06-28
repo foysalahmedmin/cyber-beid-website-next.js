@@ -146,11 +146,11 @@ const Footer = () => {
               aria-label="Home"
             >
               <Image
-                src="/logo.svg"
+                src="/logo-star.png"
                 alt="Logo"
                 width={48}
                 height={48}
-                className="size-12 rounded-lg object-contain object-left"
+                className="bg-primary size-12 rounded-full object-contain object-left"
               />
               <div className="leading-none">
                 <h5 className="font-semibold">CyberBeid</h5>
