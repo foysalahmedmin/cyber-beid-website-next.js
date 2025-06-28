@@ -50,7 +50,7 @@ const ActiveLink = forwardRef<HTMLAnchorElement, ActiveLinkProps>(
       <Link
         href={href || ""}
         className={cn(className, {
-          [cn("text-primary", activeClassName)]: isActive,
+          [cn("", activeClassName)]: isActive,
         })}
         {...props}
         ref={ref}

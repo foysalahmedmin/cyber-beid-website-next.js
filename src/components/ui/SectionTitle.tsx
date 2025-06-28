@@ -62,7 +62,7 @@ const Subtitle = forwardRef<ComponentRef<"span">, SubtitleProps>(
     return (
       <span
         className={cn(
-          "border-primary after:bg-primary relative inline-block py-1 capitalize after:absolute after:top-5/9 after:-right-2 after:bottom-0 after:inline-block after:h-[0.0625rem] after:w-12 after:translate-x-full after:content-['_']",
+          "border-primary text-primary after:bg-primary relative inline-block py-1 capitalize after:absolute after:top-5/9 after:-right-2 after:bottom-0 after:inline-block after:h-[0.0625rem] after:w-12 after:translate-x-full after:content-['_']",
           className,
         )}
         ref={ref}
