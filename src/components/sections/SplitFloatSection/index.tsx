@@ -37,47 +37,41 @@ const SplitFloatSection = ({
           <SectionTitle className="mb-6">
             {subtitle && <Subtitle>{subtitle}</Subtitle>}
             {title && <Title>{title}</Title>}
-          </SectionTitle>
-
-          {/* Floating Image */}
-          <div className="mb-6 w-full md:float-right md:ml-6 md:max-w-md lg:max-w-lg xl:max-w-xl">
-            <div className="aspect-[3/4] w-full overflow-hidden rounded-xl border">
-              <Image
-                className="bg-muted size-full object-cover object-center"
-                src={image}
-                alt="hero-split-image"
-                height={700}
-                width={525}
-              />
-            </div>
-          </div>
-
-          {/* Content that wraps around the image */}
-          {description && (
-            <Description>
-              <div className="w-full">
-                <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
-                  <div
-                    className="text-foreground font-sans"
-                    dangerouslySetInnerHTML={{ __html: description || "" }}
-                  />
-                </div>
+            {image && (
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-xl md:aspect-[2/1]">
+                <Image
+                  className="bg-muted size-full object-cover object-center"
+                  src={image}
+                  alt="hero-split-image"
+                  height={525}
+                  width={700}
+                />
               </div>
-            </Description>
-          )}
-
-          {/* Links section - clears the float */}
-          {links?.length > 0 && (
-            <div className="clear-both pt-6">
-              {links?.map((link, index) => (
-                <Link key={index} href={link?.url}>
-                  <Button asChild={true} variant="outline" size="lg">
-                    <span>{link?.text}</span>
-                  </Button>
-                </Link>
-              ))}
-            </div>
-          )}
+            )}
+            {description && (
+              <Description>
+                <div className="w-full">
+                  <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
+                    <div
+                      className="text-foreground font-sans"
+                      dangerouslySetInnerHTML={{ __html: description || "" }}
+                    />
+                  </div>
+                </div>
+              </Description>
+            )}
+            {links?.length > 0 && (
+              <div className="clear-both pt-6">
+                {links?.map((link, index) => (
+                  <Link key={index} href={link?.url}>
+                    <Button asChild={true} variant="outline" size="lg">
+                      <span>{link?.text}</span>
+                    </Button>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </SectionTitle>
         </div>
       </div>
     </section>

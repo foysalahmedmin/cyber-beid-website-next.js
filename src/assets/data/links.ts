@@ -1,11 +1,9 @@
 import {
-  Briefcase,
   Building,
   Calendar,
   Eye,
-  Handshake,
   LucideIcon,
-  Target,
+  Target
 } from "lucide-react";
 
 type TLink = {
@@ -16,12 +14,12 @@ type TLink = {
 };
 
 export const about_links: TLink[] = [
-  {
-    text: "About",
-    href: "/about",
-    icon: Handshake,
-    description: "Learn more about our company",
-  },
+  // {
+  //   text: "About",
+  //   href: "/about",
+  //   icon: Handshake,
+  //   description: "Learn more about our company",
+  // },
   // {
   //   text: "Leaderships",
   //   href: "/leaderships",
@@ -34,12 +32,12 @@ export const about_links: TLink[] = [
     icon: Building,
     description: "Explore our comprehensive service offerings",
   },
-  {
-    text: "Projects",
-    href: "/projects",
-    icon: Briefcase,
-    description: "View our portfolio and case studies",
-  },
+  // {
+  //   text: "Projects",
+  //   href: "/projects",
+  //   icon: Briefcase,
+  //   description: "View our portfolio and case studies",
+  // },
   {
     text: "Careers",
     href: "/careers",

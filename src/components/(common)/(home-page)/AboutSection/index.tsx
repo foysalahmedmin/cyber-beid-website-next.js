@@ -41,9 +41,9 @@ const AboutSection = () => {
               <Description>
                 CyberBeid is a leading digital solutions company specializing in
                 web development, mobile applications, and cloud technologies.
-                Since 2018, we&apos;ve helped businesses of all sizes transform
-                their digital presence and achieve their goals through
-                innovative technology solutions.
+                we&apos;ve helped businesses of all sizes transform their
+                digital presence and achieve their goals through innovative
+                technology solutions.
               </Description>
               <p>
                 Our commitment to excellence, innovation, and client
@@ -54,7 +54,7 @@ const AboutSection = () => {
             </SectionTitle>
 
             {/* About Links Grid */}
-            <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2">
               {about_links.map((link, index) => (
                 <Link
                   key={index}

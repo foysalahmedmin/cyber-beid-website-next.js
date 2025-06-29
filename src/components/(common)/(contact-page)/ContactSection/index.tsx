@@ -54,7 +54,7 @@ const ContactSection = () => {
               <form action="">
                 <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                   <label className="w-full space-y-2 lg:col-span-2">
-                    <span className="block">Select Inquiry</span>
+                    <span className="block">Select Service</span>
                     <FormControl as="select">
                       {services?.map((service) => (
                         <option key={service._id} value={service._id}>
@@ -119,8 +119,8 @@ const ContactSection = () => {
                     />
                   </label>
                 </div>
-                <div className="mt-6 md:mt-8">
-                  <Button size="lg">
+                <div className="mt-6 w-full text-right md:mt-8">
+                  <Button className="primary px-12" size="lg">
                     <span>SEND</span>
                   </Button>
                 </div>

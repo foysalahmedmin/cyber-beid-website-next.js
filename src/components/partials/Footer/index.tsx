@@ -27,11 +27,11 @@ const data = [
   {
     title: "About",
     items: [
-      {
-        type: "link",
-        text: "About",
-        href: "/about",
-      },
+      // {
+      //   type: "link",
+      //   text: "About",
+      //   href: "/about",
+      // },
       // {
       //   type: "link",
       //   text: "Leaderships",
@@ -96,16 +96,16 @@ const links = [
     text: "Services",
     href: "/services",
   },
-  {
-    type: "link",
-    text: "Projects",
-    href: "/projects",
-  },
   // {
   //   type: "link",
-  //   text: "Blogs",
-  //   href: "/blogs",
+  //   text: "Projects",
+  //   href: "/projects",
   // },
+  {
+    type: "link",
+    text: "Blogs",
+    href: "/blogs",
+  },
   {
     type: "link",
     text: "Careers",
@@ -130,7 +130,7 @@ const socials = [
   },
   {
     text: "Linkedin",
-    href: "https://www.linkedin.com/cyberbeid",
+    href: "https://www.linkedin.com/company/cyberbeid",
     target: "_blank",
   },
   {
@@ -172,6 +172,11 @@ const Footer = () => {
                   <span>+64 28 470 0533</span>
                 </Button>
               </Link> */}
+              <Link href="/services">
+                <Button size="lg">
+                  <span>EXPLORE SERVICES</span>
+                </Button>
+              </Link>
               <Link href="/contact">
                 <Button size="lg" variant="outline">
                   <span>CONTACT US</span>
