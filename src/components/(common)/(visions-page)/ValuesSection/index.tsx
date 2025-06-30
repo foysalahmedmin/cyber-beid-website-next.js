@@ -7,8 +7,10 @@ const ValuesSection = () => {
   return (
     <section className="bg-muted intersection-fade-in py-16 md:py-24">
       <div className="container">
-        <SectionTitle>
-          <Subtitle>Our Values in Action</Subtitle>
+        <SectionTitle className="mx-auto text-center md:mx-0 md:text-left">
+          <Subtitle className="after:hidden md:after:inline-block">
+            Our Values in Action
+          </Subtitle>
           <Title>We deliver purposeful solutions with measurable impact</Title>
         </SectionTitle>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
@@ -26,7 +28,7 @@ const ValuesSection = () => {
               <div
                 key={item?._id}
                 className={cn(
-                  "intersection-fade-in flex max-w-80 flex-col gap-y-4",
+                  "intersection-fade-in mx-auto flex max-w-80 flex-col items-center gap-y-4 text-center md:items-start md:text-left",
                   alignClassMD,
                   alignClassLG,
                 )}

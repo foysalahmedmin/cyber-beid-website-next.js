@@ -52,7 +52,7 @@ const HeroSection = () => {
             </Link>
           </div>
 
-          <div className="grid max-w-xl grid-cols-3 gap-4 pt-6 md:max-w-lg md:grid-cols-6">
+          <div className="grid max-w-xl grid-cols-3 gap-4 pt-6 md:max-w-2xl md:grid-cols-6">
             {[
               { value: "App", desc: "Development" },
               { value: "Content", desc: "Creation" },

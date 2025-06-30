@@ -45,7 +45,7 @@ const FAQSection = () => {
             </div>
           </div>
           <div className="bg-card flex flex-col justify-center rounded-xl md:h-[53rem]">
-            <div className="space-y-6 p-12">
+            <div className="space-y-6 px-8 py-12 md:px-12">
               <h3 className="text-3xl">Schedule Free Consultation</h3>
               <form className="space-y-4" action="">
                 <label className="block w-full space-y-2">

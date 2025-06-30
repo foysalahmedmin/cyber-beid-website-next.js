@@ -10,8 +10,10 @@ const FeaturesSection = () => {
     >
       <div className="container">
         <div className="grid grid-cols-1 gap-8 md:gap-12 lg:grid-cols-4">
-          <div>
-            <Subtitle>Features</Subtitle>
+          <div className="text-center md:text-center">
+            <Subtitle className="after:hidden md:after:inline-block">
+              Features
+            </Subtitle>
             <Title>
               Why <br />
               choose us
@@ -35,7 +37,7 @@ const FeaturesSection = () => {
                 <div
                   key={feature?._id}
                   className={cn(
-                    "intersection-fade-in max-w-60 space-y-4",
+                    "intersection-fade-in mx-auto flex max-w-60 flex-col items-center space-y-4 text-center md:items-start md:text-left",
                     alignClassMD,
                     alignClassLG,
                   )}
