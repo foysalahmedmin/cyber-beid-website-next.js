@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "start:out": "serve out",
     "lint": "next lint",
     "lint:fix": "eslint . --fix"
   },
@@ -39,6 +40,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-css-order": "^2.1.2",
     "prettier-plugin-tailwindcss": "^0.6.12",
+    "serve": "^14.2.4",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.2.9",
     "typescript": "^5",
