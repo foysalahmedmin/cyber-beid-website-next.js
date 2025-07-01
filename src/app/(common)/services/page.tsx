@@ -7,6 +7,12 @@ import {
   Title,
 } from "@/components/ui/SectionTitle";
 
+export const metadata = {
+  title: "SERVICES | CYBER BAID",
+  description:
+    "CyberBaid | We offer a wide range of services to help you achieve your goals. From web development to mobile app development, we have the expertise to help you succeed in the digital world.",
+};
+
 const ServicesPage = () => {
   return (
     <main>

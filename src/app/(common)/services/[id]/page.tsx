@@ -7,6 +7,20 @@ import SplitStickySection from "@/components/sections/SplitStickySection";
 type Props = {
   params: Promise<{ id: string }>;
 };
+
+export const generateMetadata = async ({ params }: Props) => {
+  const { id } = await params;
+  const service = services.find((service) => service._id === id);
+  return {
+    title: service?.title,
+    description: service?.description,
+  };
+};
+
+export const generateStaticParams = async () => {
+  return services.map((service) => ({ id: service._id }));
+};
+
 const ServicesDetailsPage = async ({ params }: Props) => {
   const { id } = await params;
   const service = services.find((service) => service._id === id);

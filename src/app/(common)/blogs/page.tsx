@@ -5,13 +5,19 @@ import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 import Image from "next/image";
 
+export const metadata = {
+  title: "BLOGS | CYBER BAID",
+  description:
+    "CyberBaid | Explore thought leadership on digital transformation, emerging technologies, and innovative strategies that drive business growth in the digital age. Our blog provides a deep understanding of the latest trends, industry insights, and practical strategies to navigate the digital landscape.",
+};
+
 const BlogsPage = () => {
   return (
     <main>
       <PageHeaderSection
         subtitle="Insights"
         title="Blogs"
-        description="Explore thought leadership on digital transformation, emerging technologies, and innovative strategies that drive business growth in the digital age."
+        description="Explore thought leadership on digital transformation, emerging technologies, and innovative strategies that drive business growth in the digital age. Our blog provides a deep understanding of the latest trends, industry insights, and practical strategies to navigate the digital landscape."
       />
       <section className="intersection-fade-in py-16 md:py-24">
         <div className="container">

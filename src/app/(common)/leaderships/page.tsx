@@ -18,13 +18,19 @@ const metrics = [
   },
 ];
 
+export const metadata = {
+  title: "LEADERSHIPS | CYBER BAID",
+  description:
+    "CyberBaid | CyberBaid's leadership team combines decades of technology expertise with visionary digital strategy.",
+};
+
 const LeadershipsPage = () => {
   return (
     <main>
       <PageHeaderSection
         subtitle="Leaderships"
         title="The champions of a construction revolution"
-        description="Mercy's leaders come from all walks of life and business. What they share: a persistent drive to explore and change the way the world builds. Meet the people who lead our quest for better."
+        description="CyberBaid's leadership team combines decades of technology expertise with visionary digital strategy."
         image="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=12000&q=80"
         metrics={metrics}
       />

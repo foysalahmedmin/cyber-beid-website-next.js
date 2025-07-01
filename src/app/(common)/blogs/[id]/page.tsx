@@ -5,6 +5,22 @@ import PageHeaderSection from "@/components/sections/PageHeaderSection";
 type Props = {
   params: Promise<{ id: string }>;
 };
+
+export const generateMetadata = async ({ params }: Props) => {
+  const { id } = await params;
+  const blog = blogs.find((blog) => blog._id === id);
+  return {
+    title: blog?.title,
+    description: blog?.description,
+  };
+};
+
+export const generateStaticParams = async () => {
+  return blogs.map((blog) => ({
+    id: blog._id,
+  }));
+};
+
 const BlogsDetailsPage = async ({ params }: Props) => {
   const { id } = await params;
   const blog = blogs.find((blog) => blog._id === id);

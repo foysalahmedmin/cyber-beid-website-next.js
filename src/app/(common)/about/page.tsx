@@ -18,6 +18,12 @@ const metrics = [
   },
 ];
 
+export const metadata = {
+  title: "ABOUT | CYBER BAID",
+  description:
+    "CyberBaid's leadership team combines decades of technology expertise with visionary digital strategy. From Silicon Valley veterans to creative pioneers, our leaders are united by a common mission: to transform businesses through cutting-edge digital solutions. Meet the minds powering our clients' digital evolution.",
+};
+
 const AboutPage = () => {
   return (
     <main>

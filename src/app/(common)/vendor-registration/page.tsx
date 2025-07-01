@@ -99,6 +99,12 @@ const terms = [
   },
 ];
 
+export const metadata = {
+  title: "VENDOR AGREEMENT | CYBER BAID",
+  description:
+    "CyberBaid | CyberBaid's leadership team combines decades of technology expertise with visionary digital strategy.",
+};
+
 const VendorRegistrationPage = () => {
   return (
     <main>

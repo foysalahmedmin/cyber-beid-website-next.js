@@ -8,9 +8,25 @@ import Link from "next/link";
 type Props = {
   params: Promise<{ id: string }>;
 };
-const LeadershipsDetailsPage = async ({ params }: Props) => {
+
+export const generateMetadata = async ({ params }: Props) => {
   const { id } = await params;
   const leader = leaderships.find((service) => service._id === id);
+  return {
+    title: leader?.name,
+    description: leader?.short_description,
+  };
+};
+
+export const generateStaticParams = async () => {
+  return leaderships.map((leader) => ({
+    id: leader._id,
+  }));
+};
+
+const LeadershipsDetailsPage = async ({ params }: Props) => {
+  const { id } = await params;
+  const leader = leaderships.find((leader) => leader._id === id);
   const {
     _id,
     name,

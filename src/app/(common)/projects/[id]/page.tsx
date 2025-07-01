@@ -10,6 +10,22 @@ import SplitStickySection from "@/components/sections/SplitStickySection";
 type Props = {
   params: Promise<{ id: string }>;
 };
+
+export const generateMetadata = async ({ params }: Props) => {
+  const { id } = await params;
+  const project = projects.find((project) => project._id === id);
+  return {
+    title: project?.title,
+    description: project?.description,
+  };
+};
+
+export const generateStaticParams = async () => {
+  return projects.map((project) => ({
+    id: project._id,
+  }));
+};
+
 const ProjectsDetailsPage = async ({ params }: Props) => {
   const { id } = await params;
   const project = projects.find((project) => project._id === id);

@@ -15,6 +15,12 @@ import {
   TabsTrigger,
 } from "@/components/ui/Tabs";
 
+export const metadata = {
+  title: "PROJECTS | CYBER BAID",
+  description:
+    "CyberBaid | Our projects range from small-scale renovations to large-scale construction projects. We're dedicated to delivering exceptional results that make a difference in the digital world.",
+};
+
 const ProjectsPage = () => {
   return (
     <main>
