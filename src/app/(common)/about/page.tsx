@@ -21,7 +21,7 @@ const metrics = [
 export const metadata = {
   title: "ABOUT | CYBER BAID",
   description:
-    "CyberBaid's leadership team combines decades of technology expertise with visionary digital strategy. From Silicon Valley veterans to creative pioneers, our leaders are united by a common mission: to transform businesses through cutting-edge digital solutions. Meet the minds powering our clients' digital evolution.",
+    "CyberBeid's leadership team combines decades of technology expertise with visionary digital strategy. From Silicon Valley veterans to creative pioneers, our leaders are united by a common mission: to transform businesses through cutting-edge digital solutions. Meet the minds powering our clients' digital evolution.",
 };
 
 const AboutPage = () => {
@@ -30,7 +30,7 @@ const AboutPage = () => {
       <PageHeaderSection
         subtitle="Leadership"
         title="Architects of the Digital Revolution"
-        description="CyberBaid's leadership team combines decades of technology expertise with visionary digital strategy. From Silicon Valley veterans to creative pioneers, our leaders are united by a common mission: to transform businesses through cutting-edge digital solutions. Meet the minds powering our clients' digital evolution."
+        description="CyberBeid's leadership team combines decades of technology expertise with visionary digital strategy. From Silicon Valley veterans to creative pioneers, our leaders are united by a common mission: to transform businesses through cutting-edge digital solutions. Meet the minds powering our clients' digital evolution."
         image="/images/(about-page)/page-header.png"
         metrics={metrics}
       />
@@ -39,7 +39,7 @@ const AboutPage = () => {
         title="Our Digital Philosophy"
         description={`<div class="space-y-6">
           <p>
-            At CyberBaid, we believe that digital transformation is not simply about implementing
+            At CyberBeid, we believe that digital transformation is not simply about implementing
             the latest tools—it’s about crafting solutions that align with human intent, business
             values, and long-term growth. Our philosophy centers on purpose-driven innovation,
             ensuring that technology works for people—not the other way around.
@@ -88,10 +88,10 @@ const AboutPage = () => {
       />
 
       <SplitSection
-        title="The CyberBaid Difference"
+        title="The CyberBeid Difference"
         description={`<div class="space-y-6">
           <p>
-            In an era where digital agencies are abundant and skillsets overlap, CyberBaid rises
+            In an era where digital agencies are abundant and skillsets overlap, CyberBeid rises
             above by delivering not just services—but results, relationships, and long-term value.
             What sets us apart isn’t just how we code, but how we think, collaborate, and drive change.
           </p>
@@ -145,9 +145,9 @@ const AboutPage = () => {
           </div>
 
           <p>
-            At CyberBaid, our commitment goes beyond project completion. We strive to build
+            At CyberBeid, our commitment goes beyond project completion. We strive to build
             long-term relationships rooted in trust, performance, and innovation. That’s
-            the CyberBaid difference.
+            the CyberBeid difference.
           </p>
         </div>`}
         image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=800&fit=crop"

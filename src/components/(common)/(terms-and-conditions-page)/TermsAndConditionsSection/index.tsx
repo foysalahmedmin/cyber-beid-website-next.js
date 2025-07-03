@@ -189,28 +189,26 @@ const sections: TSection[] = [
 
 const TermsAndConditionsSection = () => {
   return (
-    <section className="intersection-fade-in py-16 md:py-24">
+    <section className="py-16 md:py-24">
       <div className="container">
         <SectionTitle>
           <Subtitle>Terms</Subtitle>
           <Title>Terms and Conditions</Title>
           <Description>
-            <div className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
-              <p>
+            <ul className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
+              <li>
                 <strong>Business Name: </strong>CyberBeid Limited
-              </p>
-              <br />
-              <p>
+              </li>
+              <li>
                 <strong>NZBN: </strong>9429052881626
-              </p>
-              <br />
-              <p>
+              </li>
+              <li>
                 <strong>Website: </strong>
                 <a href="https://cyberbeid.nz/" target="_blank">
                   https://cyberbeid.nz/
                 </a>
-              </p>
-            </div>
+              </li>
+            </ul>
           </Description>
         </SectionTitle>
         <div className="space-y-8 md:space-y-12">

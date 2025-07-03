@@ -30,7 +30,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-muted-foreground max-w-lg lg:text-xl">
-            CyberBaid delivers digital solutions—from SEO and content to custom
+            CyberBeid delivers digital solutions—from SEO and content to custom
             apps—that boost growth, visibility, and future-proof your business.
           </p>
 

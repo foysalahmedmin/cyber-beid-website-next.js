@@ -21,7 +21,7 @@ const metrics = [
 export const metadata = {
   title: "LEADERSHIPS | CYBER BAID",
   description:
-    "CyberBaid | CyberBaid's leadership team combines decades of technology expertise with visionary digital strategy.",
+    "CyberBeid | CyberBeid's leadership team combines decades of technology expertise with visionary digital strategy.",
 };
 
 const LeadershipsPage = () => {
@@ -30,7 +30,7 @@ const LeadershipsPage = () => {
       <PageHeaderSection
         subtitle="Leaderships"
         title="The champions of a construction revolution"
-        description="CyberBaid's leadership team combines decades of technology expertise with visionary digital strategy."
+        description="CyberBeid's leadership team combines decades of technology expertise with visionary digital strategy."
         image="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=12000&q=80"
         metrics={metrics}
       />

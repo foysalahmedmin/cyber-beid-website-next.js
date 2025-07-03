@@ -1,4 +1,9 @@
-import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
+import {
+  Description,
+  SectionTitle,
+  Subtitle,
+  Title,
+} from "@/components/ui/SectionTitle";
 
 type TSection = {
   title: string;
@@ -72,11 +77,27 @@ const sections: TSection[] = [
 
 const RefundPolicySection = () => {
   return (
-    <section className="intersection-fade-in bg-muted py-16 md:py-24">
+    <section className="bg-muted py-16 md:py-24">
       <div className="container">
         <SectionTitle>
           <Subtitle>Privacy</Subtitle>
           <Title>Refund & Cancellation Policy</Title>
+          <Description>
+            <ul className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
+              <li>
+                <strong>Business Name: </strong>CyberBeid Limited
+              </li>
+              <li>
+                <strong>NZBN: </strong>9429052881626
+              </li>
+              <li>
+                <strong>Website: </strong>
+                <a href="https://cyberbeid.nz/" target="_blank">
+                  https://cyberbeid.nz/
+                </a>
+              </li>
+            </ul>
+          </Description>
         </SectionTitle>
         <div className="space-y-8 md:space-y-12">
           {sections?.map((section, index) => (

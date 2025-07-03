@@ -90,39 +90,30 @@ const sections: TSection[] = [
     title: "10. Updates to This Policy",
     description: `We may update this policy from time to time. The latest version will always be posted on our website.`,
   },
-  {
-    title: "Refund & Cancellation Policy — CyberBeid Limited",
-    description: `
-      <p><strong>Effective Date:</strong> [Insert Date]<br>
-      <strong>Applies To:</strong> All digital services, software solutions, and web development projects sold or provided by CyberBeid Limited.</p>
-    `,
-  },
 ];
 
 const PrivacyPolicySection = () => {
   return (
-    <section className="intersection-fade-in py-16 md:py-24">
+    <section className="py-16 md:py-24">
       <div className="container">
         <SectionTitle>
           <Subtitle>Privacy</Subtitle>
           <Title>Privacy Policy</Title>
           <Description>
-            <div className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
-              <p>
+            <ul className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
+              <li>
                 <strong>Business Name: </strong>CyberBeid Limited
-              </p>
-              <br />
-              <p>
+              </li>
+              <li>
                 <strong>NZBN: </strong>9429052881626
-              </p>
-              <br />
-              <p>
+              </li>
+              <li>
                 <strong>Website: </strong>
                 <a href="https://cyberbeid.nz/" target="_blank">
                   https://cyberbeid.nz/
                 </a>
-              </p>
-            </div>
+              </li>
+            </ul>
           </Description>
         </SectionTitle>
         <div className="space-y-8 md:space-y-12">
