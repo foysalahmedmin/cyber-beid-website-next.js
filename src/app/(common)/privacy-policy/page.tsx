@@ -1,4 +1,5 @@
 import PrivacyPolicySection from "@/components/(common)/(privacy-policy-page)/PrivacyPolicySection";
+import RefundPolicySection from "@/components/(common)/(privacy-policy-page)/RefundPolicySection";
 import FollowUpSection from "@/components/sections/FollowUpSection";
 
 export const metadata = {
@@ -11,6 +12,7 @@ const PrivacyPolicyPage = () => {
   return (
     <main>
       <PrivacyPolicySection />
+      <RefundPolicySection />
       <FollowUpSection />
     </main>
   );
