@@ -236,7 +236,7 @@ const Footer = () => {
               className="primary underline-effect hover:text-primary"
               href="https://www.cyberbeid.nz"
             >
-              CyberBeid.
+              CyberBeid Limited
             </Link>
           </div>
           <div className="flex flex-wrap items-center gap-4 lg:justify-center">
