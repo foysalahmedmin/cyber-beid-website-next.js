@@ -777,7 +777,7 @@ export const services: TService[] = [
           _id: "cc-3",
           title: "Audience-Focused Storytelling",
           description:
-            "Using detailed audience personas and journey mapping, we create narratives that resonate with your target demographics. Our storytelling approach connects emotional drivers with practical solutions, increasing engagement and conversion rates through relatable content experiences.",
+            "We craft compelling narratives tailored to your audience by leveraging detailed personas and customer journey mapping. Our storytelling connects emotional motivators with real-world solutions, driving deeper engagement and higher conversion rates through content that feels personal, relevant and impactful.",
         },
       ],
     },

@@ -14,7 +14,7 @@ const CareersPage = () => {
     <main>
       <PageHeaderSection
         subtitle="Shape the future of digital innovation"
-        title="Careers"
+        title="Career"
         description="Join a team that thrives on creativity, strategy, and technology. At CyberBeid, we believe the future belongs to those who build it—and we’re building it every day through groundbreaking digital experiences."
         image="/images/(careers-page)/page-header.png"
       />

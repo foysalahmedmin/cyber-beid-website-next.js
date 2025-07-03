@@ -30,8 +30,11 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-muted-foreground max-w-lg lg:text-xl">
-            CyberBeid delivers digital solutions—from SEO and content to custom
-            apps—that boost growth, visibility, and future-proof your business.
+            CyberBeid is a leading digital solutions company specializing in web
+            development, mobile applications, and cloud technologies.{" "}
+            <strong>We've</strong>
+            helped businesses of all sizes transform their digital presence and
+            achieve their goals through innovative technology solutions.
           </p>
 
           <div className="flex flex-wrap gap-4">

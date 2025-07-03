@@ -33,7 +33,7 @@ export const about_links: TLink[] = [
   //   description: "View our portfolio and case studies",
   // },
   {
-    text: "Careers",
+    text: "Career",
     href: "/careers",
     icon: Target,
     description: "Join our growing team of professionals",

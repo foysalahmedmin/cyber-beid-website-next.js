@@ -92,7 +92,7 @@ const FAQSection = () => {
                   />
                 </label>
                 <Button className="flex w-full" size="lg">
-                  <span className="uppercase">get your free quote</span>
+                  <span className="uppercase">Submit</span>
                 </Button>
               </form>
             </div>

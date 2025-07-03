@@ -12,7 +12,7 @@ const FollowUpSection = () => {
         <div className="container">
           <SectionTitle>
             <Title>
-              <span className="inline-block">Ready to</span>
+              <span className="inline-block">Let's Grow</span>
               <br />
               <span className="ml-14 inline-block">together?</span>
             </Title>
