@@ -64,7 +64,7 @@ const data = [
       },
       {
         type: "link",
-        text: "Visions",
+        text: "Vision",
         href: "/visions",
       },
     ],
@@ -118,7 +118,7 @@ const links = [
   },
   {
     type: "link",
-    text: "Visions",
+    text: "Vision",
     href: "/visions",
   },
 ];

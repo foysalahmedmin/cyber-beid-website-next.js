@@ -1,75 +1,189 @@
-import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
+import {
+  Description,
+  SectionTitle,
+  Subtitle,
+  Title,
+} from "@/components/ui/SectionTitle";
 
 type TSection = {
   title: string;
-  description: string;
+  description: string; // HTML string
 };
 
 const sections: TSection[] = [
   {
-    title: "1. Services Overview",
-    description:
-      "CyberBeid provides digital solutions including web development, application development, UI/UX design, digital marketing, and business automation services. By engaging with our services, you agree to these terms governing our professional relationship.",
+    title: "1. Introduction",
+    description: `These Terms and Conditions (“Terms”) govern your access to and use of the CyberBeid website and services. By accessing this Site, you agree to comply with and be bound by these Terms and all applicable laws and regulations of New Zealand. If you do not agree, do not use our services.`,
   },
   {
-    title: "2. Service Engagement",
-    description:
-      "All projects begin with a formal proposal outlining scope, deliverables, timeline, and pricing. Client approval of the proposal constitutes agreement to these terms. CyberBeid reserves the right to decline projects that conflict with our ethical guidelines or technical capabilities.",
+    title: "2. Definitions",
+    description: `
+      <ul>
+        <li><strong>“We”, “Us”, “Our”</strong> – CyberBeid Limited.</li>
+        <li><strong>“You”, “User”, “Client”</strong> – Any person or entity using our services.</li>
+        <li><strong>“Services”</strong> – Web development, digital solutions, hosting, and related technology services.</li>
+        <li><strong>“Site”</strong> – <a href="https://cyberbeid.nz/" target="_blank" style="text-decoration-line:none;color:rgb(66,133,244)">https://cyberbeid.nz/</a></li>
+      </ul>
+    `,
   },
   {
-    title: "3. Intellectual Property Rights",
-    description:
-      "Upon full payment, clients receive exclusive rights to final deliverables. CyberBeid retains rights to:\n• Pre-existing code libraries and frameworks\n• Project methodologies and processes\n• Non-client-specific solutions developed during engagement\nWe may showcase completed work in our portfolio unless otherwise agreed in writing.",
+    title: "3. Compliance with New Zealand Law",
+    description: `
+      <p>We operate in accordance with the laws of New Zealand. These Terms are subject to the following Acts:</p>
+      <ul>
+        <li><strong>Consumer Guarantees Act 1993 (CGA)</strong></li>
+        <li><strong>Fair Trading Act 1986 (FTA)</strong></li>
+        <li><strong>Privacy Act 2020</strong></li>
+        <li><strong>Unsolicited Electronic Messages Act 2007</strong></li>
+        <li><strong>Electronic Transactions Act 2002</strong></li>
+      </ul>
+      <p>Nothing in these Terms excludes your rights under these laws unless you're using our services for business purposes, in which case certain exclusions apply (see clause 15).</p>
+    `,
   },
   {
-    title: "4. Confidentiality",
-    description:
-      "Both parties agree to protect confidential information including:\n• Business strategies and technical specifications\n• Source code and proprietary algorithms\n• Client data and user information\n• Financial arrangements\nConfidentiality obligations survive project completion by 3 years.",
+    title: "4. Eligibility",
+    description: `To use our services, you must be at least 18 years of age or have legal consent from a guardian.`,
   },
   {
-    title: "5. Payment Terms",
-    description:
-      "Standard payment structure:\n• 30% deposit to commence work\n• 40% milestone payment\n• 30% upon completion\nDelayed payments incur 1.5% monthly interest. All invoices are payable within 15 days unless otherwise specified in the project agreement.",
+    title: "5. Account and Security",
+    description: `You are responsible for protecting your account credentials and must notify us of any unauthorized access.`,
   },
   {
-    title: "6. Revisions & Change Management",
-    description:
-      "Projects include two rounds of revisions within original scope. Additional requests will be:\n• Estimated separately\n• Subject to change order approval\n• May impact project timeline\nScope changes exceeding 20% of original estimate may require new proposal.",
+    title: "6. Use of Services",
+    description: `
+      <p>You agree not to misuse our services or engage in any unlawful activity, including:</p>
+      <ul>
+        <li>Misleading or deceptive conduct (FTA)</li>
+        <li>Uploading or distributing harmful code or spam (Unsolicited Electronic Messages Act)</li>
+        <li>Violating intellectual property rights</li>
+      </ul>
+    `,
   },
   {
-    title: "7. Warranties & Limitations",
-    description:
-      "CyberBeid warrants deliverables for 90 days post-launch against material defects. We are not liable for:\n• Third-party platform changes\n• Client-modified code\n• Issues arising from unclear requirements\n• Force majeure events\nMaximum liability is limited to project fees paid.",
+    title: "7. Fees and Payment",
+    description: `
+      <ul>
+        <li>Fees will be clearly stated in your order or service agreement.</li>
+        <li>All payments must be made by the due date.</li>
+        <li>Late fees may be charged per the NZ High Court judgment rate + 3%.</li>
+      </ul>
+    `,
   },
   {
-    title: "8. Termination Policy",
-    description:
-      "Either party may terminate with 30 days written notice. Upon termination:\n• Client pays for work completed\n• CyberBeid delivers completed work\n• Pre-paid amounts for uncompleted work are refunded\n• Client receives all work-in-progress assets",
+    title: "8. Trial Periods",
+    description: `Trial access is optional and ends automatically unless a paid service is initiated.`,
   },
   {
-    title: "9. Data Handling",
-    description:
-      "Client retains ownership of all provided data. CyberBeid will:\n• Process data only for project purposes\n• Implement industry-standard security\n• Delete or return data upon request\n• Never sell or share client data",
+    title: "9. Service Levels (Uptime and Maintenance)",
+    description: `We aim to maintain 99.9% uptime. Planned maintenance will be communicated in advance.`,
   },
   {
-    title: "10. Third-Party Services",
-    description:
-      "Projects may incorporate:\n• Open-source libraries (governed by their licenses)\n• APIs and third-party platforms\n• Cloud infrastructure providers\nClient is responsible for associated costs and compliance with third-party terms.",
+    title: "10. Data Ownership and Retention",
+    description: `
+      <ul>
+        <li>You retain ownership of your content and data.</li>
+        <li>Data will be deleted 30 days after cancellation unless required by law.</li>
+        <li>We retain anonymised analytics in compliance with the Privacy Act 2020.</li>
+      </ul>
+    `,
   },
   {
-    title: "11. Governing Law & Disputes",
-    description:
-      "These terms are governed by the laws of [Your Jurisdiction]. Disputes will first attempt resolution through mediation. Unresolved disputes may proceed to binding arbitration in [City, State], with each party bearing own costs.",
+    title: "11. Intellectual Property",
+    description: `We retain all rights to the software, content, and materials provided unless stated otherwise in writing.`,
   },
   {
-    title: "12. Policy Updates",
-    description:
-      "Terms may be updated periodically. Clients will be notified of material changes 30 days in advance. Continued use of services constitutes acceptance of revised terms.",
+    title: "12. Software Licenses",
+    description: `Software provided by us is licensed, not sold. Reverse engineering is strictly prohibited.`,
   },
   {
-    title: "13. Contact & Dispute Resolution",
-    description:
-      "For concerns or disputes:\n\nCyberBeid Solutions\nAttn: Legal Department\nEmail: legal@CyberBeid.com\nPhone: +1 (555) 123-4567\n\nWe commit to responding to formal complaints within 10 business days.",
+    title: "13. Acceptable Use Policy",
+    description: `
+      <p>You may not use our services for:</p>
+      <ul>
+        <li>Hosting illegal or harmful content</li>
+        <li>Engaging in phishing, spamming, or network attacks</li>
+        <li>Violating New Zealand’s cybercrime or anti-spam laws</li>
+      </ul>
+    `,
+  },
+  {
+    title: "14. Confidentiality",
+    description: `Both parties agree to keep non-public information confidential unless required by law.`,
+  },
+  {
+    title: "15. Privacy",
+    description: `We comply with the <strong>Privacy Act 2020</strong>. Your personal data will be collected, stored, and processed responsibly.<br>By using our services, you agree to the practices described in our [Privacy Policy].`,
+  },
+  {
+    title: "16. Consumer Rights",
+    description: `
+      <ul>
+        <li><strong>For Consumers:</strong> You are protected under the <strong>Consumer Guarantees Act 1993</strong>.</li>
+        <li><strong>For Business Clients:</strong> You agree that the CGA does not apply, as permitted under section 43(2).</li>
+      </ul>
+    `,
+  },
+  {
+    title: "17. Subcontractors and Third Parties",
+    description: `We may use verified partners to deliver parts of our services. You agree we are not liable for their independent actions unless otherwise stated.`,
+  },
+  {
+    title: "18. Portfolio and Publicity",
+    description: `We may use your business name and logo in our portfolio unless you request otherwise.`,
+  },
+  {
+    title: "19. Export Controls",
+    description: `You agree to comply with all New Zealand export control laws. Services may not be used in violation of international sanctions.`,
+  },
+  {
+    title: "20. Indemnity",
+    description: `You agree to indemnify CyberBeid Limited for any loss arising from your breach of these Terms or misuse of the services.`,
+  },
+  {
+    title: "21. Warranties and Disclaimers",
+    description: `We will provide services with reasonable care and skill.<br>We do not guarantee uninterrupted service. All services are provided “as is,” subject to applicable consumer protection laws.`,
+  },
+  {
+    title: "22. Limitation of Liability",
+    description: `
+      <ul>
+        <li>Liability is limited to the amount paid by you in the preceding 12 months.</li>
+        <li>We are not liable for indirect or consequential losses, subject to the CGA and FTA.</li>
+      </ul>
+    `,
+  },
+  {
+    title: "23. Termination",
+    description: `
+      <ul>
+        <li>Either party may terminate this agreement at any time, subject to 14 days’ notice.</li>
+        <li>We reserve the right to suspend services if you breach these Terms.</li>
+      </ul>
+    `,
+  },
+  {
+    title: "24. Effects of Termination",
+    description: `Upon termination, you must cease using our services and delete all confidential materials.`,
+  },
+  {
+    title: "25. Force Majeure",
+    description: `We are not liable for delays or failures caused by events outside our control (e.g. natural disasters, cyberattacks, strikes).`,
+  },
+  {
+    title: "26. Dispute Resolution",
+    description: `We encourage direct resolution of disputes. If unresolved, disputes may be submitted to arbitration under the Arbitration Act 1996.`,
+  },
+  {
+    title: "27. Notices",
+    description: `Notices must be delivered in writing via email or electronic notification through the Site.`,
+  },
+  {
+    title: "28. Entire Agreement",
+    description: `These Terms represent the entire agreement between you and CyberBeid Limited, superseding any previous terms or understandings.`,
+  },
+  {
+    title: "29. Severability",
+    description: `If any part of these Terms is deemed unenforceable, the remaining clauses will remain in effect.`,
   },
 ];
 
@@ -80,12 +194,39 @@ const TermsAndConditionsSection = () => {
         <SectionTitle>
           <Subtitle>Terms</Subtitle>
           <Title>Terms and Conditions</Title>
+          <Description>
+            <div className="flex flex-col flex-wrap md:flex-row md:items-center">
+              <p>
+                <strong>Business Name:</strong> CyberBeid Limited
+              </p>
+              <br />
+              <p>
+                <strong>NZBN:</strong> 9429052881626
+              </p>
+              <br />
+              <p>
+                <strong>Website:</strong>
+                <a href="https://cyberbeid.nz/" target="_blank">
+                  https://cyberbeid.nz/
+                </a>
+              </p>
+            </div>
+          </Description>
         </SectionTitle>
         <div className="space-y-8 md:space-y-12">
           {sections?.map((section, index) => (
             <div key={index} className="space-y-2">
               <h3 className="text-3xl">{section?.title}</h3>
-              <p>{section?.description}</p>
+              <div className="w-full">
+                <div className="prose prose-headings:font-normal dark:prose-invert w-full max-w-none">
+                  <div
+                    className="text-foreground font-sans"
+                    dangerouslySetInnerHTML={{
+                      __html: section?.description || "",
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           ))}
         </div>

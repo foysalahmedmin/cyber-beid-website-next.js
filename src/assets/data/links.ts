@@ -1,10 +1,4 @@
-import {
-  Building,
-  Calendar,
-  Eye,
-  LucideIcon,
-  Target
-} from "lucide-react";
+import { Building, Calendar, Eye, LucideIcon, Target } from "lucide-react";
 
 type TLink = {
   text: string;
@@ -51,7 +45,7 @@ export const about_links: TLink[] = [
     description: "Learn about our journey and milestones",
   },
   {
-    text: "Visions",
+    text: "Vision",
     href: "/visions",
     icon: Eye,
     description: "Discover our mission and future goals",

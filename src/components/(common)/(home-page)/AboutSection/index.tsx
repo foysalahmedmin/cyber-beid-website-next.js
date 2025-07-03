@@ -39,11 +39,24 @@ const AboutSection = () => {
               <Subtitle>About Us</Subtitle>
               <Title>We Build Digital Solutions That Drive Growth</Title>
               <Description>
-                CyberBeid is a leading digital solutions company specializing in
-                web development, mobile applications, and cloud technologies.
-                we&apos;ve helped businesses of all sizes transform their
-                digital presence and achieve their goals through innovative
-                technology solutions.
+                <p>
+                  CyberBeid is your trusted partner in building powerful digital
+                  solutions that fuel business growth. From top-tier web
+                  development and sleek, mobile app to scalable cloud
+                  technologies, we help brands of all sizes transform their
+                  online presence and achieve measurable success.
+                </p>
+                <br />
+                <p>
+                  Driven by a passion for innovation, a commitment to
+                  excellence, and an obsession with client success, CyberBeid
+                  delivers tailor-made tech solutions that make a real impact.
+                </p>
+                <br />
+                <p>
+                  Let’s build what’s next together. Explore our services and
+                  discover what sets us apart in the digital world.
+                </p>
               </Description>
               <p>
                 Our commitment to excellence, innovation, and client

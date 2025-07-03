@@ -5,7 +5,6 @@ import FAQSection from "@/components/(common)/(home-page)/FAQSection";
 import FeaturesSection from "@/components/(common)/(home-page)/FeaturesSection";
 import HeroSection from "@/components/(common)/(home-page)/HeroSection";
 import ServicesSection from "@/components/(common)/(home-page)/ServicesSection";
-import TestimonialsSection from "@/components/(common)/(home-page)/TestimonialsSection";
 
 export const metadata = {
   title: "HOME | CYBER BAID",
@@ -24,7 +23,7 @@ const HomePage = () => {
       <FeaturesSection />
       {/* <ProjectsSection /> */}
       <BlogsSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       {/* <ClientsSection /> */}
       <CallToActionSection />
       <FAQSection />
