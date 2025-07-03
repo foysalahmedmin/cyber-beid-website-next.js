@@ -195,17 +195,17 @@ const TermsAndConditionsSection = () => {
           <Subtitle>Terms</Subtitle>
           <Title>Terms and Conditions</Title>
           <Description>
-            <div className="flex flex-col flex-wrap gap-x-4 md:flex-row md:items-center">
+            <div className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
               <p>
-                <strong>Business Name:</strong> CyberBeid Limited
+                <strong>Business Name: </strong>CyberBeid Limited
               </p>
               <br />
               <p>
-                <strong>NZBN:</strong> 9429052881626
+                <strong>NZBN: </strong>9429052881626
               </p>
               <br />
               <p>
-                <strong>Website:</strong>
+                <strong>Website: </strong>
                 <a href="https://cyberbeid.nz/" target="_blank">
                   https://cyberbeid.nz/
                 </a>
