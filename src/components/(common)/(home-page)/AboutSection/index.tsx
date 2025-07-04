@@ -37,7 +37,7 @@ const AboutSection = () => {
           <div className="order-1 lg:order-2">
             <SectionTitle>
               <Subtitle>About Us</Subtitle>
-              <Title>We Build Digital Solutions That Drive Growth</Title>
+              <Title>Empowering Digital Growth with Smart Innovation</Title>
               <Description>
                 <p>
                   CyberBeid is your trusted partner in building powerful digital
@@ -58,12 +58,6 @@ const AboutSection = () => {
                   discover what sets us apart in the digital world.
                 </p>
               </Description>
-              <p>
-                Our commitment to excellence, innovation, and client
-                satisfaction has made us a trusted partner for organizations
-                worldwide. Explore the different aspects of our company to learn
-                more about what makes us unique.
-              </p>
             </SectionTitle>
 
             {/* About Links Grid */}

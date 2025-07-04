@@ -1,4 +1,4 @@
-import { Building, Calendar, Eye, LucideIcon, Target } from "lucide-react";
+import { Building, Eye, LucideIcon } from "lucide-react";
 
 type TLink = {
   text: string;
@@ -32,18 +32,18 @@ export const about_links: TLink[] = [
   //   icon: Briefcase,
   //   description: "View our portfolio and case studies",
   // },
-  {
-    text: "Career",
-    href: "/careers",
-    icon: Target,
-    description: "Join our growing team of professionals",
-  },
-  {
-    text: "History",
-    href: "/history",
-    icon: Calendar,
-    description: "Learn about our journey and milestones",
-  },
+  // {
+  //   text: "Career",
+  //   href: "/careers",
+  //   icon: Target,
+  //   description: "Join our growing team of professionals",
+  // },
+  // {
+  //   text: "History",
+  //   href: "/history",
+  //   icon: Calendar,
+  //   description: "Learn about our journey and milestones",
+  // },
   {
     text: "Vision",
     href: "/visions",

@@ -25,13 +25,13 @@ const data = [
   //   ],
   // },
   {
-    title: "About",
+    title: "Menu",
     items: [
-      // {
-      //   type: "link",
-      //   text: "About",
-      //   href: "/about",
-      // },
+      {
+        type: "link",
+        text: "About",
+        href: "/about",
+      },
       // {
       //   type: "link",
       //   text: "Leaderships",
@@ -52,20 +52,25 @@ const data = [
         text: "Blogs",
         href: "/blogs",
       },
-      {
-        type: "link",
-        text: "Career",
-        href: "/careers",
-      },
-      {
-        type: "link",
-        text: "History",
-        href: "/history",
-      },
+      // {
+      //   type: "link",
+      //   text: "Career",
+      //   href: "/careers",
+      // },
+      // {
+      //   type: "link",
+      //   text: "History",
+      //   href: "/history",
+      // },
       {
         type: "link",
         text: "Vision",
         href: "/visions",
+      },
+      {
+        type: "link",
+        text: "Contact",
+        href: "/contact",
       },
     ],
   },
@@ -106,16 +111,16 @@ const links = [
     text: "Blogs",
     href: "/blogs",
   },
-  {
-    type: "link",
-    text: "Career",
-    href: "/careers",
-  },
-  {
-    type: "link",
-    text: "History",
-    href: "/history",
-  },
+  // {
+  //   type: "link",
+  //   text: "Career",
+  //   href: "/careers",
+  // },
+  // {
+  //   type: "link",
+  //   text: "History",
+  //   href: "/history",
+  // },
   {
     type: "link",
     text: "Vision",
@@ -217,7 +222,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-6">
+        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-4">
           {links.map((link, index) => (
             <Link className="w-full" key={index} href={link?.href}>
               <Button
