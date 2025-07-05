@@ -80,7 +80,7 @@ const RefundPolicySection = () => {
     <section className="bg-muted py-16 md:py-24">
       <div className="container">
         <SectionTitle>
-          <Subtitle>Privacy</Subtitle>
+          <Subtitle>Refund & Cancellation</Subtitle>
           <Title>Refund & Cancellation Policy</Title>
           <Description>
             <ul className="flex flex-col flex-wrap gap-x-2 md:flex-row md:items-center">
