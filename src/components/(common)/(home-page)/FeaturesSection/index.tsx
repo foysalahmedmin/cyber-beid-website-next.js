@@ -10,7 +10,7 @@ const FeaturesSection = () => {
     >
       <div className="container">
         <div className="grid grid-cols-1 gap-8 md:gap-12 lg:grid-cols-4">
-          <div className="text-center md:text-center">
+          <div className="text-center md:text-left">
             <Subtitle className="after:hidden md:after:inline-block">
               Features
             </Subtitle>

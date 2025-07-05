@@ -175,7 +175,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="lg:col-span-2">
-            <strong className="mb-4 block font-medium">Menu</strong>
+            <strong className="mb-4 block font-medium">Services</strong>
             <ul className={cn("grid space-y-2 lg:grid-cols-2")}>
               {services
                 .map((service) => {

@@ -14,7 +14,7 @@ const FollowUpSection = () => {
             <Title>
               <span className="inline-block">Let&apos;s Grow</span>
               <br />
-              <span className="ml-14 inline-block">together.</span>
+              <span className="ml-14 inline-block">Together.</span>
             </Title>
           </SectionTitle>
           <div className="flex flex-wrap items-center gap-6">
