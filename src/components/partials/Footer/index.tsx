@@ -4,85 +4,51 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
-const data = [
+const menu = [
+  {
+    type: "link",
+    text: "About",
+    href: "/about",
+  },
   // {
-  //   title: "Our location",
-  //   items: [
-  //     {
-  //       type: "text",
-  //       text: "Wellington, New Zealand",
-  //     },
-  //     {
-  //       type: "link",
-  //       text: "+64 28 470 0533",
-  //       href: "tel:+64284700533",
-  //     },
-  //     {
-  //       type: "link",
-  //       text: "cyberbeid@gmail.com",
-  //       href: "mailto:cyberbeid@gmail.com",
-  //     },
-  //   ],
+  //   type: "link",
+  //   text: "Leaderships",
+  //   href: "/leaderships",
   // },
   {
-    title: "Menu",
-    items: [
-      {
-        type: "link",
-        text: "About",
-        href: "/about",
-      },
-      // {
-      //   type: "link",
-      //   text: "Leaderships",
-      //   href: "/leaderships",
-      // },
-      {
-        type: "link",
-        text: "Services",
-        href: "/services",
-      },
-      // {
-      //   type: "link",
-      //   text: "Projects",
-      //   href: "/projects",
-      // },
-      {
-        type: "link",
-        text: "Blogs",
-        href: "/blogs",
-      },
-      // {
-      //   type: "link",
-      //   text: "Career",
-      //   href: "/careers",
-      // },
-      // {
-      //   type: "link",
-      //   text: "History",
-      //   href: "/history",
-      // },
-      {
-        type: "link",
-        text: "Vision",
-        href: "/visions",
-      },
-      {
-        type: "link",
-        text: "Contact",
-        href: "/contact",
-      },
-    ],
+    type: "link",
+    text: "Services",
+    href: "/services",
+  },
+  // {
+  //   type: "link",
+  //   text: "Projects",
+  //   href: "/projects",
+  // },
+  {
+    type: "link",
+    text: "Blogs",
+    href: "/blogs",
+  },
+  // {
+  //   type: "link",
+  //   text: "Career",
+  //   href: "/careers",
+  // },
+  // {
+  //   type: "link",
+  //   text: "History",
+  //   href: "/history",
+  // },
+  {
+    type: "link",
+    text: "Vision",
+    href: "/visions",
   },
   {
-    title: "Services",
-    items: services.map((service) => {
-      return {
-        type: "link",
-        text: service?.title,
-        href: `/services/${service?._id}`,
-      };
-    }),
+    type: "link",
+    text: "Contact",
+    href: "/contact",
   },
 ];
 const links = [
@@ -133,11 +99,11 @@ const socials = [
     href: "https://www.facebook.com/cyberbeid",
     target: "_blank",
   },
-  {
-    text: "Linkedin",
-    href: "https://www.linkedin.com/company/cyberbeid",
-    target: "_blank",
-  },
+  // {
+  //   text: "Linkedin",
+  //   href: "https://www.linkedin.com/company/cyberbeid",
+  //   target: "_blank",
+  // },
   {
     text: "Instagram",
     href: "https://www.instagram.com/cyberbeid",
@@ -189,40 +155,54 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          {data?.map((obj, index) => (
-            <div
-              key={index}
-              className={cn("", {
-                "lg:col-span-2": obj?.items?.length > 6,
-              })}
-            >
-              <strong className="mb-4 block font-medium">{obj?.title}</strong>
-              {obj?.items?.length > 0 && (
-                <ul
-                  className={cn("space-y-2", {
-                    "grid lg:grid-cols-2": obj?.items?.length > 6,
-                  })}
-                >
-                  {obj?.items.map((item, index) => (
-                    <li className="font-light" key={index}>
-                      {item?.type === "link" ? (
-                        <Link
-                          className="underline-effect primary hover:text-primary"
-                          href={item?.href || "#"}
-                        >
-                          {item?.text}
-                        </Link>
-                      ) : (
-                        <p className="mb-4">{item?.text}</p>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
+          <div className="hidden lg:block">
+            <strong className="mb-4 block font-medium">Menu</strong>
+            <ul className={cn("space-y-2")}>
+              {menu.map((item, index) => (
+                <li className="font-light" key={index}>
+                  {item?.type === "link" ? (
+                    <Link
+                      className="underline-effect primary hover:text-primary"
+                      href={item?.href || "#"}
+                    >
+                      {item?.text}
+                    </Link>
+                  ) : (
+                    <p className="mb-4">{item?.text}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="lg:col-span-2">
+            <strong className="mb-4 block font-medium">Menu</strong>
+            <ul className={cn("grid space-y-2 lg:grid-cols-2")}>
+              {services
+                .map((service) => {
+                  return {
+                    type: "link",
+                    text: service?.title,
+                    href: `/services/${service?._id}`,
+                  };
+                })
+                .map((item, index) => (
+                  <li className="font-light" key={index}>
+                    {item?.type === "link" ? (
+                      <Link
+                        className="underline-effect primary hover:text-primary"
+                        href={item?.href || "#"}
+                      >
+                        {item?.text}
+                      </Link>
+                    ) : (
+                      <p className="mb-4">{item?.text}</p>
+                    )}
+                  </li>
+                ))}
+            </ul>
+          </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:hidden lg:grid-cols-4">
           {links.map((link, index) => (
             <Link className="w-full" key={index} href={link?.href}>
               <Button

@@ -28,7 +28,7 @@ const AboutPage = () => {
   return (
     <main>
       <PageHeaderSection
-        subtitle="Leadership"
+        subtitle="About Us"
         title="Architects of the Digital Revolution"
         description="CyberBeid's leadership team combines decades of technology expertise with visionary digital strategy. From Silicon Valley veterans to creative pioneers, our leaders are united by a common mission: to transform businesses through cutting-edge digital solutions. Meet the minds powering our clients' digital evolution."
         image="/images/(about-page)/page-header.png"

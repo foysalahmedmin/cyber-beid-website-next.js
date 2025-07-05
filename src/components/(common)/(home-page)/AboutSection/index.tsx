@@ -36,7 +36,7 @@ const AboutSection = () => {
           {/* Right Column - Content */}
           <div className="order-1 lg:order-2">
             <SectionTitle>
-              <Subtitle>About Us</Subtitle>
+              <Subtitle>Next Horizon</Subtitle>
               <Title>Empowering Digital Growth with Smart Innovation</Title>
               <Description>
                 <p>
@@ -90,7 +90,7 @@ const AboutSection = () => {
             <div className="flex flex-wrap items-center justify-start gap-4">
               <Link href="/about">
                 <Button asChild={true} size="lg">
-                  <span>More About Us</span>
+                  <span>About Us</span>
                 </Button>
               </Link>
               <Link href="/contact">
