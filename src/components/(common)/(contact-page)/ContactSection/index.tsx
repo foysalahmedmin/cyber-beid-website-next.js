@@ -1,3 +1,5 @@
+"use client";
+
 import { services } from "@/assets/data/services";
 import { Button } from "@/components/ui/Button";
 import { FormControl } from "@/components/ui/FormControl";
