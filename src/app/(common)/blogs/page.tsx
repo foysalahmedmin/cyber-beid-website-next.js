@@ -6,7 +6,7 @@ import { Description, SectionTitle, Title } from "@/components/ui/SectionTitle";
 import Image from "next/image";
 
 export const metadata = {
-  title: "BLOGS | CYBER BAID",
+  title: "Blogs | CyberBeid",
   description:
     "CyberBeid | Explore thought leadership on digital transformation, emerging technologies, and innovative strategies that drive business growth in the digital age. Our blog provides a deep understanding of the latest trends, industry insights, and practical strategies to navigate the digital landscape.",
 };

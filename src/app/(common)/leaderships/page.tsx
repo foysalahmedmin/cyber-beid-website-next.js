@@ -19,7 +19,7 @@ const metrics = [
 ];
 
 export const metadata = {
-  title: "LEADERSHIPS | CYBER BAID",
+  title: "Leaderships | CyberBeid",
   description:
     "CyberBeid | CyberBeid's leadership team combines decades of technology expertise with visionary digital strategy.",
 };

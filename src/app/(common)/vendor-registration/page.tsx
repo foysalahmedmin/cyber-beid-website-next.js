@@ -100,7 +100,7 @@ const terms = [
 ];
 
 export const metadata = {
-  title: "VENDOR AGREEMENT | CYBER BAID",
+  title: "Vendor Registration | CyberBeid",
   description:
     "CyberBeid | CyberBeid's leadership team combines decades of technology expertise with visionary digital strategy.",
 };

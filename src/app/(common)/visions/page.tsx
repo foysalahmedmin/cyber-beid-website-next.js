@@ -6,7 +6,7 @@ import SplitStickySection from "@/components/sections/SplitStickySection";
 import { SectionTitle, Subtitle, Title } from "@/components/ui/SectionTitle";
 
 export const metadata = {
-  title: "VISIONS | CYBER BAID",
+  title: "Visions | CyberBeid",
   description:
     "CyberBeid | We believe in the power of collaboration, creativity, and technology to solve complex problems. Our team of dedicated strategists, designers, developers, and marketers is committed to creating solutions that help businesses grow, engage users, and stay competitive in a rapidly evolving digital landscape.",
 };

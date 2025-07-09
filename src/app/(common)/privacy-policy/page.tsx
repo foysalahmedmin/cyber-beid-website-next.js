@@ -3,7 +3,7 @@ import RefundPolicySection from "@/components/(common)/(privacy-policy-page)/Ref
 import FollowUpSection from "@/components/sections/FollowUpSection";
 
 export const metadata = {
-  title: "PRIVACY POLICY | CYBER BAID",
+  title: "Privacy Policy | CyberBeid",
   description:
     "CyberBeid | Our privacy policy outlines how we collect, use, and protect your personal information. We're committed to ensuring your privacy and security in our digital world.",
 };

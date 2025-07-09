@@ -2,7 +2,7 @@ import TermsAndConditionsSection from "@/components/(common)/(terms-and-conditio
 import FollowUpSection from "@/components/sections/FollowUpSection";
 
 export const metadata = {
-  title: "TERMS AND CONDITIONS | CYBER BAID",
+  title: "Terms and Conditions | CyberBeid",
   description:
     "CyberBeid | By using our services, you agree to the terms and conditions outlined in this document. We're dedicated to delivering exceptional digital experiences that make a difference in the digital world.",
 };

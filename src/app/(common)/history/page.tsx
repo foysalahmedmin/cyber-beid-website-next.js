@@ -1,7 +1,7 @@
 import PageHeaderSection from "@/components/sections/PageHeaderSection";
 
 export const metadata = {
-  title: "HISTORY | CYBER BAID",
+  title: "History | CyberBeid",
   description:
     "CyberBeid | From the day it all started, we've been a company dedicated to asking one question: “Why not?” Our work to anticipate and overcome every challenge has rooted our values and vaulted us to the top of our industry.",
 };

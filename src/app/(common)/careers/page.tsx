@@ -4,7 +4,7 @@ import PageHeaderSection from "@/components/sections/PageHeaderSection";
 import SplitSection2 from "@/components/sections/SplitSection2";
 
 export const metadata = {
-  title: "CAREERS | CYBER BAID",
+  title: "Career | CyberBeid",
   description:
     "CyberBeid | We're a team of digital experts who believe in creativity, strategy, and technology. Join us and shape the future of digital innovation. At CyberBeid, we're building groundbreaking digital experiences that make a difference.",
 };

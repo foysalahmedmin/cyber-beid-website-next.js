@@ -30,7 +30,7 @@ const rubikGlitch = Rubik_Glitch({
 });
 
 export const metadata: Metadata = {
-  title: "CYBER BEID",
+  title: "CyberBeid",
   description: "Digital solutions.",
 };
 
