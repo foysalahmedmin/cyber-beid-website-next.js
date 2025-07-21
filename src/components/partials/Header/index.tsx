@@ -218,19 +218,21 @@ const MobileNavigation: React.FC<{
       className="flex flex-col items-center gap-6"
       onClick={(e) => e.stopPropagation()}
     >
-      {navLinks.map((link, index) => (
-        <NavItem
-          key={`mobile-${link.href}-${index}`}
-          link={link}
-          visibleSection={visibleSection}
-          onClick={onClose}
-        />
-      ))}
+      {[...navLinks, { href: "/contact", name: "Contact Us" }].map(
+        (link, index) => (
+          <NavItem
+            key={`mobile-${link.href}-${index}`}
+            link={link}
+            visibleSection={visibleSection}
+            onClick={onClose}
+          />
+        ),
+      )}
     </nav>
   </div>
 );
 
-const CTAButton: React.FC = () => (
+const ContactButton: React.FC = () => (
   <Link className="hidden lg:inline-block" href="/contact">
     <Button className="foreground" asChild={true} variant="outline">
       <span>CONTACT</span>
@@ -278,7 +280,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           />
 
           <div className="flex items-center gap-4">
-            <CTAButton />
+            <ContactButton />
             <MobileMenuButton
               isOpen={isMobileMenuOpen}
               onClick={toggleMobileMenu}
