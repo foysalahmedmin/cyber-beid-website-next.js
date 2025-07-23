@@ -12,7 +12,7 @@ export const faqs: TFaq[] = [
       <p>Project timelines vary based on complexity:</p>
       <ul>
         <li>Websites: 4-12 weeks</li>
-        <li>Mobile Apps: 12-20 weeks</li>
+        <li>Mobile Apps: 4-12 weeks</li>
         <li>Marketing Campaigns: Ongoing with monthly optimizations</li>
         <li>Branding/Design: 2-8 weeks</li>
       </ul>
@@ -54,23 +54,9 @@ export const faqs: TFaq[] = [
         <li>Content Creation</li>
         <li>Graphic Design</li>
         <li>Business Solutions &amp; Automation</li>
-        <li>Lead Generation</li>
-        <li>Advertising Campaign Management</li>
+        <li>Data Entry</li>
+        <li>Back Office Services</li>
       </ul>
-    `,
-  },
-  {
-    _id: "pricing",
-    question: "What are your pricing models?",
-    answer: `
-      <p>We provide flexible pricing:</p>
-      <ul>
-        <li>Project-based: Fixed price per scope</li>
-        <li>Retainer: Monthly ongoing services ($2,500-$10,000+)</li>
-        <li>Hourly: $95-$150/hour</li>
-        <li>Performance-based: For marketing projects</li>
-      </ul>
-      <p>No hidden fees. Transparent pricing always.</p>
     `,
   },
   {
@@ -111,10 +97,9 @@ export const faqs: TFaq[] = [
       <p>Our tech stack includes:</p>
       <ul>
         <li><strong>Frontend:</strong> React, Next.js, TypeScript</li>
-        <li><strong>Backend:</strong> Node.js, Python, Ruby</li>
-        <li><strong>Mobile:</strong> Swift, Kotlin, React Native</li>
-        <li><strong>CMS:</strong> WordPress, Shopify, Contentful</li>
-        <li><strong>Marketing:</strong> Google Ads, Meta, HubSpot</li>
+        <li><strong>Backend:</strong> Node.js, Express.js</li>
+        <li><strong>Mobile:</strong> Expo, React Native</li>
+        <li><strong>Marketing:</strong> Google Ads, Meta, SEO</li>
         <li><strong>Database:</strong> MongoDB, PostgreSQL</li>
       </ul>
     `,
@@ -125,7 +110,7 @@ export const faqs: TFaq[] = [
     answer: `
       <p>Yes, we offer ongoing support plans:</p>
       <ul>
-        <li>Basic Maintenance ($500+/month)</li>
+        <li>Basic Maintenance (Flexible pricing – negotiable based on your needs)</li>
         <li>Performance Optimization</li>
         <li>Security Updates</li>
         <li>Content Management</li>
@@ -158,7 +143,7 @@ export const faqs: TFaq[] = [
         <li>Discuss your goals</li>
         <li>Receive a tailored proposal</li>
       </ol>
-      <p>Contact us via our form or email <a href="mailto:hello@yourcompany.com">hello@yourcompany.com</a>.</p>
+      <p>Contact us via our form or email <a href="mailto:mail@cyberbeid.nz">mail@cyberbeid.nz</a>.</p>
     `,
   },
 ];
